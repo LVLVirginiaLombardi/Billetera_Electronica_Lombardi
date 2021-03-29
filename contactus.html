@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"><!-- Estilos para la página -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="subtitulo">LANE es tú Banco de confianza</div>
+        <a href="index.html"><img src="img/logo_lane.png" class="logo"></a>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <ul class="link">
+                <li>
+                    <a class="link__2" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a class="link__2" href="transactions.html">Transacciones</a>
+                    <!-- <ul class="link__3">
+                        <li>
+                            <a href="#envio">Enviar Dinero</a>
+                        </li>
+                        <li>
+                            <a href="#dinero">Solicitar Dinero</a>
+                        </li>
+                        <li>
+                            <a href="#recargas">Recargas</a>
+                        </li>
+                        <li>
+                            <a href="#servicios">Pago de Servicios</a>
+                        </li>
+                        <li>
+                            <a href="#movimientos">Últimos Movimientos</a>
+                        </li>
+                    </ul> -->
+                </li>
+                <li>
+                    <a class="link__2" href="services.html">Servicios Disponibles</a>
+                    <!-- <ul class="link__3">
+                        <li>
+                            <a href="#BancaporInternet">Banca por Internet</a>
+                        </li>
+                        <li>
+                            <a href="#BancaTelefónica">Banca Telefónica</a>
+                        </li>
+                        <li>
+                            <a href="#App">App Móvil</a>
+                        </li>
+                        <li>
+                            <a href="#Multipagos">Multipagos</a>
+                        </li>
+                        <li>
+                            <a href="#Billetera">Billetera Electrónica</a>
+                        </li>
+                    </ul> -->
+                </li>
+                <li>
+                    <a class="link__2" href="about.html">Nosotros</a>
+                </li>
+                <li>
+                    <a class="link__2" href="contactus.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- End Navbar -->
+    </header>
+    <section>
+        <img src="img/Feed-amico.png" alt="information" class="feed">
+    </section>
+    <section class="feedback">
+        <h1>Dejanos tú Feedback:</h1>
+    </section>
+    
+    <form class="form">
+        <!-- <div class="form-group"> -->
+            <label for="firstname" class="label">Nombres</label>
+            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Nombres">
+        <!-- </div> -->
+        <!-- <div class="form-group"> -->
+            <label for="lastname" class="label">Apellidos</label>
+            <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Apellidos">
+        <!-- </div> -->
+        <!-- <div class="form-group"> -->
+            <label for="telnum" class="tel">Teléfono de Contacto</label>
+                <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Código de Área">                   
+            
+                <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Teléfono">                        
+        <!-- </div> -->
+        <!-- <div class="form-group"> -->
+            <label for="emailid" class="label">Email</label>
+                <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email">
+        <!-- </div> -->
+        <!-- <div class="form-group"> -->
+            <label for="feedback" class="feedback" cols="30">Tú Feedback</label>
+            
+                <textarea class="form-control" id="feedback" name="feedback" rows="12"></textarea>
+            
+        <!-- </div> -->
+
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" name="approve" id="approve" value="">
+            <label class="form-check-label" for="approve">
+                <strong class="strong">Lo/a Contactamos?</strong>
+            </label>
+    
+            <div class="form-option">
+                <select class="op_form">
+                    <option>Teléfono</option>
+                    <option>Correo</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="buttons">
+                <button type="submit" class="btn_submit" value="Submit">Enviar</button>
+                <button type="reset" class="btn_clean" value="Reset">Limpiar Formulario</button>
+            </div>
+        </div>
+    </form>
+
+    <!-- Footer -->
+    <footer>
+        <address class="address">
+            <img src="img/logo_lane.png" class="logo_footer">
+            <ul class="info">
+                <li>2021 - Virginia Lombardi || Todos los Derechos Reservados</li>
+                <li>Montevideo, Uruguay</li>
+                <li>Whatsapp: +598232907896</li>
+                <li>billetera@lane.com</li>
+                <li><a class="no-deco" href="https://www.linkedin.com/in/virginia-lombardi-b7bba5129/">LinkedIn</a></li>
+            </ul>
+            
+            <ul class="links-footer">
+                <li><a class="no-deco" href="transactions.html" style=" margin-top: 30px;">Transacciones</a></li>
+                <li><a class="no-deco" href="services.html">Servicios</a></li>
+                <li><a class="no-deco" href="about.html">Nosotros</a></li>
+                <li><a class="no-deco" href="contactus.html">Contacto</a></li>
+            </ul> 
+        </address>
+    </footer>
+        <!-- End Footer -->
+</body>
+</html>
