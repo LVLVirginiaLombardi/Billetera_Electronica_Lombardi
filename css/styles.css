@@ -2,15 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;600&family=Montserrat:ital,wght@1,100;1,300&display=swap');
 
+/* RESET */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* END RESET */
+
+/* HTML */
+
 html {
     height: 100%;
 }
+
+/* END HTML */
 
 /* BODY */
 
@@ -22,106 +29,55 @@ body{
     right: 0;
     bottom: 0;
     left: 0;
-    
     background-image: linear-gradient(to right, #0b8793, #360033);
     
 }
 
 /* END BODY */
 
-/* HEADER */
-
-
-.header {
-    background-image: url("../img/slide-multipagos.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 70vh; 
-    display: flex;
-    flex-direction: column;
-    justify-content: left; 
-    align-items: left; 
-    margin-top: 65px;
-}
-
-.subtitulo{
-    color: #fff;
-    font-family: 'Inter', sans-serif;
-    margin-top: 20px;
-    text-align: center;
-    font-weight: bold;
-    animation-name: efecto_subtitulo;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-    animation-duration: 5s;
-    animation-delay: 0s;
-}
-
-/* END HEADER */
-
-
 /* NAVBAR */
-
-/* nav{
-    height: 65px;
-    z-index: 10;
-    font-weight: 300;
-    transition: 0.2s ease-in-out;
-    background-color: rgba(7, 8, 90, 0.67);
-
-} */
 
 .navbar-dark {
     background-color: rgba(7, 8, 90, 0.67);
 }
 
-.logo{
-    height: 20px;
-    width: 40px;
-}
 .nav-link{
     font-family: 'Inter', sans-serif; 
-}
-/* .navbar {
-    display: flex;
-    flex-direction: column;  
-    flex-wrap: nowrap;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    justify-content: flex-start;
+    font-weight: bold;
 }
 
+/* END NAVBAR */
 
-.navbar .link {
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
+/* BANNER */
+
+.banner{
+    background-image: url(../img/banner.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
 }
 
-.navbar .link .link__2 {
-    margin: 0 2rem;
-    padding: 1rem;
+.logo{
+    height: 200px;
+    width: 500px;
+    margin-top: 70px;
+}
+
+.subtitulo{
     color: #fff;
-    font-size: 1.5rem;
-    text-decoration: none;
-
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    margin-top: 200px;
+    margin-left: 100px;
+    font-size: larger;
+    animation-name: efecto_subtitulo;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-duration: 5s;
+    animation-delay: 0s;
 }
 
-.navbar.link .link__2 {
-    position: relative;
-	background-color: rgba(35, 17, 134, 0.8);
-	width: 0 auto;
-	visibility: hidden; 
- 	opacity: 0;
-    transition: opacity 1.5s;
-    margin-top: 20px;
-    color: #fff;
-} */
-
-
-/* NAVBAR END */
+/* END BANNER */
 
 /* -- INDEX -- */
 
@@ -139,11 +95,11 @@ body{
     margin-left: auto;
     margin-right: auto;
     
-  }
+}
   
 .gallery:hover {
     border: 1px solid #777;
-    width: 100%;
+    width: 70%;
 }
   
 .gallery .img {
@@ -250,13 +206,12 @@ a:hover, a:active{
 
 /* END FOOTER */
 
-
 /* TRANSACTIONS */
 
 .container_divs{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 150vh;
     width: 50%;
     flex-wrap: nowrap;
     justify-content: center;
@@ -292,7 +247,8 @@ a:hover, a:active{
     width: 50%;
     margin-left: auto;
     margin-right: auto;
-    height: 150%;
+    height: 200%;
+    margin-top: 30px;
 }
 
 .container .banca_por_internet{
@@ -402,7 +358,7 @@ a:hover, a:active{
 
 /* CONTACT US */
 
-form {
+/* form {
     display: grid;
     padding: 1em;
     border: none;
@@ -418,9 +374,14 @@ form {
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     
+} */
+
+form{
+    color: #fff;
+    max-width: 600px;
 }
 
-form input {
+input {
     background: rgba(114.0, 223.0, 221.0, 0.6);
     border: 1px solid #9c9c9c;
     transition: all 1s;
@@ -434,16 +395,15 @@ input:focus{
     border: 5px solid rgb(119, 119, 255);
 }
 
-form button {
-    background: rgba(114.0, 223.0, 221.0, 0.6);
+button {
     padding: 0.7em;
     width: 100%;
     border: 0;
-    color: #fff;
 }
 
-form button:hover {
+.boton_enviar:hover {
     background: #c40062d0;
+    color: #fff;
 }
   
 label {
@@ -481,7 +441,17 @@ textarea{
     margin-left: 60px;
 }
 
-  
+.h3_feed{
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    margin-left: 100px;
+}
+
+.boton_enviar{
+    background-color: rgb(141, 94, 180);
+    color: #fff;
+}
+
 /* END CONTACT US */
 
 
@@ -558,7 +528,7 @@ textarea{
     color: #fff;
 }
 
-li{
+.li_op{
     margin: 20px;
    
 } 
@@ -612,20 +582,6 @@ li{
 
     100%{
         font-size: 20px;
-    }
-}
-
-@keyframes aparecer{
-    0%{
-        opacity: 0;
-    }
-
-    50%{
-        opacity: 0.5;
-    }
-
-    100%{
-        opacity: 1;
     }
 }
 

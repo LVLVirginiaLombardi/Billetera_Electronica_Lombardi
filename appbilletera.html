@@ -4,74 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css"><!-- Estilos para la página -->
+    <link rel="stylesheet" href="css/styles.css"><!-- Estilos para la página -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <title>Billetera Electrónica</title>
     
 </head>
 <body>
-    <header class="header">
-        <div class="subtitulo">Tú Billetera Electrónica</div>
-        <a href="index.html"><img src="img/logo_lane.png" class="logo"></a>
-        <!-- Navbar -->
-        <nav class="navbar">
-            <ul class="link">
-                <li>
-                    <a class="link__2" href="index.html">Home</a>
-                </li>
-                <li>
-                    <a class="link__2" href="transactions.html">Transacciones</a>
-                    <!-- <ul class="link__3">
-                        <li>
-                            <a href="#envio">Enviar Dinero</a>
-                        </li>
-                        <li>
-                            <a href="#dinero">Solicitar Dinero</a>
-                        </li>
-                        <li>
-                            <a href="#recargas">Recargas</a>
-                        </li>
-                        <li>
-                            <a href="#servicios">Pago de Servicios</a>
-                        </li>
-                        <li>
-                            <a href="#movimientos">Últimos Movimientos</a>
-                        </li>
-                    </ul> -->
-                </li>
-                <li>
-                    <a class="link__2" href="services.html">Servicios Disponibles</a>
-                    <!-- <ul class="link__3">
-                        <li>
-                            <a href="#BancaporInternet">Banca por Internet</a>
-                        </li>
-                        <li>
-                            <a href="#BancaTelefónica">Banca Telefónica</a>
-                        </li>
-                        <li>
-                            <a href="#App">App Móvil</a>
-                        </li>
-                        <li>
-                            <a href="#Multipagos">Multipagos</a>
-                        </li>
-                        <li>
-                            <a href="#Billetera">Billetera Electrónica</a>
-                        </li>
-                    </ul> -->
-                </li>
-                <li>
-                    <a class="link__2" href="about.html">Nosotros</a>
-                </li>
-                <li>
-                    <a class="link__2" href="contactus.html">Contacto</a>
-                </li>
-            </ul>
-                
-            
-            
-        </nav>
-        <button type="submit" class="button"><i class="fas fa-sign-in-alt"></i> Iniciar Sesión</button>
-    </header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">LANE</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls=navbarNavDropdown aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="transactions.html"><i class="fas fa-sync"></i> Transacciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html"><i class="fa fa-list fa-lg"></i> Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html"><i class="fa fa-info fa-lg"></i> Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
+                </ul>
+                <span class="navbar-text">
+                    <a id="login-button" href="#">
+                    <span class="fa fa-sign-in"></span> Login</a>
+                </span>
+            </div>
+        </div>
+    </nav>
+        <!-- End Navbar -->
+        
+      
+    <div class="banner container-fluid">
+        <div class="row">
+            <img src="img/logo_lane.png" alt="Logo" class="logo">
+            <div class="subtitulo">LANE es tú Banco de confianza</div>
+        </div>
+    </div>
     <section>
         <img src="img/Wallet-amico.png" alt="wallet" class="wallet_img">
     </section>
@@ -82,15 +51,15 @@
         <div class="contenedor-p">
             <h4>Elige una opción a realizar</h4>
             <ul>
-                <li>Pago de minutos de Estacionamiento Tarifado de la Intendencia de Montevideo</li>
-                <li>Pago de viajes en taxímetro Radio Taxi 141</li>
-                <li>Pago de Facturas</li>
-                <li>Recargas ANTEL, Claro y Movistar</li>
-                <li>Recarga de Telepeaje</li>
-                <li>Recarga de Tarjetas AlfaLANE</li>
-                <li>Colectas</li>
-                <li>Envíos de dinero móvil a móvil</li>
-                <li>Pagos en comercios adheridos</li>
+                <li class="li_op">Pago de minutos de Estacionamiento Tarifado de la Intendencia de Montevideo</li>
+                <li class="li_op">Pago de viajes en taxímetro Radio Taxi 141</li>
+                <li class="li_op">Pago de Facturas</li>
+                <li class="li_op">Recargas ANTEL, Claro y Movistar</li>
+                <li class="li_op">Recarga de Telepeaje</li>
+                <li class="li_op">Recarga de Tarjetas AlfaLANE</li>
+                <li class="li_op">Colectas</li>
+                <li class="li_op">Envíos de dinero móvil a móvil</li>
+                <li class="li_op">Pagos en comercios adheridos</li>
             </ul>
         </div>
     </section>
