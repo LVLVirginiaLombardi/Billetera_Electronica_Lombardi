@@ -13,9 +13,9 @@
 
 /* HTML */
 
-html {
+/* html {
     height: 100%;
-}
+} */
 
 /* END HTML */
 
@@ -55,6 +55,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
+    object-fit: cover;
 }
 
 .logo{
@@ -78,6 +79,22 @@ body{
 }
 
 /* END BANNER */
+
+/* CAROUSEL */
+
+.carousel-item {
+    max-height: 800px;
+}
+
+.carousel-caption {
+    font-weight: bolder;
+    color: rgb(217, 176, 255);
+}
+
+.carousel-inner img {
+    margin: auto;
+}
+/* END CAROUSEL */
 
 /* -- INDEX -- */
 
