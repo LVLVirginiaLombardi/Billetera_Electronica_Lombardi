@@ -261,7 +261,7 @@ a:hover, a:active{
     flex-direction: column;
     font-family: 'Inter', sans-serif;
     flex-wrap: nowrap;
-    width: 50%;
+    width:50%;
     margin-left: auto;
     margin-right: auto;
     height: 200%;
@@ -359,15 +359,20 @@ footer {
 .no-deco{
     text-decoration: none !important;
     list-style: none !important;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
 
 }
 
-.container{
+.card-text{
     font-family: 'Inter', sans-serif;
     color: #fff;
 }
 
-.container__2 .historia{
+.info{
+    
+}
+/* .container__2 .historia{
     margin-top: 90px;
     padding: 20px;
 }
@@ -387,7 +392,7 @@ footer {
     flex-direction: row;
     font-family: 'Inter', sans-serif;
     justify-content: center;
-}
+} */
 
 /* END ABOUT */
 
@@ -606,5 +611,13 @@ textarea{
 /* END ANIMATIONS */
 
 /* MEDIA QUERIES */
+
+
+
+@media (max-width: 576px) { 
+ .container{
+     width: 100%;
+ }
+}
 
 /* END MEDIA QUERIES */
