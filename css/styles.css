@@ -11,14 +11,6 @@
 
 /* END RESET */
 
-/* HTML */
-
-/* html {
-    height: 100%;
-} */
-
-/* END HTML */
-
 /* BODY */
 
 body{
@@ -369,31 +361,6 @@ footer {
     color: #fff;
 }
 
-.info{
-    
-}
-/* .container__2 .historia{
-    margin-top: 90px;
-    padding: 20px;
-}
-
-.image{
-    height: 400px;
-    width: 400px;
-    margin: 40px;
-    transition: transform 0.4s;
-}
-
-.image:hover {
-    transform: scale(1.2) rotate(0.01deg);
-}
-
-.container__2 .p_1{
-    flex-direction: row;
-    font-family: 'Inter', sans-serif;
-    justify-content: center;
-} */
-
 /* END ABOUT */
 
 
@@ -464,8 +431,12 @@ textarea{
     margin-left: 60px;
 }
 
+.feed:hover {
+    transform: scale(1.2) rotate(0.01deg);
+}
+
 .h3_feed{
-    color: #fff;
+    color: black;
     font-family: 'Inter', sans-serif;
     margin-left: 100px;
 }
@@ -488,7 +459,7 @@ textarea{
     justify-content: center;
     color: #fff;
     font-family: 'Inter', sans-serif;
-    animation-duration: 2s;
+    animation-duration: 6s;
     animation-name: aparecer;
 }
 
@@ -500,6 +471,7 @@ textarea{
     margin-top: 20px;
     animation-duration: 2s;
     animation-name: aparecer;
+
 }
  
 .app_billetera{
@@ -577,7 +549,9 @@ textarea{
     height: 500px;
     margin-left: 30px;
 }
-
+.wallet_img:hover {
+    transform: scale(1.2) rotate(0.01deg);
+}
 /* END APP BILLETERA */
 
 /* ANIMATIONS */
@@ -608,6 +582,14 @@ textarea{
     }
 }
 
+
+@keyframes aparecer {
+    0% {opacity:0};
+    50% {opacity:0.5};
+    70% {opacity:0.8};
+    100% {opacity:1};
+
+  }
 /* END ANIMATIONS */
 
 /* MEDIA QUERIES */
