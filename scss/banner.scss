@@ -1,0 +1,31 @@
+/* BANNER */
+
+.banner{
+    background-image: url(../img/banner.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    object-fit: cover;
+}
+
+.logo{
+    height: 200px;
+    width: 500px;
+    margin-top: 70px;
+}
+
+.subtitulo{
+    color: #fff;
+    font-family: $fam-fuente;
+    font-weight: 900;
+    margin-top: 200px;
+    margin-left: 100px;
+    font-size: larger;
+    animation-name: efecto_subtitulo;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-duration: 5s;
+    animation-delay: 0s;
+}
+
+/* END BANNER */

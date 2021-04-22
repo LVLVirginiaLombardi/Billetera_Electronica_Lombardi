@@ -1,0 +1,32 @@
+/* ABOUT */
+
+#card_historia{
+    background-color: rgb(99, 49, 146);
+    font-family: 'Inter', sans-serif;
+}
+
+.carousel-caption {
+    font-weight: bolder;
+    color: rgb(217, 176, 255);
+}
+
+footer {
+    padding: 0% !important;
+    background: linear-gradient(to left, #2193b0, #6dd5ed);
+    margin-top: 150px;
+    margin-bottom: 10px;
+}
+.no-deco{
+    text-decoration: none !important;
+    list-style: none !important;
+    color: #fff;
+    font-family: $fam-fuente;
+
+}
+
+.card-text{
+    font-family: $fam-fuente;
+    color: #fff;
+}
+
+/* END ABOUT */

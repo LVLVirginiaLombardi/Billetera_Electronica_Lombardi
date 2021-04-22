@@ -1,0 +1,62 @@
+
+
+/* WALLET */
+
+.grid .grid__section{
+    display: grid;
+    grid-template-columns:30% 50%;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: $fam-fuente;
+    animation-duration: 6s;
+    animation-name: aparecer;
+}
+
+.grid .grid__asterisco{
+    color: darkgray;
+    font-weight: bold;
+    font-family: $fam-fuente;
+    grid-column: 2/2;
+    margin-top: 20px;
+    animation-duration: 2s;
+    animation-name: aparecer;
+
+}
+ 
+.app_billetera{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    color: #72dfdd;
+    background-color: #551f73;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    width: 20%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    font-family: $fam-fuente;
+} 
+
+.op_form{
+    width: 120px;
+    height: 30px;
+    font-size: 20px;
+    font-family: $fam-fuente;
+    font-weight: 600;
+}
+
+.a:hover, .a:active{
+    color: #e90175;
+}
+.app_billetera--link{
+    color: #72dfdd;
+    text-decoration: none;
+}
+
+
+
+/* END WALLET */

@@ -1,0 +1,48 @@
+/* FOOTER */
+
+.address{
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    padding: 2rem;
+    height: 25vh;
+    justify-content: space-evenly;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to left, #2193b0, #6dd5ed);
+    align-items: center;
+}
+
+.address .logo_footer{
+    flex-direction: column;
+    height: 100px;
+    margin-top: 40px;
+}
+
+.address .info{
+    margin-top: 40px;
+    list-style: none;
+
+}
+
+.address .no-deco{
+    text-decoration: none;
+}
+
+.address .links-footer{
+    margin-top: 40px;
+    list-style: none;
+}
+
+a:hover, a:active{
+    color: #c40062;
+}
+
+.no-deco{
+    color: #03fcf8;
+}
+
+.logo_footer{
+    margin-bottom: 30px;
+}
+
+/* END FOOTER */

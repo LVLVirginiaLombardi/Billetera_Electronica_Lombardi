@@ -1,0 +1,39 @@
+/* TRANSACTIONS */
+section.contenedor_t{
+    height: 30vh;
+    width: 50%;
+}
+
+.contenedor_t{
+    display: flex;
+    flex-direction: column;
+   
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.tajeta__titulo{
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+}
+
+.contenedor_t .tarjeta{
+    color: #880a3e;
+    background-color: rgba(114.0, 223.0, 221.0, 0.6);
+    border-radius: 20px;
+    padding: 1rem;
+    flex-basis: 10%; 
+    margin-bottom: 40px;
+    margin-top: 50px;
+    font-family: $fam-fuente;
+}
+
+.tarjeta__parrafo{
+    padding: 10px;
+}
+/* END TRANSACTIONS */

@@ -1,0 +1,83 @@
+/* SERVICES */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    font-family: $fam-fuente;
+    flex-wrap: nowrap;
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200%;
+    margin-top: 30px;
+}
+
+.container .banca_por_internet{
+    color: #880a3e;
+    background-color: rgba(114.0, 223.0, 221.0, 0.6);
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.container .banca_telefonica{
+    color: #880a3e;
+    background-color: rgba(114.0, 223.0, 221.0, 0.6);
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.ul{
+    margin: 10px;
+}
+
+.container .app{
+    color: #880a3e;
+    background-color: rgba(114.0, 223.0, 221.0, 0.6);
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.asterisco{
+    color: rgb(109, 107, 107);
+    font-weight: bold;
+    display: inline-block;
+    padding: 20px;
+}
+
+.container .multipagos{
+    color: #880a3e;
+    background-color: rgba(114.0, 223.0, 221.0, 0.6);
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.billetera{
+   display: flex;
+   flex-direction: column; 
+   padding: 20px;
+   align-items: center;
+   font-family: $fam-fuente;
+   font-size: large;
+   font-weight: bold;
+   height: 100%;
+}
+
+.billetera .a{
+    color: #1a7982;
+    background-color: rgba(114.0, 223.0, 221.0, 0.6);
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 40px;
+    text-decoration: none;
+    
+}
+
+.a:hover, .a:active{
+    color: #c40062d0;
+}
+
+/* END SERVICES */

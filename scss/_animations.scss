@@ -1,0 +1,37 @@
+/* ANIMATIONS */
+
+@keyframes efecto_subtitulo{
+    0%{
+        font-size: 15px;
+    }
+
+    30%{
+        font-size: 25px;
+    }
+
+    50%{
+        font-size: 40px;
+    }
+
+    70%{
+        font-size: 30px;
+    }
+
+    85%{
+       font-size: 25px;
+    }
+
+    100%{
+        font-size: 20px;
+    }
+}
+
+
+@keyframes aparecer {
+    0% {opacity:0};
+    50% {opacity:0.5};
+    70% {opacity:0.8};
+    100% {opacity:1};
+
+  }
+/* END ANIMATIONS */

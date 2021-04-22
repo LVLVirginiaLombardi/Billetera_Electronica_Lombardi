@@ -1,0 +1,78 @@
+
+
+/* -- INDEX -- */
+
+.myslideshow{
+    display: grid;
+    grid-template-columns: 20%;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    border: 1px solid #ccc;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+  
+.gallery:hover {
+    border: 1px solid #777;
+    width: 70%;
+}
+  
+.gallery .img {
+    width: 100%;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+}
+
+.container_cot{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.container_cot .cot{
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+}
+
+.table{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.table .fila{
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+}
+
+
+
+.table .fila1{
+    color: #fff;
+    font-family: $fam-fuente;
+    align-items: flex-end;
+}
+
+.table .fila2{
+    color: #fff;
+    font-family: $fam-fuente;
+    align-items: flex-end;
+}
+
+/* END INDEX */

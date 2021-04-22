@@ -1,605 +1,487 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;600&family=Montserrat:ital,wght@1,100;1,300&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;600&family=Montserrat:ital,wght@1,100;1,300&display=swap");
 /* RESET */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 /* END RESET */
-
-/* BODY */
-
-body{
-    font-family: 'Inter', sans-serif;
-    content: '';
-    position: relative;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: linear-gradient(to right, #0b8793, #360033);
-    
-}
-
-/* END BODY */
-
-/* NAVBAR */
-
-.navbar-dark {
-    background-color: rgba(7, 8, 90, 0.67);
-}
-
-.nav-link{
-    font-family: 'Inter', sans-serif; 
-    font-weight: bold;
-}
-
-/* END NAVBAR */
-
-/* BANNER */
-
-.banner{
-    background-image: url(../img/banner.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
-    object-fit: cover;
-}
-
-.logo{
-    height: 200px;
-    width: 500px;
-    margin-top: 70px;
-}
-
-.subtitulo{
-    color: #fff;
-    font-family: 'Inter', sans-serif;
-    font-weight: 900;
-    margin-top: 200px;
-    margin-left: 100px;
-    font-size: larger;
-    animation-name: efecto_subtitulo;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-out;
-    animation-duration: 5s;
-    animation-delay: 0s;
-}
-
-/* END BANNER */
-
-/* CAROUSEL */
-
-.carousel-item {
-    max-height: 800px;
-}
-
-.carousel-caption {
-    font-weight: bolder;
-    color: rgb(217, 176, 255);
-}
-
-.carousel-inner img {
-    margin: auto;
-}
-/* END CAROUSEL */
-
-/* -- INDEX -- */
-
-.myslideshow{
-    display: grid;
-    grid-template-columns: 20%;
-}
-
-.gallery {
-    display: flex;
-    flex-direction: column;
-    margin: 40px;
-    border: 1px solid #ccc;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    
-}
-  
-.gallery:hover {
-    border: 1px solid #777;
-    width: 70%;
-}
-  
-.gallery .img {
-    width: 100%;
-}
-
-.desc {
-    padding: 15px;
-    text-align: center;
-    color: #fff;
-    font-family: 'Inter', sans-serif;
-}
-
-.container_cot{
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-}
-
-.container_cot .cot{
-    color: #fff;
-    font-family: 'Inter', sans-serif;
-}
-
-.table{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.table .fila{
-    font-family: 'Inter', sans-serif;
-    color: #fff;
-}
-
-
-.table .fila1{
-    color: #fff;
-    font-family: 'Inter', sans-serif;
-    align-items: flex-end;
-}
-
-.table .fila2{
-    color: #fff;
-    font-family: 'Inter', sans-serif;
-    align-items: flex-end;
-}
-
-/* END INDEX */
-
-
-
-/* FOOTER */
-
-.address{
-    display: flex;
-    flex-direction: row;
-    color: #fff;
-    padding: 2rem;
-    height: 25vh;
-    justify-content: space-evenly;
-    font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(to left, #2193b0, #6dd5ed);
-    align-items: center;
-}
-
-.address .logo_footer{
-    flex-direction: column;
-    height: 100px;
-    margin-top: 40px;
-}
-
-.address .info{
-    margin-top: 40px;
-    list-style: none;
-
-}
-
-.address .no-deco{
-    text-decoration: none;
-}
-
-.address .links-footer{
-    margin-top: 40px;
-    list-style: none;
-}
-
-a:hover, a:active{
-    color: #c40062;
-}
-
-.no-deco{
-    color: #03fcf8;
-}
-
-.logo_footer{
-    margin-bottom: 30px;
-}
-
-/* END FOOTER */
-
-/* TRANSACTIONS */
-
-.container_divs{
-    display: flex;
-    flex-direction: column;
-    height: 150vh;
-    width: 50%;
-    flex-wrap: nowrap;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    padding: 40px;
-}
-
-.container_divs .div{
-    color: #880a3e;
-    background-color: rgba(114.0, 223.0, 221.0, 0.6);
-    border-radius: 20px;
-    padding: 1rem;
-    flex-basis: 30%; 
-    margin-bottom: 40px;
-    font-family: 'Inter', sans-serif;
-}
-
-.p{
-    padding: 10px;
-}
-/* END TRANSACTIONS */
-
-
-/* SERVICES */
-
-.container{
-    display: flex;
-    flex-direction: column;
-    font-family: 'Inter', sans-serif;
-    flex-wrap: nowrap;
-    width:50%;
-    margin-left: auto;
-    margin-right: auto;
-    height: 200%;
-    margin-top: 30px;
-}
-
-.container .banca_por_internet{
-    color: #880a3e;
-    background-color: rgba(114.0, 223.0, 221.0, 0.6);
-    border-radius: 20px;
-    padding: 30px;
-    margin-bottom: 40px;
-}
-
-.container .banca_telefonica{
-    color: #880a3e;
-    background-color: rgba(114.0, 223.0, 221.0, 0.6);
-    border-radius: 20px;
-    padding: 30px;
-    margin-bottom: 40px;
-}
-
-.ul{
-    margin: 10px;
-}
-
-.container .app{
-    color: #880a3e;
-    background-color: rgba(114.0, 223.0, 221.0, 0.6);
-    border-radius: 20px;
-    padding: 30px;
-    margin-bottom: 40px;
-}
-
-.asterisco{
-    color: rgb(109, 107, 107);
-    font-weight: bold;
-    display: inline-block;
-    padding: 20px;
-}
-
-.container .multipagos{
-    color: #880a3e;
-    background-color: rgba(114.0, 223.0, 221.0, 0.6);
-    border-radius: 20px;
-    padding: 30px;
-    margin-bottom: 40px;
-}
-
-.billetera{
-   display: flex;
-   flex-direction: column; 
-   padding: 20px;
-   align-items: center;
-   font-family: 'Inter', sans-serif;
-   font-size: large;
-   font-weight: bold;
-   height: 100%;
-}
-
-.billetera .a{
-    color: #1a7982;
-    background-color: rgba(114.0, 223.0, 221.0, 0.6);
-    border-radius: 20px;
-    padding: 30px;
-    margin-bottom: 40px;
-    text-decoration: none;
-    
-}
-
-.a:hover, .a:active{
-    color: #c40062d0;
-}
-
-/* END SERVICES */
-
-/* ABOUT */
-
-#card_historia{
-    background-color: rgb(99, 49, 146);
-    font-family: 'Inter', sans-serif;
-}
-
-.carousel-caption {
-    font-weight: bolder;
-    color: rgb(217, 176, 255);
-}
-
-footer {
-    padding: 0% !important;
-    background: linear-gradient(to left, #2193b0, #6dd5ed);
-    margin-top: 150px;
-    margin-bottom: 10px;
-}
-.no-deco{
-    text-decoration: none !important;
-    list-style: none !important;
-    color: #fff;
-    font-family: 'Inter', sans-serif;
-
-}
-
-.card-text{
-    font-family: 'Inter', sans-serif;
-    color: #fff;
-}
-
-/* END ABOUT */
-
-
-/* CONTACT US */
-
-form{
-    color: #fff;
-    max-width: 600px;
-}
-
-input {
-    background: rgba(114.0, 223.0, 221.0, 0.6);
-    border: 1px solid #9c9c9c;
-    transition: all 1s;
-    
-}
-
-input:focus{
-    max-width: 400px;
-    font-size: 30px;
-    max-height: 50px;
-    border: 5px solid rgb(119, 119, 255);
-}
-
-button {
-    padding: 0.7em;
-    width: 100%;
-    border: 0;
-}
-
-.boton_enviar:hover {
-    background: #c40062d0;
-    color: #fff;
-}
-  
-label {
-    padding: 0.5em 0.5em 0.5em 0;
-    text-align: right;
-    grid-column: 1 / 2;
-}
-  
-input {
-    padding: 0.7em;
-    margin-bottom: 0.5rem;
-}
-input:focus {
-    outline: 3px solid #fff;
-}
-  
-input,button {
-    grid-column: 2 / 3;
-}
-textarea{
-    background: rgba(114.0, 223.0, 221.0, 0.6);
-}  
-
-
-.feedback{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color: #fff;
-}
-
-.feed{
-    width: 400px;
-    height: 400px;
-    margin-left: 60px;
-}
-
-.feed:hover {
-    transform: scale(1.2) rotate(0.01deg);
-}
-
-.h3_feed{
-    color: black;
-    font-family: 'Inter', sans-serif;
-    margin-left: 100px;
-}
-
-.boton_enviar{
-    background-color: rgb(141, 94, 180);
-    color: #fff;
-}
-
-/* END CONTACT US */
-
-
-/* WALLET */
-
-.grid section{
-    display: grid;
-    grid-template-columns:30% 50%;
-    height: 300px;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-family: 'Inter', sans-serif;
-    animation-duration: 6s;
-    animation-name: aparecer;
-}
-
-.grid .asterisco{
-    color: darkgray;
-    font-weight: bold;
-    font-family: 'Inter', sans-serif;
-    grid-column: 2/2;
-    margin-top: 20px;
-    animation-duration: 2s;
-    animation-name: aparecer;
-
-}
- 
-.app_billetera{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    color: #72dfdd;
-    background-color: #551f73;
-    border-radius: 20px;
-    margin-bottom: 40px;
-    width: 20%;
-    padding: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    font-family: 'Inter', sans-serif;
-} 
-
-.op_form{
-    width: 120px;
-    height: 30px;
-    font-size: 20px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-}
-
-.a:hover, .a:active{
-    color: #e90175;
-}
-.link-text{
-    color: #72dfdd;
-    text-decoration: none;
-}
-
-
-
-/* END WALLET */
-
-
-/* APP BILLETERA */
-
-
-.section{
-    display: grid;
-    grid-template-columns:30% 50%;
-    height: 500px;
-    align-items: center;
-    justify-content: space-evenly;
-    color: #fff;
-}
-
-.li_op{
-    margin: 20px;
-   
-} 
-.fas{
-    margin-right: 20px;
-}
-.button {
-    display: flex;
-    background-color: rgba(7, 8, 90, 0.67);
-    justify-content: center;
-    border-radius: 5px;
-    padding: 5px 10px;
-    color: #fff;
-    border: none;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: 'Inter', sans-serif;
-    width: 20%;
-}
-
-.wallet_img{
-    width: 500px;
-    height: 500px;
-    margin-left: 30px;
-}
-.wallet_img:hover {
-    transform: scale(1.2) rotate(0.01deg);
-}
-/* END APP BILLETERA */
-
 /* ANIMATIONS */
-
-@keyframes efecto_subtitulo{
-    0%{
-        font-size: 15px;
-    }
-
-    30%{
-        font-size: 25px;
-    }
-
-    50%{
-        font-size: 40px;
-    }
-
-    70%{
-        font-size: 30px;
-    }
-
-    85%{
-       font-size: 25px;
-    }
-
-    100%{
-        font-size: 20px;
-    }
-}
-
+@keyframes efecto_subtitulo {
+  0% {
+    font-size: 15px; }
+  30% {
+    font-size: 25px; }
+  50% {
+    font-size: 40px; }
+  70% {
+    font-size: 30px; }
+  85% {
+    font-size: 25px; }
+  100% {
+    font-size: 20px; } }
 
 @keyframes aparecer {
-    0% {opacity:0};
-    50% {opacity:0.5};
-    70% {opacity:0.8};
-    100% {opacity:1};
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0.5; }
+  70% {
+    opacity: 0.8; }
+  100% {
+    opacity: 1; } }
 
-  }
 /* END ANIMATIONS */
-
 /* MEDIA QUERIES */
-
-
-
-@media (max-width: 576px) { 
- .container{
-     width: 100%;
- }
-}
+@media (max-width: 576px) {
+  .container {
+    width: 100%; } }
 
 /* END MEDIA QUERIES */
+/* -- INDEX -- */
+.myslideshow {
+  display: grid;
+  grid-template-columns: 20%; }
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+  border: 1px solid #ccc;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.gallery:hover {
+  border: 1px solid #777;
+  width: 70%; }
+
+.gallery .img {
+  width: 100%; }
+
+.desc {
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+  font-family: 'Inter', sans-serif; }
+
+.container_cot {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px; }
+
+.container_cot .cot {
+  color: #fff;
+  font-family: 'Inter', sans-serif; }
+
+.table {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 40px; }
+
+.table .fila {
+  font-family: 'Inter', sans-serif;
+  color: #fff; }
+
+.table .fila1 {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  align-items: flex-end; }
+
+.table .fila2 {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  align-items: flex-end; }
+
+/* END INDEX */
+/* FOOTER */
+.address {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  padding: 2rem;
+  height: 25vh;
+  justify-content: space-evenly;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(to left, #2193b0, #6dd5ed);
+  align-items: center; }
+
+.address .logo_footer {
+  flex-direction: column;
+  height: 100px;
+  margin-top: 40px; }
+
+.address .info {
+  margin-top: 40px;
+  list-style: none; }
+
+.address .no-deco {
+  text-decoration: none; }
+
+.address .links-footer {
+  margin-top: 40px;
+  list-style: none; }
+
+a:hover, a:active {
+  color: #c40062; }
+
+.no-deco {
+  color: #03fcf8; }
+
+.logo_footer {
+  margin-bottom: 30px; }
+
+/* END FOOTER */
+/* CAROUSEL */
+.carousel-item {
+  max-height: 800px; }
+
+.carousel-caption {
+  font-weight: bolder;
+  color: #d9b0ff; }
+
+.carousel-inner img {
+  margin: auto; }
+
+/* END CAROUSEL */
+/* BANNER */
+.banner {
+  background-image: url(../img/banner.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  object-fit: cover; }
+
+.logo {
+  height: 200px;
+  width: 500px;
+  margin-top: 70px; }
+
+.subtitulo {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  margin-top: 200px;
+  margin-left: 100px;
+  font-size: larger;
+  animation-name: efecto_subtitulo;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  animation-duration: 5s;
+  animation-delay: 0s; }
+
+/* END BANNER */
+/* ABOUT */
+#card_historia {
+  background-color: #633192;
+  font-family: 'Inter', sans-serif; }
+
+.carousel-caption {
+  font-weight: bolder;
+  color: #d9b0ff; }
+
+footer {
+  padding: 0% !important;
+  background: linear-gradient(to left, #2193b0, #6dd5ed);
+  margin-top: 150px;
+  margin-bottom: 10px; }
+
+.no-deco {
+  text-decoration: none !important;
+  list-style: none !important;
+  color: #fff;
+  font-family: "Inter", sans-serif; }
+
+.card-text {
+  font-family: "Inter", sans-serif;
+  color: #fff; }
+
+/* END ABOUT */
+/* WALLET */
+.grid .grid__section {
+  display: grid;
+  grid-template-columns: 30% 50%;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  animation-duration: 6s;
+  animation-name: aparecer; }
+
+.grid .grid__asterisco {
+  color: darkgray;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+  grid-column: 2/2;
+  margin-top: 20px;
+  animation-duration: 2s;
+  animation-name: aparecer; }
+
+.app_billetera {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  color: #72dfdd;
+  background-color: #551f73;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  width: 20%;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  font-family: "Inter", sans-serif; }
+
+.op_form {
+  width: 120px;
+  height: 30px;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600; }
+
+.a:hover, .a:active {
+  color: #e90175; }
+
+.app_billetera--link {
+  color: #72dfdd;
+  text-decoration: none; }
+
+/* END WALLET */
+/* TRANSACTIONS */
+section.contenedor_t {
+  height: 30vh;
+  width: 50%; }
+
+.contenedor_t {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px; }
+
+.tajeta__titulo {
+  color: #fff;
+  font-family: 'Inter', sans-serif; }
+
+.contenedor_t .tarjeta {
+  color: #880a3e;
+  background-color: rgba(114, 223, 221, 0.6);
+  border-radius: 20px;
+  padding: 1rem;
+  flex-basis: 10%;
+  margin-bottom: 40px;
+  margin-top: 50px;
+  font-family: "Inter", sans-serif; }
+
+.tarjeta__parrafo {
+  padding: 10px; }
+
+/* END TRANSACTIONS */
+/* SERVICES */
+.container {
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+  flex-wrap: nowrap;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200%;
+  margin-top: 30px; }
+
+.container .banca_por_internet {
+  color: #880a3e;
+  background-color: rgba(114, 223, 221, 0.6);
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 40px; }
+
+.container .banca_telefonica {
+  color: #880a3e;
+  background-color: rgba(114, 223, 221, 0.6);
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 40px; }
+
+.ul {
+  margin: 10px; }
+
+.container .app {
+  color: #880a3e;
+  background-color: rgba(114, 223, 221, 0.6);
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 40px; }
+
+.asterisco {
+  color: #6d6b6b;
+  font-weight: bold;
+  display: inline-block;
+  padding: 20px; }
+
+.container .multipagos {
+  color: #880a3e;
+  background-color: rgba(114, 223, 221, 0.6);
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 40px; }
+
+.billetera {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-size: large;
+  font-weight: bold;
+  height: 100%; }
+
+.billetera .a {
+  color: #1a7982;
+  background-color: rgba(114, 223, 221, 0.6);
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 40px;
+  text-decoration: none; }
+
+.a:hover, .a:active {
+  color: #c40062d0; }
+
+/* END SERVICES */
+/* NAVBAR */
+.navbar-dark {
+  background-color: rgba(7, 8, 90, 0.67); }
+
+.nav-link {
+  font-family: "Inter", sans-serif;
+  font-weight: bold; }
+
+/* END NAVBAR */
+/* CONTACT US */
+form {
+  color: #fff;
+  max-width: 600px; }
+
+input {
+  background: rgba(114, 223, 221, 0.6);
+  border: 1px solid #9c9c9c;
+  transition: all 1s; }
+
+input:focus {
+  max-width: 400px;
+  font-size: 30px;
+  max-height: 50px;
+  border: 5px solid #7777ff; }
+
+button {
+  padding: 0.7em;
+  width: 100%;
+  border: 0; }
+
+.boton_enviar:hover {
+  background: #c40062d0;
+  color: #fff; }
+
+label {
+  padding: 0.5em 0.5em 0.5em 0;
+  text-align: right;
+  grid-column: 1 / 2; }
+
+input {
+  padding: 0.7em;
+  margin-bottom: 0.5rem; }
+
+input:focus {
+  outline: 3px solid #fff; }
+
+input, button {
+  grid-column: 2 / 3; }
+
+textarea {
+  background: rgba(114, 223, 221, 0.6); }
+
+.feedback {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #fff; }
+
+.feed {
+  width: 400px;
+  height: 400px;
+  margin-left: 60px; }
+
+.feed:hover {
+  transform: scale(1.2) rotate(0.01deg); }
+
+.h3_feed {
+  color: black;
+  font-family: "Inter", sans-serif;
+  margin-left: 100px; }
+
+.boton_enviar {
+  background-color: #8d5eb4;
+  color: #fff; }
+
+/* END CONTACT US */
+/* BODY */
+body {
+  font-family: "Inter", sans-serif;
+  content: '';
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #0b8793, #360033); }
+
+/* END BODY */
+/* APP BILLETERA */
+.section {
+  display: grid;
+  grid-template-columns: 30% 50%;
+  height: 500px;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #fff; }
+
+.li_op {
+  margin: 20px; }
+
+.fas {
+  margin-right: 20px; }
+
+.button {
+  display: flex;
+  background-color: rgba(7, 8, 90, 0.67);
+  justify-content: center;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: #fff;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Inter", sans-serif;
+  width: 20%; }
+
+.wallet_img {
+  width: 500px;
+  height: 500px;
+  margin-left: 30px; }
+
+.wallet_img:hover {
+  transform: scale(1.2) rotate(0.01deg); }
+
+/* END APP BILLETERA */
