@@ -118,9 +118,8 @@
   font-family: "Inter", sans-serif; }
 
 .card__thumbnail {
-  width: 650px;
   height: 200px;
-  background: #000;
+  width: 650px;
   margin-right: 20px;
   border-radius: 10px;
   overflow: hidden;

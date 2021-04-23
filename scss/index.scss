@@ -93,10 +93,13 @@
     font-family: $fam-fuente;
 }
 
+@mixin sizes($width, $height){
+    height: $height;
+    width: $width;
+}
+
 .card__thumbnail{
-    width: 650px;
-    height: 200px;
-    background: #000;
+    @include sizes(650px, 200px);
     margin-right: 20px;
     border-radius: 10px;
     overflow: hidden;
