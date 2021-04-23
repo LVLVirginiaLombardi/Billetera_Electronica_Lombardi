@@ -36,7 +36,7 @@
 /* END ANIMATIONS */
 /* MEDIA QUERIES */
 @media (max-width: 576px) {
-  .container {
+  .container, .banca_por_internet, .banca_telefonica, .app, .multipagos {
     width: 100%; } }
 
 /* END MEDIA QUERIES */
@@ -100,6 +100,80 @@
   font-family: "Inter", sans-serif;
   align-items: flex-end; }
 
+/* BEM */
+.contenedor {
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto; }
+
+.card {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  margin-bottom: 50px;
+  font-family: "Inter", sans-serif; }
+
+.card__thumbnail {
+  width: 650px;
+  height: 200px;
+  background: #000;
+  margin-right: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: inline-block; }
+
+.card__enlace--negrita {
+  font-weight: 900;
+  color: #000; }
+
+.card__img {
+  width: 100%; }
+
+.card__textos {
+  margin-top: 20px; }
+
+.card__titulo {
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+  margin-bottom: 20px; }
+
+.card__extracto--gris {
+  line-height: 28px;
+  color: #6d6d6d;
+  margin-bottom: 20px; }
+
+.boton {
+  border: none;
+  min-width: 160px;
+  height: 50px;
+  padding: 0 30px;
+  color: #fff;
+  border-radius: 100px;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #5f5bd3;
+  transition: .3s ease all; }
+
+.boton__texto {
+  font-family: "Inter", sans-serif; }
+
+.boton--absolute {
+  position: absolute;
+  right: 20px;
+  bottom: 25px; }
+
+.boton--azul:hover {
+  text-decoration: none;
+  background: #45abff; }
+
+/* END BEM */
 /* END INDEX */
 /* FOOTER */
 .address {
@@ -204,8 +278,113 @@ footer {
   color: #fff; }
 
 /* END ABOUT */
+/* TRANSACTIONS */
+section.contenedor_t {
+  height: 30vh;
+  width: 50%; }
+
+.contenedor_t {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px; }
+
+.tajeta__titulo {
+  color: #fff;
+  font-family: 'Inter', sans-serif; }
+
+.contenedor_t .tarjeta {
+  color: #880a3e;
+  background-color: rgba(114, 223, 221, 0.6);
+  border-radius: 20px;
+  padding: 1rem;
+  flex-basis: 10%;
+  margin-bottom: 40px;
+  margin-top: 50px;
+  font-family: "Inter", sans-serif; }
+
+.tarjeta__parrafo {
+  padding: 10px; }
+
+/* END TRANSACTIONS */
+/* SERVICES */
+.container, .banca_por_internet, .banca_telefonica, .app, .multipagos {
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200%;
+  margin-top: 30px; }
+
+.banca_por_internet {
+  color: #880a3e;
+  background-color: rgba(114, 223, 221, 0.6);
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 40px; }
+
+.banca_telefonica {
+  color: #880a3e;
+  background-color: rgba(114, 223, 221, 0.6);
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 40px; }
+
+.ul {
+  margin: 10px; }
+
+.app {
+  color: #880a3e;
+  background-color: rgba(114, 223, 221, 0.6);
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 40px; }
+
+.asterisco {
+  color: #6d6b6b;
+  font-weight: bold;
+  display: inline-block;
+  padding: 20px; }
+
+.multipagos {
+  color: #880a3e;
+  background-color: rgba(114, 223, 221, 0.6);
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 40px; }
+
+.billetera {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-size: large;
+  font-weight: bold;
+  height: 100%; }
+
+.billetera .a {
+  color: #1a7982;
+  background-color: rgba(114, 223, 221, 0.6);
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 40px;
+  text-decoration: none; }
+
+.a:hover, .a:active {
+  color: #c40062d0; }
+
+/* END SERVICES */
 /* WALLET */
-.grid .grid__section {
+.grid section {
   display: grid;
   grid-template-columns: 30% 50%;
   height: 300px;
@@ -216,7 +395,7 @@ footer {
   animation-duration: 6s;
   animation-name: aparecer; }
 
-.grid .grid__asterisco {
+.grid .asterisco {
   color: darkgray;
   font-weight: bold;
   font-family: "Inter", sans-serif;
@@ -255,111 +434,6 @@ footer {
   text-decoration: none; }
 
 /* END WALLET */
-/* TRANSACTIONS */
-section.contenedor_t {
-  height: 30vh;
-  width: 50%; }
-
-.contenedor_t {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-  padding-left: 40px;
-  padding-right: 40px; }
-
-.tajeta__titulo {
-  color: #fff;
-  font-family: 'Inter', sans-serif; }
-
-.contenedor_t .tarjeta {
-  color: #880a3e;
-  background-color: rgba(114, 223, 221, 0.6);
-  border-radius: 20px;
-  padding: 1rem;
-  flex-basis: 10%;
-  margin-bottom: 40px;
-  margin-top: 50px;
-  font-family: "Inter", sans-serif; }
-
-.tarjeta__parrafo {
-  padding: 10px; }
-
-/* END TRANSACTIONS */
-/* SERVICES */
-.container {
-  display: flex;
-  flex-direction: column;
-  font-family: "Inter", sans-serif;
-  flex-wrap: nowrap;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  height: 200%;
-  margin-top: 30px; }
-
-.container .banca_por_internet {
-  color: #880a3e;
-  background-color: rgba(114, 223, 221, 0.6);
-  border-radius: 20px;
-  padding: 30px;
-  margin-bottom: 40px; }
-
-.container .banca_telefonica {
-  color: #880a3e;
-  background-color: rgba(114, 223, 221, 0.6);
-  border-radius: 20px;
-  padding: 30px;
-  margin-bottom: 40px; }
-
-.ul {
-  margin: 10px; }
-
-.container .app {
-  color: #880a3e;
-  background-color: rgba(114, 223, 221, 0.6);
-  border-radius: 20px;
-  padding: 30px;
-  margin-bottom: 40px; }
-
-.asterisco {
-  color: #6d6b6b;
-  font-weight: bold;
-  display: inline-block;
-  padding: 20px; }
-
-.container .multipagos {
-  color: #880a3e;
-  background-color: rgba(114, 223, 221, 0.6);
-  border-radius: 20px;
-  padding: 30px;
-  margin-bottom: 40px; }
-
-.billetera {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  align-items: center;
-  font-family: "Inter", sans-serif;
-  font-size: large;
-  font-weight: bold;
-  height: 100%; }
-
-.billetera .a {
-  color: #1a7982;
-  background-color: rgba(114, 223, 221, 0.6);
-  border-radius: 20px;
-  padding: 30px;
-  margin-bottom: 40px;
-  text-decoration: none; }
-
-.a:hover, .a:active {
-  color: #c40062d0; }
-
-/* END SERVICES */
 /* NAVBAR */
 .navbar-dark {
   background-color: rgba(7, 8, 90, 0.67); }

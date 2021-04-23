@@ -1,13 +1,12 @@
 /* TRANSACTIONS */
 section.contenedor_t{
     height: 30vh;
-    width: 50%;
+    width: ($ancho - 100%)/2;
 }
 
 .contenedor_t{
     display: flex;
     flex-direction: column;
-   
     flex-wrap: nowrap;
     justify-content: center;
     margin-left: auto;

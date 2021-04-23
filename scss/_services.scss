@@ -5,14 +5,15 @@
     flex-direction: column;
     font-family: $fam-fuente;
     flex-wrap: nowrap;
-    width:50%;
+    width:100%;
     margin-left: auto;
     margin-right: auto;
     height: 200%;
     margin-top: 30px;
 }
 
-.container .banca_por_internet{
+.banca_por_internet{
+    @extend.container;
     color: #880a3e;
     background-color: rgba(114.0, 223.0, 221.0, 0.6);
     border-radius: 20px;
@@ -20,7 +21,8 @@
     margin-bottom: 40px;
 }
 
-.container .banca_telefonica{
+.banca_telefonica{
+    @extend.container;
     color: #880a3e;
     background-color: rgba(114.0, 223.0, 221.0, 0.6);
     border-radius: 20px;
@@ -32,7 +34,8 @@
     margin: 10px;
 }
 
-.container .app{
+.app{
+    @extend.container;
     color: #880a3e;
     background-color: rgba(114.0, 223.0, 221.0, 0.6);
     border-radius: 20px;
@@ -47,7 +50,8 @@
     padding: 20px;
 }
 
-.container .multipagos{
+.multipagos{
+    @extend.container;
     color: #880a3e;
     background-color: rgba(114.0, 223.0, 221.0, 0.6);
     border-radius: 20px;

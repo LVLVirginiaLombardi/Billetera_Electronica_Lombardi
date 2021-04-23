@@ -2,7 +2,7 @@
 
 /* WALLET */
 
-.grid .grid__section{
+.grid section{
     display: grid;
     grid-template-columns:30% 50%;
     height: 300px;
@@ -14,7 +14,7 @@
     animation-name: aparecer;
 }
 
-.grid .grid__asterisco{
+.grid .asterisco{
     color: darkgray;
     font-weight: bold;
     font-family: $fam-fuente;
