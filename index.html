@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css"><!-- Estilos para la página -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css"><!-- Estilos para la página -->
+    
     <title>LANE Home</title>
     
 </head>
@@ -22,7 +23,7 @@
                         <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i> Transacciones</a></li>
                         <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i> Servicios</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i> Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-info fa-lg"></i> Nosotros</a></li>
                         <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg"></i> Contacto</a></li>
                     </ul>
                     <span class="navbar-text">
@@ -43,137 +44,38 @@
                         <form>
                             <div class="form-row">
                                 <div class="form-group col-sm-4">
-                                        <label class="sr-only" for="exampleInputEmail3">Email address</label>
-                                        <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+                                        <label class="sr-only" for="exampleInputEmail3">Correo Electrónico</label>
+                                        <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Ingresar Email">
                                 </div>
                                 <div class="form-group col-sm-4">
-                                    <label class="sr-only" for="exampleInputPassword3">Password</label>
-                                    <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                                    <label class="sr-only" for="exampleInputPassword3">Constraseña</label>
+                                    <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Contraseña">
                                 </div>
                                 <div class="col-sm-auto">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox">
-                                        <label class="form-check-label"> Remember me
-                                        </label>
+                                        <label class="form-check-label"> Recordarme</label>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-row">
-                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>        
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancelar</button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Iniciar Sesión</button>        
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
-            </div>
-            <div id="reserveModal" class="modal fade" role="dialog">
-                <div class="modal-dialog modal-lg" role="content">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="modal-title">Reserve a Table</h4>
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="row form-group" id="formid">
-                                    
-                                    <legend class="col-10 col-md-2 col-form-legend">Number of Guests</legend>
-                                    <div class="col-md-10 col-md-8 form-inline align-self-start">
-                                    <div class="d-flex flex-row">
-                                    <div class="form-check form-check-inline ml-1">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                        <legend class="form-check-label" for="inlineRadio1">1</legend>
-                                    </div>
-                                    </div>
-                                    <div class="d-flex flex-row">
-                                    <div class="form-check form-check-inline ml-1">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                        <legend class="form-check-label" for="inlineRadio2">2</legend>
-                                    </div>
-                                    </div>
-                                    <div class="d-flex flex-row">
-                                    <div class="form-check form-check-inline ml-1">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-                                        <legend class="form-check-label" for="inlineRadio3">3</legend>
-                                    </div>
-                                    </div>
-                                    <div class="d-flex flex-row">
-                                    <div class="form-check form-check-inline ml-1">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
-                                        <legend class="form-check-label" for="inlineRadio4">4</legend>
-                                    </div>
-                                    </div>
-                                    <div class="d-flex flex-row">
-                                    <div class="form-check form-check-inline ml-1">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
-                                        <legend class="form-check-label" for="inlineRadio5">5</legend>
-                                    </div>
-                                    </div>
-                                    <div class="d-flex flex-row">
-                                    <div class="form-check form-check-inline ml-1">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option6">
-                                        <legend class="form-check-label" for="inlineRadio6">6</legend>
-                                    </div>
-                                    </div>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <legend class="col-12 col-sm-2 col-form-legend"> Section </legend>
-                                    <div class="col-12 col-sm-5">
-                                        <div id="section" class="btn-group btn-group-toggle" data-toggle="buttons">
-                                            <label class="btn btn-success active">
-                                                <input type="radio" id="nonsmoking" name="section" autocomplete="off" checked>
-                                                Non-smoking
-                                            </label>
-                                            <label class="btn btn-danger">
-                                                <input type="radio" id="smoking" name="section" autocomplete="off">
-                                                Smoking
-                                            </label>
-                                        </div>
-                                    </div>  
-                                </div>
-                                <div class="form-group row">
-                                    <legend class="col-12 col-sm-2 col-form-legend"> Date and Time </legend>
-                                    <div class="col-12 col-sm-3">
-                                        <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Date">
-                                    </div>
-                                    
-                                    <div class="col-12 col-sm-3">
-                                        <input type="tel" class="form-control" id="time" name="time" placeholder="Time">
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="col-md-4 offset-md-2 mt-2 col-sm-3">
-                                            <button type="button" class="btn btn-secondary ml-auto" data-dismiss="modal">Cancel</button>
-                                            <button type="submit" class="btn btn-primary ml-1">Reserve</button> 
-                                    </div>
-                                </div>
-                                </div>
-                            </form>
-                        </div>  
-                    </div>
-                </div>
-            </div>
-         
-            
+        </div>
+
         <header class="jumbotron">
-            <div class="container">
-                <div class="row row-header">
-                    <div class="col-12 col-sm-6">
-                        <h1>Ristorante con Fusion</h1>
-                        <p>
-                            We take inspiration from the World's best cuisines, and
-                            create a unique fusion experience. Our lipsmacking
-                            creations will tickle your culinary senses!
-                        </p>
-                    </div>
-                    <div class="col-12 col-sm text-center">
-                        <img src="img/logo.png" class="img-fluid">
-                    </div>
-                    <div class="col-12 col-sm d-flex justify-content-center align-items-center">
-                        <a id="button-reserve" type="button" class="btn btn-block nav-link btn-warning"
-                            data-placement="bottom">Reserve Table</a>
+            <div class="jumbotron__container">
+                <div class="col-12 col-sm jumbotron__col">
+                    <img src="img/logo_lane.png" class="jumbotron__img-fluid">
+                </div>
+                <div class="row jumbotron__row-header">
+                    <div class="col-12 col-sm-6 jumbotron__col2">
+                        <h4>LANE es Tú Banco de Confianza</h4>
                     </div>
                 </div>
             </div>

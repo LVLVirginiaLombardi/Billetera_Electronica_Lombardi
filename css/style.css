@@ -1,7 +1,9 @@
 .row-header {
-    margin: 0px auto;
-    padding: 0px 0px; }
-  
+  margin: 0px auto;
+  padding: 0px 0px;
+ 
+
+}
   .row-content {
     margin: 0px auto;
     padding: 50px 0px;
@@ -13,12 +15,19 @@
     margin: 0px auto;
     padding: 20px 0px; }
   
-  .jumbotron {
-    margin: 0px auto;
-    padding: 70px 30px;
-    background: #9575CD;
-    color: floralwhite; }
-  
+.jumbotron {
+  margin: 0px auto;
+  padding: 70px 30px;
+  color: rgb(79, 7, 88);
+  background-image: url(../img/banner.jpeg);
+  background-size: cover;
+  height: 50vh;
+}
+
+.jumbotron__img-fluid{
+  transform: translate(-20px, 0px);
+}
+
   address {
     font-size: 80%;
     margin: 0px;
@@ -62,3 +71,11 @@
   
   .modal-body {
     background: #D1C4E9; 
+  }
+
+
+/* MEDIA QUERIES */
+
+
+
+/* END MEDIA QUERIES */
