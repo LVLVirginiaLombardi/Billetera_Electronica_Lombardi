@@ -53,10 +53,11 @@ body {
 
 .jumbotron{
     padding: 0% !important;
+    width: 100%;
 }
 
 .jumbotron-row{
-    margin-top: 0% !important;
+    margin-top: 0%;
     padding: 0%;
     margin-bottom: 0%;
     height: 50vh;
@@ -68,6 +69,17 @@ body {
 .jumbotron__img--fluid{
     width: 300px;
     transform: translate(0%, 50%);
+}
+
+.jumbotron__subtitulo{
+    transform: translate(0%, 800%);
+    color: #360033;
+    animation-name: efecto_subtitulo;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    font-size: 70px;
 }
   footer {
     padding: 0% !important;
@@ -766,33 +778,7 @@ li{
 
 /* ANIMATIONS */
 
-/* @keyframes efecto_subtitulo{
-    0%{
-        font-size: 15px;
-    }
-
-    30%{
-        font-size: 25px;
-    }
-
-    50%{
-        font-size: 40px;
-    }
-
-    70%{
-        font-size: 30px;
-    }
-
-    85%{
-       font-size: 25px;
-    }
-
-    100%{
-        font-size: 20px;
-    }
-}
-
-@keyframes aparecer{
+@keyframes efecto_subtitulo{
     0%{
         opacity: 0;
     }
@@ -804,6 +790,49 @@ li{
     100%{
         opacity: 1;
     }
-} */
+    
+}
+
+@keyframes aparecer{
+    0%{
+        opacity: 0.1;
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
 
 /* END ANIMATIONS */
+
+/* MEDIA QUERIES */
+
+@media (max-width: 576px) {
+    .jumbotron__subtitulo{
+        transform: translate(0%, -50%);
+        font-size: 20px;
+        text-align: center;
+    }
+    .jumbotron-row{
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .jumbotron{
+        height: 20%;
+    }
+    .jumbotron__img--fluid{
+        width: 100px;
+        transform: translate(0%, 50%);
+    }
+}
+
+@media (min-width: 576px) {
+    .jumbotron__subtitulo{
+        transform: translate(-50%, -50%);
+    }
+}
+/* END MEDIA QUERIES */
