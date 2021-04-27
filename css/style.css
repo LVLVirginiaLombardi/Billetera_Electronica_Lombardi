@@ -1,3 +1,9 @@
+body{
+  background-image: linear-gradient(to right, #0b8793, #360033);
+  padding: 50px 0px 0px 0px;
+  z-index: 0;
+}
+
 .row-header {
   margin: 0px auto;
   padding: 0px 0px;
@@ -26,6 +32,7 @@
 
 .jumbotron__img-fluid{
   transform: translate(-20px, 0px);
+  width: 300px;
 }
 
   address {
@@ -33,12 +40,9 @@
     margin: 0px;
     color: #0f0f0f; }
   
-  body {
-    padding: 50px 0px 0px 0px;
-    z-index: 0; }
-  
-  .navbar-dark {
-    background-color: #512DA8; }
+.navbar-dark {
+  background-color: #512DA8; 
+}
   
   .tab-content {
     border-left: 1px solid #ddd;
@@ -76,6 +80,13 @@
 
 /* MEDIA QUERIES */
 
-
+@media (max-width: 576px) {
+  .jumbotron__img-fluid{
+    transform: translate(-20px, 0px);
+  }
+  .jumbotron{
+    background-size: cover;
+  }
+}
 
 /* END MEDIA QUERIES */
