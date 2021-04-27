@@ -15,7 +15,6 @@ html {
 
 /* BODY */
 body {
-    padding: 50px 0px 0px 0px;
     font-family: 'Inter', sans-serif;
     content: '';
     top: 0;
@@ -43,15 +42,12 @@ body {
     margin-top: 50px;
     text-align: center;
     font-weight: bold;
-    animation-name: efecto_subtitulo;
+   /*  animation-name: efecto_subtitulo;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
     animation-duration: 5s;
-    animation-delay: 0s;
+    animation-delay: 0s; */
     position: absolute;
-    /* top: 0;
-    right: 0;
-    transform: translate(-150%,150%); */
     font-size: 30px;
 }
 
@@ -65,6 +61,14 @@ body {
     background-color: rgba(7, 8, 90, 0.67); 
 }
 
+.nav-link{
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+}
+
+.nav-link:hover{
+    color: rgb(199, 191, 180);
+}
 
 
 
@@ -94,7 +98,17 @@ body {
     color: #360033; 
     height: 50vh;
 }
-  
+
+.breadcrumb{
+    height: 50px;
+    position: relative;
+}
+
+.breadcrumb-item{
+    position: relative;
+    transform: translate(0px,-20px);
+}
+
   address {
     font-size: 80%;
     margin: 0px;
@@ -109,22 +123,6 @@ body {
     border-right: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     padding: 10px; }
-  
-  .carousel {
-    background: #512DA8; }
-    .carousel .carousel-item {
-      height: 300px; }
-      .carousel .carousel-item img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        min-height: 300px; }
-  
-  #carouselButton {
-    right: 0px;
-    position: absolute;
-    bottom: 0px;
-    z-index: 1; }
   
   .modal-header {
     background: #512DA8;
@@ -146,7 +144,9 @@ body {
     color: cornsilk;
 }
 .carousel-slide{
-    height: 100vh;
+    height: auto;
+    width: auto;
+    overflow: hidden;
 }
 /* END NUEVO CSS */
 
