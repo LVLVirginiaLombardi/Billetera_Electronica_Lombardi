@@ -25,7 +25,7 @@ body {
 }
  /* HEADER */
 
-.row-header {
+/* .row-header {
     margin: 0px auto;
     padding: 0px 0px; 
 }
@@ -47,42 +47,98 @@ body {
     animation-timing-function: ease-in;
     animation-duration: 5s;
     animation-delay: 0s; */
-    position: absolute;
+    /* position: absolute;
     font-size: 30px;
+} */ 
+
+.jumbotron{
+    padding: 0% !important;
+}
+
+.jumbotron-row{
+    margin-top: 0% !important;
+    padding: 0%;
+    margin-bottom: 0%;
+    height: 50vh;
+    background-size: cover;
+    background-image: url(../img/banner.jpeg);
 }
 
 
+.jumbotron__img--fluid{
+    width: 300px;
+    transform: translate(0%, 50%);
+}
+  footer {
+    padding: 0% !important;
+    background-color: #6699ff;
+    margin-top: 150px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-address-icon {
+    padding-right: 10px;
+  }
+  
+  address {
+    color: white;
+  }
+  
+  .carousel-item {
+    max-height: 620px;
+  }
+  
+  .tab-content {
+    padding-top: 20px;
+  }
+  
+  .nav-link {
+    color: #fff;
+  }
+
+  .breadcrumb__list{
+    height: 20px;
+    position: relative;
+}
+
+.breadcrumb-item{
+    position: relative;
+    transform: translate(0px,-20px);
+}
+  
+  /*# sourceMappingURL=styles.css.map */
+  
 
 
 
 
 
-.navbar-color {
+
+/* .navbar-color {
     background-color: rgba(7, 8, 90, 0.67); 
 }
 
 .nav-link{
     color: #fff;
     font-family: 'Inter', sans-serif;
+
 }
 
 .nav-link:hover{
     color: rgb(199, 191, 180);
 }
 
+.navbar-toggler{
+    background-color: rgba(7, 8, 90, 0.8) !important;
+} */
 
 
-
-.row-content {
+/* .row-content {
     margin: 0px auto;
     padding: 50px 0px;
     border-bottom: 1px ridge;
     min-height: 400px; 
 }
-
-
-
-
 
 .footer {
     background-color: #D1C4E9;
@@ -136,18 +192,17 @@ body {
   }
 
 .carousel-item {
-    height: 300px;
+    max-height: 800px; 
 }
-    
-.carousel-caption {
+
+.titulo, .parrafo {
     font-weight: bolder;
-    color: cornsilk;
+    color: #ad87ce; 
 }
-.carousel-slide{
-    height: auto;
-    width: auto;
-    overflow: hidden;
-}
+
+.carousel-inner img {
+    margin: auto; 
+} */
 /* END NUEVO CSS */
 
 
@@ -524,7 +579,7 @@ a:hover, a:active{
 
 /* CONTACT US */
 
-form {
+/* form {
     display: grid;
     padding: 1em;
     border: none;
@@ -603,7 +658,7 @@ textarea{
     margin-left: 60px;
 }
 
-  
+   */
 /* END CONTACT US */
 
 
