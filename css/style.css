@@ -11,6 +11,147 @@
 html {
     height: 100%;
 }
+/* NUEVO CSS */
+
+/* BODY */
+body {
+    padding: 50px 0px 0px 0px;
+    font-family: 'Inter', sans-serif;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #0b8793, #360033);
+}
+ /* HEADER */
+
+.row-header {
+    margin: 0px auto;
+    padding: 0px 0px; 
+}
+
+.img-fluid{
+    width: 300px;
+    transform: translate(-80%,0%);
+    margin-top: 30px;
+}
+
+.subtitulo{
+    color: #360033;
+    font-family: 'Inter', sans-serif;
+    margin-top: 50px;
+    text-align: center;
+    font-weight: bold;
+    animation-name: efecto_subtitulo;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    position: absolute;
+    /* top: 0;
+    right: 0;
+    transform: translate(-150%,150%); */
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+.navbar-color {
+    background-color: rgba(7, 8, 90, 0.67); 
+}
+
+
+
+
+
+.row-content {
+    margin: 0px auto;
+    padding: 50px 0px;
+    border-bottom: 1px ridge;
+    min-height: 400px; 
+}
+
+
+
+
+
+.footer {
+    background-color: #D1C4E9;
+    margin: 0px auto;
+    padding: 20px 0px; 
+}
+  
+.jumbotron {
+    margin: 0px auto;
+    padding: 70px 30px;
+    background-image: url(../img/banner.jpeg);
+    background-size: cover;
+    color: #360033; 
+    height: 50vh;
+}
+  
+  address {
+    font-size: 80%;
+    margin: 0px;
+    color: #0f0f0f; }
+  
+  
+  
+  
+  
+  .tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px; }
+  
+  .carousel {
+    background: #512DA8; }
+    .carousel .carousel-item {
+      height: 300px; }
+      .carousel .carousel-item img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-height: 300px; }
+  
+  #carouselButton {
+    right: 0px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1; }
+  
+  .modal-header {
+    background: #512DA8;
+    color: floralwhite; }
+  
+  .close {
+    color: floralwhite; }
+  
+  .modal-body {
+    background: #D1C4E9;
+  }
+
+.carousel-item {
+    height: 300px;
+}
+    
+.carousel-caption {
+    font-weight: bolder;
+    color: cornsilk;
+}
+.carousel-slide{
+    height: 100vh;
+}
+/* END NUEVO CSS */
+
+
+
 
 /* BODY */
 
@@ -28,41 +169,6 @@ body{
 }
 
 /* END BODY */
-
-/* HEADER */
-.header {
-    background-image: url("../img/slide-multipagos.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 70vh; 
-    display: flex;
-    flex-direction: column;
-    justify-content: left; 
-    align-items: left; 
-    margin-top: 65px;
-}
-
-.subtitulo{
-    color: #fff;
-    font-family: 'Inter', sans-serif;
-    margin-top: 20px;
-    text-align: center;
-    font-weight: bold;
-    animation-name: efecto_subtitulo;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-    animation-duration: 5s;
-    animation-delay: 0s;
-}
-
-.header .logo{
-    display: grid;
-    grid-template-columns: 300px;
-    width: 300px;
-}
-
-/* END HEADER */
-
 
 /* NAVBAR */
 
@@ -115,6 +221,29 @@ nav{
 
 
 /* NAVBAR END */
+
+/* HEADER */
+.header {
+    background-image: url("../img/banner.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 70vh; 
+    margin-top: 65px;
+    position: relative;
+}
+
+
+
+.header .logo{
+    display: grid;
+    grid-template-columns: 300px;
+    width: 300px;
+}
+
+/* END HEADER */
+
+
+
 
 /* -- INDEX -- */
 
@@ -582,7 +711,7 @@ li{
 
 /* ANIMATIONS */
 
-@keyframes efecto_subtitulo{
+/* @keyframes efecto_subtitulo{
     0%{
         font-size: 15px;
     }
@@ -620,6 +749,6 @@ li{
     100%{
         opacity: 1;
     }
-}
+} */
 
 /* END ANIMATIONS */
