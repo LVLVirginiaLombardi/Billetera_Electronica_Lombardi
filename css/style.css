@@ -1,8 +1,11 @@
+
+
+
 /* BODY */
 
 body{
   background-image: linear-gradient(to right, #0b8793, #360033);
-  padding: 50px 0px 0px 0px;
+  /* padding: 50px 0px 0px 0px; */
   z-index: 0;
 }
 
@@ -31,23 +34,28 @@ body{
 
 /* MAIN */
 
+
+/* CAROUSEL */
+.carousel{
+  height: 200%;
+}
+
 .carousel-item {
   max-height: 620px;
 }
 
 .carousel-caption {
   font-weight: bolder;
-  color: cornsilk;
+  color: rgb(180, 62, 190);
 }
 
-/* .carousel-inner > .carousel-item > .carousel-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 900px;
-  height: 500px;
-} */
 
+
+/* END CAROUSEL */
+
+.tab-content {
+  padding-top: 20px;
+}
 /* END MAIN */
   .row-content {
     margin: 0px auto;
@@ -56,7 +64,7 @@ body{
     min-height: 400px; }
   
   .footer {
-    background-color: #D1C4E9;
+    background: linear-gradient(to right, #2193b0, #6dd5ed);
     margin: 0px auto;
     padding: 20px 0px; }
   
