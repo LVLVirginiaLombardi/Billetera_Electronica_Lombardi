@@ -5,6 +5,22 @@ body{
     z-index: 0;
 }
 
+.navbar-light{
+    background-color: rgba(7, 8, 90, 0.67);
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
+.navbar-toggler{
+    background-color: rgba(54, 55, 151, 0.67);
+}
+
+.navbar-brand{
+    color: #fff !important;
+}
+
 .contenedor {
     background-image: url(../img/banner.jpeg);
     background-repeat: no-repeat;
@@ -97,9 +113,7 @@ ol{
     padding-top: 20px;
   }
   
-  .nav-link {
-    color: #6699ff;
-  }
+  
   
 /* END BODY */
 
