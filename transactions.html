@@ -3,136 +3,233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--   <link rel="stylesheet" href="util.js"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css"><!-- Estilos para la página -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-    <title>Transacciones</title>
+    <title>LANE - Transacciones</title>
 </head>
-
+<!-- BODY -->
 <body>
-    <header class="header">
-        <div class="subtitulo">LANE es tú Banco de confianza</div>
-        <a href="index.html"><img src="img/logo_lane.png" class="logo"></a>
-        <!-- Navbar -->
-        <nav class="navbar">
-            <ul class="link">
-                <li>
-                    <a class="link__2" href="index.html">Home</a>
-                </li>
-                <li>
-                    <a class="link__2" href="transactions.html">Transacciones</a>
-                    <!-- <ul class="link__3">
-                        <li>
-                            <a href="#envio">Enviar Dinero</a>
-                        </li>
-                        <li>
-                            <a href="#dinero">Solicitar Dinero</a>
-                        </li>
-                        <li>
-                            <a href="#recargas">Recargas</a>
-                        </li>
-                        <li>
-                            <a href="#servicios">Pago de Servicios</a>
-                        </li>
-                        <li>
-                            <a href="#movimientos">Últimos Movimientos</a>
-                        </li>
-                    </ul> -->
-                </li>
-                <li>
-                    <a class="link__2" href="services.html">Servicios Disponibles</a>
-                    <!-- <ul class="link__3">
-                        <li>
-                            <a href="#BancaporInternet">Banca por Internet</a>
-                        </li>
-                        <li>
-                            <a href="#BancaTelefónica">Banca Telefónica</a>
-                        </li>
-                        <li>
-                            <a href="#App">App Móvil</a>
-                        </li>
-                        <li>
-                            <a href="#Multipagos">Multipagos</a>
-                        </li>
-                        <li>
-                            <a href="#Billetera">Billetera Electrónica</a>
-                        </li>
-                    </ul> -->
-                </li>
-                <li>
-                    <a class="link__2" href="about.html">Nosotros</a>
-                </li>
-                <li>
-                    <a class="link__2" href="contactus.html">Contacto</a>
-                </li>
-            </ul>
+    <!-- HEADER -->
+    <header>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-md navbar-light fixed-top">
+            <a class="navbar-brand" href="./index.html">LANE</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls=navbarNavDropdown aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#">Transacciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./services.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./about.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contactus.html">Contacto</a></li>
+                </ul>
+            </div>
         </nav>
-        <!-- End Navbar -->
+        <!-- END NAVBAR -->
     </header>
-
-    <div class="container_divs">
-        <div class="div">
-            <h3>Enviar Dinero</h3>
-            <p id="envio" class="p">
-                Para Enviar Dinero debes iniciar sesión, y colocar tu número de cuenta
-                y el número de cuenta de la persona a la que quieres enviarle dinero.
-            </p>
-        </div> 
-        
-        <div class="div">
-            <h3>Solicitar Dinero</h3>
-            <p id="dinero" class="p">
-                Para Solicitar Dinero debes iniciar sesión y colocar tú número de cuenta
-                y el monto que quieres solicitar.
-            </p>
+    <!-- END HEADER -->
+    <main>
+        <div class="contenedor">
+            <div class="logo">
+                <a href="./index.html"><img src="./img/logo_lane.png" alt="Logo LANE" class="logo-img"></a>
+            </div>
+            <div class="subtitulo">
+                <h4 class="subtitulo--modif">LANE es TÚ Banco de Confianza</h4>
+            </div>
         </div>
-        
-        <div class="div">
-            <h3>Recargas</h3>
-            <p id="recargas" class="p">
-                Para Recargas debes iniciar sesión y colocar tú número de cuenta
-                luego elegir lo que quieres recargar. Puedes recargar diferentes
-                servicios: ya sea STM, Movistar, Antel, Claro, etc.
-            </p>
-        </div>
-        
-        <div class="div">
-            <h3>Pago de Servicios</h3>
-            <p id="servicios" class="p">
-                Para Pago de Servicios debes iniciar sesión y colocar tú número de cuenta
-                busca los Servicios Disponibles: tales como UTE, OSE, IMM, etc.
-            </p>
-        </div>
-        
-        <div class="div">
-            <h3>Últimos Movimientos</h3>
-            <p id="movimientos" class="p">
-                Para ver los Últimos Movimientos debes iniciar sesión y colocar tú número 
-                de cuenta luego seleccionar Movimientos y podrás ver tus últimos movimientos.
-            </p>
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item" aria-current="page"><a href="./index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Transacciones</li>
+                </ol>
+            </nav>
+    </main>
+    <hr>
+    <div class="row row-content">
+        <div class="col col-12">
+            <h2>Transacciones Disponibles</h2>
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" role="tab" id="enviarhead">
+                        <h3 class="mb-0">
+                            <a data-toggle="collapse" data-target="#enviar">
+                                Enviar Dinero
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="collapse" id="enviar" data-parent="#accordion">
+                        <div class="card-body">
+                            <p class="d-none d-sm-block">
+                                Para Enviar Dinero debes iniciar sesión, y luego colocar tu número de cuenta
+                                y el número de cuenta de la persona a la que quieres enviarle dinero.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" role="tab" id="solicitarhead">
+                        <h3 class="mb-0">
+                            <a class="collapsed" data-toggle="collapse" data-target="#solicitar">
+                                Solicitar Dinero
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="collapse" id="solicitar" data-parent="#accordion">
+                        <div class="card-body">
+                            <p class="d-none d-sm-block">
+                                Para Solicitar Dinero debes iniciar sesión y colocar tú número de cuenta
+                                y el monto que quieres solicitar.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" role="tab" id="agumbehead">
+                        <h3 class="mb-0">
+                            <a class="collapsed" data-toggle="collapse" data-target="#agumbe">
+                                Agumbe Tang <small>Chief Taste Officer</small>
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="collapse" id="agumbe" data-parent="#accordion">
+                        <div class="card-body">
+                            <p class="d-none d-sm-block">Blessed with the most discerning gustatory sense, Agumbe, our CTO,
+                                personally ensures that every dish that we serve meets his exacting tastes. Our chefs dread
+                                the tongue lashing that ensues if their dish does not meet his exacting standards. He lives
+                                by his motto, <em>You click only if you survive my lick.</em></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" role="tab" id="agumbehead">
+                        <h3 class="mb-0">
+                            <a class="collapsed" data-toggle="collapse" data-target="#alberto">
+                                Alberto Somayya <small>Executive Chef</small>
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="collapse" id="alberto" data-parent="#accordion">
+                        <div class="card-body">
+                            <p class="d-none d-sm-block">
+                                Award winning three-star Michelin chef with wide International
+                                experience having worked closely with whos-who in the culinary world, he specializes in
+                                creating mouthwatering Indo-Italian fusion experiences. He says, <em>Put together the
+                                    cuisines from the two craziest cultures, and you get a winning hit! Amma Mia!</em>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    
-    
-    
-    
-    <footer>
-        <address class="address">
-            <img src="img/logo_lane.png" class="logo_footer">
-            <ul class="info">
-                <li>2021 - Virginia Lombardi || Todos los Derechos Reservados</li>
-                <li>Montevideo, Uruguay</li>
-                <li>Whatsapp: +598232907896</li>
-                <li>billetera@lane.com</li>
-                <li><a class="no-deco" href="https://www.linkedin.com/in/virginia-lombardi-b7bba5129/">LinkedIn</a></li>
-            </ul>
+    <!-- <section class="section">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="enviar-tab" data-toggle="tab" href="#Enviar Dinero" role="tab" aria-controls="Enviar Dinero"
+                    aria-selected="true">Enviar Dinero</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="solicitar-tab" data-toggle="tab" href="#Solicitar Dinero" role="tab" aria-controls="Solicitar Dinero"
+                    aria-selected="false">Solicitar Dinero</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="recargas-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+                    aria-selected="false">Recargas</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="enviar" role="tabpanel" aria-labelledby="enviar">
+                Para Enviar Dinero debes iniciar sesión, y colocar tu número de cuenta
+                y el número de cuenta de la persona a la que quieres enviarle dinero.
+            </div>
+            <div class="tab-pane fade" id="solicitar" role="tabpanel" aria-labelledby="solicitar">...</div>
+            <div class="tab-pane fade" id="recargas" role="tabpanel" aria-labelledby="recargas-tab">...</div>
+        </div>
+    </section> -->
+    <!-- <section class="section">
+        <div class="container_divs">
+            <div class="div">
+                <h3>Enviar Dinero</h3>
+                <p id="envio" class="p">
+                    Para Enviar Dinero debes iniciar sesión, y colocar tu número de cuenta
+                    y el número de cuenta de la persona a la que quieres enviarle dinero.
+                </p>
+            </div> 
             
-            <ul class="links-footer">
-                <li><a class="no-deco" href="transactions.html" style=" margin-top: 30px;">Transacciones</a></li>
-                <li><a class="no-deco" href="services.html">Servicios</a></li>
-                <li><a class="no-deco" href="about.html">Nosotros</a></li>
-                <li><a class="no-deco" href="contactus.html">Contacto</a></li>
-            </ul> 
-        </address>
+            <div class="div">
+                <h3>Solicitar Dinero</h3>
+                <p id="dinero" class="p">
+                    Para Solicitar Dinero debes iniciar sesión y colocar tú número de cuenta
+                    y el monto que quieres solicitar.
+                </p>
+            </div>
+            
+            <div class="div">
+                <h3>Recargas</h3>
+                <p id="recargas" class="p">
+                    Para Recargas debes iniciar sesión y colocar tú número de cuenta
+                    luego elegir lo que quieres recargar. Puedes recargar diferentes
+                    servicios: ya sea STM, Movistar, Antel, Claro, etc.
+                </p>
+            </div>
+            
+            <div class="div">
+                <h3>Pago de Servicios</h3>
+                <p id="servicios" class="p">
+                    Para Pago de Servicios debes iniciar sesión y colocar tú número de cuenta
+                    busca los Servicios Disponibles: tales como UTE, OSE, IMM, etc.
+                </p>
+            </div>
+            
+            <div class="div">
+                <h3>Últimos Movimientos</h3>
+                <p id="movimientos" class="p">
+                    Para ver los Últimos Movimientos debes iniciar sesión y colocar tú número 
+                    de cuenta luego seleccionar Movimientos y podrás ver tus últimos movimientos.
+                </p>
+            </div>
+        </div>
+    </section> -->
+    
+    
+    
+    
+    <!-- FOOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col col-12 col-md-4 align-items-start d-flex flex-row justify-content-center my-4">
+                    <a href="http://www.twitter.com" style="font-size: 2rem;"><span class="fab fa-twitter-square footer-address-icon"></span></a>
+                    <a href="https://www.instagram.com/liliths_aart/" style="font-size: 2rem;"><span class="fab fa-instagram-square footer-address-icon"></span></a>
+                    <a href="https://www.linkedin.com/in/virginia-lombardi-b7bba5129/" style="font-size: 2rem;"><span class="fab fa-linkedin"></span></a></br>
+                </div>
+                <div class="col col-12 col-md-4 text-center">
+                    <address>
+                        <h3>Oficina Central</h3>
+                        <p><span class="fas fa-map-marker-alt"></span> Ciudad Vieja 2345, Montevideo, Uruguay</p>
+                        <p><span class="fas fa-mobile-alt footer-address-icon"></span>+598232907896</p>
+                        <p><span class="fas fa-envelope footer-address-icon"></span>contacto@lane.com</p>
+                    </address>
+                </div>
+                <div class="col col-12 col-md-4 d-flex flex-column align-items-center pt-4 pt-md-0">
+                    <a href="./transactions.html" class="col-item">Transacciones</a>
+                    <a href="./services.html" class="col-item">Servicios</a>
+                    <a href="./about.html" class="col-item">Nosotros</a>
+                    <a href="./contactus.html" class="col-item">Contacto</a>
+                </div>
+            </div>
+        </div>
     </footer>
+    <!-- END FOOTER -->
+    <!-- SCRIPTS -->
+    <script src="https://kit.fontawesome.com/2754e90659.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <!-- END SCRIPTS -->
 </body>
 </html>
