@@ -95,17 +95,35 @@ ol{
 
 .transacciones-titulo{
     color: #fff;
-    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
     text-align: center;
 }
 
 .row-content{
     position: relative;
+    width: 100%;
 }
 
 .columna{
     position: relative;
     transform: translate(50%, 0%);
+}
+
+.card{
+    background-color: #530f81;
+}
+
+.card-body{
+    background-color: #fff;
+}
+.a{
+    color: #007bff;
+    text-decoration: none !important;
+}
+.a:hover{
+    text-decoration: none !important;
+    color: #1769c2 !important;
 }
 
 /* END ACCORDION */
@@ -174,4 +192,11 @@ ol{
       }
 }
 
+
+@media (max-width: 576px) { 
+    .columna{
+        transform: translate(-0.2%, 0%);
+        margin-left: 28px;
+    }
+   }
 /* END MEDIA QUERIES */
