@@ -80,13 +80,27 @@ ol{
     padding: 0% !important;
   }
   
+/* FOOTER */
+
   footer {
     padding: 0% !important;
     background: linear-gradient(to left, #2193b0, #6dd5ed);
     margin-top: 150px;
-    margin-bottom: 10px;
   }
-  
+
+  .col-item{
+      color: #fff;
+      margin-top: 10px;
+      text-decoration: none;
+  }
+
+.col-item:hover{
+    text-decoration: none;
+    color: rgb(184, 32, 108);
+}
+/* END FOOTER */
+
+
   .fab {
     color: white;
   }
