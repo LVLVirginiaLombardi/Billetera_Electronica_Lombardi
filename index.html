@@ -11,220 +11,179 @@
 </head>
 
 <body>
-
-        <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls=navbarNavDropdown aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./transactions.html"><i class="fa fa-info fa-lg"></i> Transacciones</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./services.html"><i class="fa fa-list fa-lg"></i> Servicios</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./about.html"><i class="fa fa-info fa-lg"></i> Nosotros</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg"></i> Contacto</a></li>
-                    </ul>
-                    <span class="navbar-text">
-                        <a id="login-button" href="#">
-                        <span class="fa fa-sign-in"></span> Login</a>
-                    </span>
-                </div>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="#">LANE</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls=navbarNavDropdown aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./transactions.html">Transacciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./services.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./about.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contactus.html">Contacto</a></li>
+                </ul>
             </div>
         </nav>
-        <div id="loginModal" class="modal fade" role="dialog">
-            <div class="modal-dialog modal-lg" role="content">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Login</h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+    </header>
+    <main>
+        <!-- <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-8 col-centered">
+                    <div class="maintxt">
+                        LANE es TÚ Banco de Confianza
                     </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-row">
-                                <div class="form-group col-sm-4">
-                                        <label class="sr-only" for="exampleInputEmail3">Correo Electrónico</label>
-                                        <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Ingresar Email">
+                </div>
+            </div>
+        </div> -->
+        <div class="banner container-fluid">
+            <div class="maintxt">
+                <img src="./img/banner.jpeg" alt="Responsive image" class="img-responsive">
+                <a href="./index.html"><img src="./img/logo_lane.png" alt="Logo LANE" class="carousel-caption"></a>
+                <h3 class="overlay-text">LANE es TÚ Banco</h3>
+            </div>
+        </div>
+        <!-- <div class="contenedor">
+            <div class="logo">
+                <a href="./index.html"><img src="./img/logo_lane.png" alt="Logo LANE" class="logo_img"></a>
+            </div>
+            <div class="subtitulo">
+                <h3 class="subtitulo--modif">LANE es TÚ Banco</h3>
+            </div>
+        </div> -->
+        
+        
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page">Home</li>
+                </ol>
+            </nav>
+        
+        
+            <div class="row">
+                <div class="col-sm-4">
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#funciona" aria-expanded="false" aria-controls="multi1">
+                        ¿Cómo funciona?
+                    </button>
+                </div>
+                <div class="col-sm-4">
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#info" aria-expanded="false" aria-controls="multi2"> 
+                        ¿Si quiero más información?
+                    </button>
+                </div>
+                <div class="col-sm-4">
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#como" aria-expanded="false" aria-controls="multi3"> ¿Cómo pago?</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 collapse multi-collapse" id="funciona">
+                    <h3>¿Cómo funciona?</h3>
+                    <p>
+                        Inicia sesión o creá tú cuenta y podrás acceder a tu Billetera Electrónica.
+                    </p>
+                </div>
+                <div class="col-sm-4 collapse multi-collapse" id="info">
+                    <h3>Quiero más información</h3>
+                    <p>
+                        En la parte de Servicios se encuentra toda la información que buscas.
+                    </p>
+                </div>
+                <div class="col-sm-4 collapse multi-collapse" id="como">
+                    <h3>¿Cómo pago?</h3>
+                    <p>
+                        Utilizá tus tarjetas favoritas, para realizar el pago de todo lo que está en la información de la
+                        página.
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="./img/img1.jpg" class="d-block w-100" alt="Responsive image">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./img/img2.png" class="d-block w-100" alt="Responsive image">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./img/electronic-wallet.jpg" class="d-block w-100" alt="Responsive image">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <hr>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Contacto con el hotel</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="exampleModal">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">Tu Email:</label>
+                                    <input type="text" class="form-control" id="recipient-name">
                                 </div>
-                                <div class="form-group col-sm-4">
-                                    <label class="sr-only" for="exampleInputPassword3">Constraseña</label>
-                                    <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Contraseña">
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">Mensaje:</label>
+                                    <textarea class="form-control" id="message-text"></textarea>
                                 </div>
-                                <div class="col-sm-auto">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox">
-                                        <label class="form-check-label"> Recordarme</label>
-                                    </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-primary">Enviar mensaje</button>
                                 </div>
-                            </div>
-                            <div class="form-row">
-                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancelar</button>
-                                <button type="submit" class="btn btn-primary btn-sm ml-1">Iniciar Sesión</button>        
-                            </div>
-                        </form>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <header class="jumbotron">
-            <div class="jumbotron__container">
-                <div class="col-12 col-sm jumbotron__col">
-                    <img src="img/logo_lane.png" class="jumbotron__img-fluid">
-                </div>
-                <div class="row jumbotron__row-header text-center">
-                    <div class="col-12 col-sm-6 jumbotron__col2 text-center">
-                        <h4>LANE es Tú Banco de Confianza</h4>
+    </main>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col col-12 col-md-4 align-items-start d-flex flex-row justify-content-center my-4">
+                        <a href="http://www.twitter.com" style="font-size: 2rem;"><span class="fab fa-twitter-square footer-address-icon"></span></a>
+                        <a href="https://www.instagram.com/liliths_aart/" style="font-size: 2rem;"><span class="fab fa-instagram-square footer-address-icon"></span></a>
+                        <a href="https://www.linkedin.com/in/virginia-lombardi-b7bba5129/" style="font-size: 2rem;"><span class="fab fa-linkedin"></span></a></br>
+                    </div>
+                    <div class="col col-12 col-md-4 text-center">
+                        <address>
+                            <h3>Oficina Central</h3>
+                            <p><span class="fas fa-map-marker-alt"></span> Ciudad Vieja 2345, Montevideo, Uruguay</p>
+                            <p><span class="fas fa-mobile-alt footer-address-icon"></span>+598232907896</p>
+                            <p><span class="fas fa-envelope footer-address-icon"></span>contacto@lane.com</p>
+                        </address>
+                    </div>
+                    <div class="col col-12 col-md-4 d-flex flex-column align-items-center pt-4 pt-md-0">
+                        <a href="./about.html" style="color:white;">Transacciones</a>
+                        <a href="./transactions.html" style="color:white;">Servicios</a>
+                        <a href="./about.html" style="color:white;">Nosotros</a>
+                        <a href="./contactus.html" style="color:white;">Contacto</a>
                     </div>
                 </div>
             </div>
-        </header>
-        <hr>
-        <main>
-            <div class="carousel">
-                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100 carousel-img" src="./img/img1.jpg" class="d-block w-100 carousel-img" alt="Responsive image">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h2>LANE TÚ BANCO</h2>
-                                <p class="d-none d-sm-block">LANE es tú Banco de Confianza con la posibilidad de Billetera
-                                    Electrónica.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="./img/img2.png" class="d-block w-100 carousel-img" alt="Responsive image">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h2>LANE TÚ BANCO</h2>
-                                <p class="d-none d-sm-block">La Billetera Electrónica más confiable del País.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="./img/electronic-wallet.jpg" class="d-block w-100 carousel-img" alt="Responsive image">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h2 class="mt-0">LANE TÚ BANCO</h2>
-                                <p class="d-none d-sm-block">La Billetera Electrónica más ágil del Uruguay.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-12 col-sm-9">
-                    <h2>Monedas &amp; Su correspondiente información</h2>
-                    <div class="table-responsive">
-                        <table class="table table-hover table-striped">
-                            <thead>
-                                <tr>
-                                    <th class="text-center">Moneda</th>
-                                    <th class="text-center">Compra</th>
-                                    <th class="text-center">Venta</th>
-                                    <th class="text-center">Arbitraje Compra</th>
-                                    <th class="text-center">Arbitraje Venta</th>
-                                </tr>
-                                <tr>
-                                    <th class="text-center">Dolar</th>
-                                    <td class="text-center">42,00000</td>
-                                    <td class="text-center">44,40000</td>
-                                    <td class="text-center">1,00000</td>
-                                    <td class="text-center">1,00000</td>
-                                </tr>
-                                <tr>
-                                    <th class="text-center">Dolar LANE</th>
-                                    <td class="text-center">42,50000</td>
-                                    <td class="text-center">43,90000</td>
-                                    <td class="text-center">1,00000</td>
-                                    <td class="text-center">1,00000</td>
-                                </tr>
-                                <tr>
-                                    <th class="text-center">Euro</th>
-                                    <td class="text-center">49,53000</td>
-                                    <td class="text-center">55,18000</td>
-                                    <td class="text-center">1,17930</td>
-                                    <td class="text-center">1,24290</td>
-                                </tr>
-                                <tr>
-                                    <th class="text-center">Peso Argentino</th>
-                                    <td class="text-center">0,05000</td>
-                                    <td class="text-center">0,55000</td>
-                                    <td class="text-center">888,00000</td>
-                                    <td class="text-center">61,36360</td>
-                                </tr>
-                                <tr>
-                                    <th class="text-center">Real</th>
-                                    <td class="text-center">6,82000</td>
-                                    <td class="text-center">8,82000</td>
-                                    <td class="text-center">6,51030</td>
-                                    <td class="text-center">4,76190</td>
-                                </tr>
-                                <tr>
-                                    <th class="text-center">Unidad Indexada</td>
-                                    <td class="text-center">-------</td>
-                                    <td class="text-center">4,84310</td>
-                                    <td class="text-center">-------</td>
-                                    <td class="text-center">-------</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        <hr>
-                
-        
-            <footer class="footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-4 offset-1 col-sm-2">
-                            <h5>Links</h5>
-                            <ul class="list-unstyled">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="./transactions.html">Transacciones</a></li>
-                                <li><a href="./services.html">Servicios</a></li>
-                                <li><a href="./about.html">Nosotros</a></li>
-                                <li><a href="./contactus.html">Contacto</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-7 col-sm-5">
-                            <h5>Ubicación</h5>
-                            <address>
-                                <p>Ciudad Vieja 1234, Montevideo, Uruguay</p>
-                                <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
-                                <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
-                                <i class="fa fa-envelope fa-lg"></i>: contacto@lane.com</a>
-                            </address>
-                        </div>
-                        <div class="col-12 col-sm-4 align-self-center">
-                            <div class="text-center">
-                                <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/virginia-lombardi-b7bba5129/"><i
-                                        class="fa fa-linkedin fa-lg"></i></a>
-                                <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
-                                        class="fa fa-twitter fa-lg"></i></a>
-                                <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div class="col-auto">
-                            <p>Todos los Derechos Reservados - Virginia Lombardi - 2021</p>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+        </footer>
     <!-- SCRIPTS -->
     <script src="https://kit.fontawesome.com/2754e90659.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

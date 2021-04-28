@@ -1,113 +1,132 @@
-
-
-
 /* BODY */
 
 body{
-  background-image: linear-gradient(to right, #0b8793, #360033);
-  /* padding: 50px 0px 0px 0px; */
-  z-index: 0;
+    background-image: linear-gradient(to right, #0b8793, #360033);
+    z-index: 0;
 }
 
-/* HEADER */
-
-.row-header {
-  margin: 0px auto;
-  padding: 0px 0px;
+.container{
+    height: 100%;
 }
+
+.maintxt {
+    background-image: url(../img/banner.jpeg);
+    background-size: cover;
+}
+
+/* END BODY */
+
+
 
 .jumbotron {
-  margin: 0px auto;
-  padding: 70px 30px;
-  color: rgb(79, 7, 88);
-  background-image: url(../img/banner.jpeg);
-  background-size: cover;
-  height: 50vh;
-}
-
-.jumbotron__img-fluid{
-  transform: translate(-20px, 0px);
-  width: 300px;
-}
-
-/* END HEADER */
-
-/* MAIN */
-
-
-/* CAROUSEL */
-.carousel{
-  height: 200%;
-}
-
-.carousel-item {
-  max-height: 620px;
-}
-
-.carousel-caption {
-  font-weight: bolder;
-  color: rgb(180, 62, 190);
-}
-
-
-
-/* END CAROUSEL */
-
-.tab-content {
-  padding-top: 20px;
-}
-/* END MAIN */
-  .row-content {
-    margin: 0px auto;
-    padding: 50px 0px;
-    border-bottom: 1px ridge;
-    min-height: 400px; }
+    background-color: #6699ff;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
   
-  .footer {
-    background: linear-gradient(to right, #2193b0, #6dd5ed);
-    margin: 0px auto;
-    padding: 20px 0px; }
+  .btn {
+    background-color: #6699ff;
+    border-color: #6699ff;
+  }
   
-
-
+  .banner {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 0% !important;
+  }
+  
+  footer {
+    padding: 0% !important;
+    background-color: #6699ff;
+    margin-top: 150px;
+    margin-bottom: 10px;
+  }
+  
+  .card-hotel {
+    flex: 1 200px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  
+  .btn-reserva {
+    with: 100%;
+    border-radius: 0px;
+    color: white;
+    border-color: #6699ff;
+  }
+  
+  .fab {
+    color: white;
+  }
+  
+  .footer-address-icon {
+    padding-right: 10px;
+  }
+  
+  .banner {
+    margin-right: 20px;
+    padding: 20px 20px 0px 20px;
+  }
+  
   address {
-    font-size: 80%;
-    margin: 0px;
-    color: #0f0f0f; }
+    color: white;
+  }
   
-.navbar-dark {
-  background-color: #512DA8; 
-}
+  .card-header {
+    color: white;
+  }
+  
+  .carousel-item {
+    max-height: 620px;
+  }
+  
+  .carousel-caption {
+    font-weight: bolder;
+    color: cornsilk;
+  }
+  
+  .listaHoteles .card {
+    width: 330px;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    color: #666;
+  }
+  
+  .listaHoteles .card .card-title {
+    color: #075f92;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .listaHoteles .card .btn {
+    width: 40;
+  }
+  
+  .listaHoteles .card-img-top {
+    height: 220px;
+  }
+  
+  .hotel {
+    height: 100px;
+    min-height: 100px;
+    overflow: hidden;
+  }
+  
+  .btn-inicio {
+    width: 100;
+    background-color: #6699ff;
+    display: flex;
+    justify-content: center;
+    border-color: #6699ff;
+  }
   
   .tab-content {
-    border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    padding: 10px; }
-  
-
-  
-  .modal-header {
-    background: #512DA8;
-    color: floralwhite; }
-  
-  .close {
-    color: floralwhite; }
-  
-  .modal-body {
-    background: #D1C4E9; 
+    padding-top: 20px;
   }
-
-
-/* MEDIA QUERIES */
-
-@media (max-width: 576px) {
-  .jumbotron__img-fluid{
-    transform: translate(-20px, 0px);
+  
+  .nav-link {
+    color: #6699ff;
   }
-  .jumbotron{
-    background-size: cover;
-  }
-}
-
-/* END MEDIA QUERIES */
+  
