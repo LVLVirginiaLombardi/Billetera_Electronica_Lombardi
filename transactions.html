@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--   <link rel="stylesheet" href="util.js"> -->
+    <link rel="stylesheet" href="util.js">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css"><!-- Estilos para la página -->
     <title>LANE - Transacciones</title>
@@ -21,8 +21,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="#">Transacciones</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./transactions.html">Transacciones</a></li>
                     <li class="nav-item"><a class="nav-link" href="./services.html">Servicios</a></li>
                     <li class="nav-item"><a class="nav-link" href="./about.html">Nosotros</a></li>
                     <li class="nav-item"><a class="nav-link" href="./contactus.html">Contacto</a></li>
@@ -32,7 +32,9 @@
         <!-- END NAVBAR -->
     </header>
     <!-- END HEADER -->
+    <!-- MAIN -->
     <main>
+        <!-- BANNER, LOGO, SUBTITULO -->
         <div class="contenedor">
             <div class="logo">
                 <a href="./index.html"><img src="./img/logo_lane.png" alt="Logo LANE" class="logo-img"></a>
@@ -41,18 +43,22 @@
                 <h4 class="subtitulo--modif">LANE es TÚ Banco de Confianza</h4>
             </div>
         </div>
+        <!-- END BANNER, LOGO, SUBTITULO -->
+        <!-- CONTENEDOR -->
         <div class="container">
+            <!-- BREADCRUMB -->
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item" aria-current="page"><a href="./index.html">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Transacciones</li>
+                    <li class="breadcrumb-item active" aria-current="page">Home</li>
                 </ol>
             </nav>
+            <!-- END BREADCRUMB -->
+        </div>
     </main>
     <hr>
     <div class="row row-content">
         <div class="col col-12">
-            <h2>Transacciones Disponibles</h2>
+            <h2 class="">Transacciones Disponibles</h2>
             <div id="accordion">
                 <div class="card">
                     <div class="card-header" role="tab" id="enviarhead">
@@ -89,37 +95,36 @@
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-header" role="tab" id="agumbehead">
+                    <div class="card-header" role="tab" id="recargashead">
                         <h3 class="mb-0">
-                            <a class="collapsed" data-toggle="collapse" data-target="#agumbe">
-                                Agumbe Tang <small>Chief Taste Officer</small>
+                            <a class="collapsed" data-toggle="collapse" data-target="#recargas">
+                                Recargas
                             </a>
                         </h3>
                     </div>
-                    <div class="collapse" id="agumbe" data-parent="#accordion">
+                    <div class="collapse" id="recargas" data-parent="#accordion">
                         <div class="card-body">
-                            <p class="d-none d-sm-block">Blessed with the most discerning gustatory sense, Agumbe, our CTO,
-                                personally ensures that every dish that we serve meets his exacting tastes. Our chefs dread
-                                the tongue lashing that ensues if their dish does not meet his exacting standards. He lives
-                                by his motto, <em>You click only if you survive my lick.</em></p>
+                            <p class="d-none d-sm-block">
+                                Para Recargas debes iniciar sesión y colocar tú número de cuenta
+                                luego elegir lo que quieres recargar. Puedes recargar diferentes
+                                servicios: ya sea STM, Movistar, Antel, Claro, etc.
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-header" role="tab" id="agumbehead">
+                    <div class="card-header" role="tab" id="pagohead">
                         <h3 class="mb-0">
-                            <a class="collapsed" data-toggle="collapse" data-target="#alberto">
-                                Alberto Somayya <small>Executive Chef</small>
+                            <a class="collapsed" data-toggle="collapse" data-target="#pago">
+                                Pago de Servicios
                             </a>
                         </h3>
                     </div>
-                    <div class="collapse" id="alberto" data-parent="#accordion">
+                    <div class="collapse" id="pago" data-parent="#accordion">
                         <div class="card-body">
                             <p class="d-none d-sm-block">
-                                Award winning three-star Michelin chef with wide International
-                                experience having worked closely with whos-who in the culinary world, he specializes in
-                                creating mouthwatering Indo-Italian fusion experiences. He says, <em>Put together the
-                                    cuisines from the two craziest cultures, and you get a winning hit! Amma Mia!</em>
+                                Para Pago de Servicios debes iniciar sesión y colocar tú número de cuenta
+                                busca los Servicios Disponibles: tales como UTE, OSE, IMM, etc.
                             </p>
                         </div>
                     </div>
@@ -127,30 +132,6 @@
             </div>
         </div>
     </div>
-    <!-- <section class="section">
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <a class="nav-link active" id="enviar-tab" data-toggle="tab" href="#Enviar Dinero" role="tab" aria-controls="Enviar Dinero"
-                    aria-selected="true">Enviar Dinero</a>
-            </li>
-            <li class="nav-item" role="presentation">
-                <a class="nav-link" id="solicitar-tab" data-toggle="tab" href="#Solicitar Dinero" role="tab" aria-controls="Solicitar Dinero"
-                    aria-selected="false">Solicitar Dinero</a>
-            </li>
-            <li class="nav-item" role="presentation">
-                <a class="nav-link" id="recargas-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
-                    aria-selected="false">Recargas</a>
-            </li>
-        </ul>
-        <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="enviar" role="tabpanel" aria-labelledby="enviar">
-                Para Enviar Dinero debes iniciar sesión, y colocar tu número de cuenta
-                y el número de cuenta de la persona a la que quieres enviarle dinero.
-            </div>
-            <div class="tab-pane fade" id="solicitar" role="tabpanel" aria-labelledby="solicitar">...</div>
-            <div class="tab-pane fade" id="recargas" role="tabpanel" aria-labelledby="recargas-tab">...</div>
-        </div>
-    </section> -->
     <!-- <section class="section">
         <div class="container_divs">
             <div class="div">
