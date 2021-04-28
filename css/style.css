@@ -90,6 +90,25 @@ ol{
     padding: 0% !important;
   }
   
+
+/* ACCORDION */
+
+.transacciones-titulo{
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.row-content{
+    position: relative;
+}
+
+.columna{
+    position: relative;
+    transform: translate(50%, 0%);
+}
+
+/* END ACCORDION */
 /* FOOTER */
 
   footer {

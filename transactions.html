@@ -57,8 +57,8 @@
     </main>
     <hr>
     <div class="row row-content">
-        <div class="col col-12">
-            <h2 class="">Transacciones Disponibles</h2>
+        <div class="col col-md-6 col-sm-12 columna">
+            <h2 class="transacciones-titulo">Transacciones Disponibles</h2>
             <div id="accordion">
                 <div class="card">
                     <div class="card-header" role="tab" id="enviarhead">
@@ -70,7 +70,7 @@
                     </div>
                     <div class="collapse" id="enviar" data-parent="#accordion">
                         <div class="card-body">
-                            <p class="d-none d-sm-block">
+                            <p class="d-sm-block">
                                 Para Enviar Dinero debes iniciar sesión, y luego colocar tu número de cuenta
                                 y el número de cuenta de la persona a la que quieres enviarle dinero.
                             </p>
@@ -87,7 +87,7 @@
                     </div>
                     <div class="collapse" id="solicitar" data-parent="#accordion">
                         <div class="card-body">
-                            <p class="d-none d-sm-block">
+                            <p class="d-sm-block">
                                 Para Solicitar Dinero debes iniciar sesión y colocar tú número de cuenta
                                 y el monto que quieres solicitar.
                             </p>
@@ -104,7 +104,7 @@
                     </div>
                     <div class="collapse" id="recargas" data-parent="#accordion">
                         <div class="card-body">
-                            <p class="d-none d-sm-block">
+                            <p class="d-sm-block">
                                 Para Recargas debes iniciar sesión y colocar tú número de cuenta
                                 luego elegir lo que quieres recargar. Puedes recargar diferentes
                                 servicios: ya sea STM, Movistar, Antel, Claro, etc.
@@ -122,9 +122,26 @@
                     </div>
                     <div class="collapse" id="pago" data-parent="#accordion">
                         <div class="card-body">
-                            <p class="d-none d-sm-block">
+                            <p class="d-sm-block">
                                 Para Pago de Servicios debes iniciar sesión y colocar tú número de cuenta
                                 busca los Servicios Disponibles: tales como UTE, OSE, IMM, etc.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" role="tab" id="movimientoshead">
+                        <h3 class="mb-0">
+                            <a class="collapsed" data-toggle="collapse" data-target="#movimientos">
+                                Últimos Movimientos
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="collapse" id="movimientos" data-parent="#accordion">
+                        <div class="card-body">
+                            <p class="d-sm-block">
+                                Para ver los Últimos Movimientos debes iniciar sesión y colocar tú número 
+                                de cuenta luego seleccionar Movimientos y podrás ver tus últimos movimientos.
                             </p>
                         </div>
                     </div>
