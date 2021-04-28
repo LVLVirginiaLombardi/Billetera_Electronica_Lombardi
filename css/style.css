@@ -66,7 +66,7 @@ ol{
   
   footer {
     padding: 0% !important;
-    background-color: #6699ff;
+    background: linear-gradient(to left, #2193b0, #6dd5ed);
     margin-top: 150px;
     margin-bottom: 10px;
   }
