@@ -3,74 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css"><!-- Estilos para la página -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-    <title>Billetera Electrónica INFO</title>
+    <title>LANE - Billetera Electrónica INFO</title>
 </head>
 
 <body>
-    <header class="header">
-        <div class="subtitulo">Conoce nuestra Billetera Electrónica</div>
-        <a href="index.html"><img src="img/logo_lane.png" class="logo"></a>
-        <!-- Navbar -->
-        <nav class="navbar">
-            <ul class="link">
-                <li>
-                    <a class="link__2" href="index.html">Home</a>
-                </li>
-                <li>
-                    <a class="link__2" href="transactions.html">Transacciones</a>
-                    <!-- <ul class="link__3">
-                        <li>
-                            <a href="#envio">Enviar Dinero</a>
-                        </li>
-                        <li>
-                            <a href="#dinero">Solicitar Dinero</a>
-                        </li>
-                        <li>
-                            <a href="#recargas">Recargas</a>
-                        </li>
-                        <li>
-                            <a href="#servicios">Pago de Servicios</a>
-                        </li>
-                        <li>
-                            <a href="#movimientos">Últimos Movimientos</a>
-                        </li>
-                    </ul> -->
-                </li>
-                <li>
-                    <a class="link__2" href="services.html">Servicios Disponibles</a>
-                    <!-- <ul class="link__3">
-                        <li>
-                            <a href="#BancaporInternet">Banca por Internet</a>
-                        </li>
-                        <li>
-                            <a href="#BancaTelefónica">Banca Telefónica</a>
-                        </li>
-                        <li>
-                            <a href="#App">App Móvil</a>
-                        </li>
-                        <li>
-                            <a href="#Multipagos">Multipagos</a>
-                        </li>
-                        <li>
-                            <a href="#Billetera">Billetera Electrónica</a>
-                        </li>
-                    </ul> -->
-                </li>
-                <li>
-                    <a class="link__2" href="about.html">Nosotros</a>
-                </li>
-                <li>
-                    <a class="link__2" href="contactus.html">Contacto</a>
-                </li>
-            </ul>
+     <!-- HEADER -->
+     <header>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-md navbar-light fixed-top">
+            <a class="navbar-brand" href="./index.html">LANE</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls=navbarNavDropdown aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./transactions.html">Transacciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./services.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./about.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contactus.html">Contacto</a></li>
+                </ul>
+            </div>
         </nav>
-        <!-- End Navbar -->
+        <!-- END NAVBAR -->
     </header>
+        <!-- END HEADER -->
+        <!-- MAIN -->
+        <main>
+            <!-- BANNER, LOGO, SUBTITULO -->
+            <div class="contenedor">
+                <div class="logo">
+                    <a href="./index.html"><img src="./img/logo_lane.png" alt="Logo LANE" class="logo-img"></a>
+                </div>
+                <div class="subtitulo">
+                    <h4 class="subtitulo--modif">LANE tiene la Billetera Electrónica más ágil del Uruguay</h4>
+                </div>
+            </div>
+            <!-- END BANNER, LOGO, SUBTITULO -->
+            <!-- CONTENEDOR -->
+            <div class="container">
+                <!-- BREADCRUMB -->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item" aria-current="page"><a href="./index.html">Home</a></li>
+                        <li class="breadcrumb-item" aria-current="page"><a href="./services.html">Servicios</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">INFO B. Electrónica</li>
+                    </ol>
+                </nav>
+            </div>
+            <!-- END BREADCRUMB -->
+        </main>
     
     
-    <div class="grid">
+    <div class="container container__info">
         <section class="section1">
             <section class="h4_section1">
                 <h4>Adherí tu medio de pago LANE y accedé a sus beneficios</h4>
@@ -154,32 +142,47 @@
     </div>
             
         <div class="app_billetera">
-            <a href="appbilletera.html" class="link-text"><i class="fas fa-wallet"></i> Abre tú Billetera Electrónica aquí</a>
+            <button type="button" class="btn btn-primary btn-lg btn-block"> 
+                <a href="appbilletera.html" class="link-text"><i class="fas fa-wallet"></i> Abre tú Billetera Electrónica aquí</a>
+            </button>
         </div>
     
     
     
-     <!-- Footer -->
-     <footer>
-        <address class="address">
-            <img src="img/logo_lane.png" class="logo_footer">
-            <ul class="info">
-                <li>2021 - Virginia Lombardi || Todos los Derechos Reservados</li>
-                <li>Montevideo, Uruguay</li>
-                <li>Whatsapp: +598232907896</li>
-                <li>billetera@lane.com</li>
-                <li><a class="no-deco" href="https://www.linkedin.com/in/virginia-lombardi-b7bba5129/">LinkedIn</a></li>
-            </ul>
-            
-            <ul class="links-footer">
-                <li><a class="no-deco" href="transactions.html" style=" margin-top: 30px;">Transacciones</a></li>
-                <li><a class="no-deco" href="services.html">Servicios</a></li>
-                <li><a class="no-deco" href="about.html">Nosotros</a></li>
-                <li><a class="no-deco" href="contactus.html">Contacto</a></li>
-            </ul> 
-        </address>
+    <!-- FOOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col col-12 col-md-4 align-items-start d-flex flex-row justify-content-center my-4">
+                    <a href="http://www.twitter.com" style="font-size: 2rem;"><span
+                            class="fab fa-twitter-square footer-address-icon"></span></a>
+                    <a href="https://www.instagram.com/liliths_aart/" style="font-size: 2rem;"><span
+                            class="fab fa-instagram-square footer-address-icon"></span></a>
+                    <a href="https://www.linkedin.com/in/virginia-lombardi-b7bba5129/" style="font-size: 2rem;"><span
+                            class="fab fa-linkedin"></span></a></br>
+                </div>
+                <div class="col col-12 col-md-4 text-center">
+                    <address>
+                        <h3>Oficina Central</h3>
+                        <p><span class="fas fa-map-marker-alt"></span> Ciudad Vieja 2345, Montevideo, Uruguay</p>
+                        <p><span class="fas fa-mobile-alt footer-address-icon"></span>+598232907896</p>
+                        <p><span class="fas fa-envelope footer-address-icon"></span>contacto@lane.com</p>
+                    </address>
+                </div>
+                <div class="col col-12 col-md-4 d-flex flex-column align-items-center pt-4 pt-md-0">
+                    <a href="./transactions.html" class="col-item">Transacciones</a>
+                    <a href="./services.html" class="col-item">Servicios</a>
+                    <a href="./about.html" class="col-item">Nosotros</a>
+                    <a href="./contactus.html" class="col-item">Contacto</a>
+                </div>
+            </div>
+        </div>
     </footer>
-    <!-- End Footer -->
-    
+    <!-- END FOOTER -->
+    <!-- SCRIPTS -->
+    <script src="https://kit.fontawesome.com/2754e90659.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <!-- END SCRIPTS -->
 </body>
 </html>

@@ -117,12 +117,13 @@ ol{
 .card-body{
     background-color: #fff;
 }
+#accordion a {
+    text-decoration: none;
+  }
 .a{
     color: #007bff;
-    text-decoration: none !important;
 }
 .a:hover{
-    text-decoration: none !important;
     color: #1769c2 !important;
 }
 
@@ -174,9 +175,76 @@ ol{
     padding-top: 20px;
   }
   
+/* SERVICES */
+
+.container{
+    margin-top: 50px;
+    color: #fff;
+}
+
+
+
+.billetera{
+    width: 50%;
+}
+
+.billetera a{
+    text-decoration: none;
+    align-items: center;
+}
+
+.btn-primary{
+    transform: translate(50%, 0%);
+}
   
-  
-/* END BODY */
+/* END SERVICES */
+
+/* WALLET */
+
+.container-info{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.app_billetera a{
+    text-decoration: none;
+    align-items: center;
+}
+
+.app_billetera{
+    width: 50%;
+    margin-top: 30px;
+}
+
+/* END WALLET */
+
+/* APPBILLETERA */
+
+.wallet_img{
+    width: 20%;
+    transform: translate(100%, 0%);
+}
+
+.section{
+    color: #fff;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.information{
+    text-align: center;
+}
+
+.contenedor-p{
+    margin-top: 20px;
+}
+
+.info-lista{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* END APPBILLETERA */
 
 /* MEDIA QUERIES */
 @media (max-width: 576px) {
@@ -198,5 +266,54 @@ ol{
         transform: translate(-0.2%, 0%);
         margin-left: 28px;
     }
-   }
+}
+
+@media (max-width: 600px) {
+    .contenedor {
+        background-image: url(../img/slide-multipagos.jpg);
+    }
+}
+
+@media (max-width: 600px){
+    .billetera{
+        width: 80%;
+    }
+    .btn-primary{
+
+        transform: translate(4%, 0%);
+    }
+}
+
+@media (max-width: 600px){
+    .app_billetera{
+        width: 80%;
+    }
+    .btn-primary{
+
+        transform: translate(4%, 0%);
+    }
+}
+
+@media (max-width: 600px){
+    .wallet_img{
+        width: 80%;
+        transform: translate(-2%, 0%);
+    }
+    .information{
+        text-align: center;
+    }
+    
+    .section{
+        margin-left: 10px;
+        margin-top: 40px;
+    }
+    .contenedor-p{
+        margin-right: 5px;
+    }
+    .titulo-cent{
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
 /* END MEDIA QUERIES */
