@@ -21,8 +21,9 @@ body{
 
 
 .navbar-toggler{
-    background-color: rgba(54, 55, 151, 0.67);
+    background-color: rgba(54, 55, 151, 0.67) !important;
 }
+
 
 .navbar-brand{
     color: #fff !important;
@@ -49,7 +50,7 @@ body{
 }
 
 .subtitulo--modif {
-    color: rgb(79, 7, 88);
+    color: rgb(255, 2, 150);
     font-family: "Inter", sans-serif;
     font-weight: 900;
     margin-top: 200px;
@@ -90,6 +91,24 @@ ol{
     padding: 0% !important;
   }
   
+/* TRANSACTIONS */
+
+/* BANNER, LOGO, SUBTITULO */
+
+.contenedor__transacciones{
+    background-image: url(../img/bg-cuentas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    object-fit: cover;
+    position: relative;
+    background-position-x:right;
+}
+
+
+/* END BANNER, LOGO, SUBTITULO */
+
+
 
 /* ACCORDION */
 
@@ -128,6 +147,9 @@ ol{
 }
 
 /* END ACCORDION */
+
+/* END TRANSACTIONS */
+
 /* FOOTER */
 
   footer {
@@ -177,6 +199,18 @@ ol{
   
 /* SERVICES */
 
+/* BANNER, LOGO, SUBTITULO */
+
+.contenedor__servicios{
+    background-image: url(../img/Accounting-Skills-You-Need-to-Succeed-on-the-Job-AT-Blog-05-26-20.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    object-fit: cover;
+    position: relative;
+}
+
+/* END BANNER, LOGO, SUBTITULO */
 .container{
     margin-top: 50px;
     color: #fff;
@@ -200,6 +234,20 @@ ol{
 /* END SERVICES */
 
 /* WALLET */
+
+/* BANNER, LOGO, SUBTITULO */
+
+.contenedor__billetera{
+    background-image: url(../img/openbankingfuture.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    object-fit: cover;
+    position: relative;
+}
+
+/* END BANNER, LOGO, SUBTITULO */
+
 
 .container-info{
     margin-top: 10px;
@@ -231,6 +279,15 @@ ol{
 
 /* APPBILLETERA */
 
+.contenedor__app{
+    background-image: url(../img/portadaEmpresasTarjetas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    object-fit: cover;
+    position: relative;
+}
+
 .wallet_img{
     width: 20%;
     transform: translate(100%, 0%);
@@ -259,6 +316,19 @@ ol{
 
 /* ABOUT */
 
+/* BANNER, LOGO, SUBTITULO */
+
+.contenedor__nosotros{
+    background-image: url(../img/Our+Story-overview-simg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    object-fit: cover;
+    position: relative;
+}
+
+/* END BANNER, LOGO, SUBTITULO */
+
 .image{
     width: 40%;
 }
@@ -276,6 +346,20 @@ ol{
 }
 
 /* END ABOUT */
+
+/* CONTACTUS */
+
+.contenedor__contacto{
+    background-image: url(../img/it_jobs.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    object-fit: cover;
+    position: relative;
+}
+
+
+/* END CONTACTUS */
 
 /* MEDIA QUERIES */
 @media (max-width: 576px) {
@@ -300,10 +384,49 @@ ol{
 }
 
 @media (max-width: 600px) {
-    .contenedor {
-        background-image: url(../img/slide-multipagos.jpg);
+    .contenedor__app {
+        background-image: url(../img/bg-sub-servicio.jpg);
+        background-size: inherit;
+        background-position-x:right;
+        height: 100%;
+    }
+
+    .subtitulo--modificado{
+        opacity: 0;
+    }
+    .logo-img{
+        margin-bottom: 40px;
     }
 }
+
+@media (max-width: 900px) {
+    .contenedor__app {
+        background-image: url(../img/bg-sub-servicio.jpg);
+        background-size: inherit;
+        background-position-x:right;
+        height: 200%;
+    }
+    .subtitulo--modificado{
+        opacity: 0;
+    }
+    .logo-img {
+        
+        margin-top: 40px; 
+        
+    }
+}
+
+@media (max-width: 1050px){
+    .contenedor__app{
+        background-image: url(../img/portadaEmpresasTarjetas.jpg);
+        background-size: cover;
+        background-position-x:right;
+    }
+    .logo-img{
+        transform: translate(0%, 30%);
+    }
+}
+
 
 @media (max-width: 600px){
     .billetera{
