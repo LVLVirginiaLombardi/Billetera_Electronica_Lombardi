@@ -32,6 +32,22 @@ body{
     color: #fff !important;
 }
 
+
+.logotipo{
+    height: 30px;
+}
+
+.lane{
+    text-decoration: none !important;
+}
+
+.lane__span{
+    font-size: 100px;
+    margin-left: 40px;
+    margin-top: 100% !important; /* NO LO PUEDO MOVER PARA ABAJO */
+    font-family: 'Inter', sans-serif;
+    color: #ff006a;
+}
 /* END NAVBAR */
 
 /* MAIN */
@@ -47,9 +63,9 @@ body{
 }
 
 .logo-img {
-    height: 200px;
-    width: 500px;
-    margin-top: 70px; 
+    height: 300px;
+    margin-top: 100px;
+    margin-left: 30px; 
     transform: translate(0%, 0%);
 }
 
@@ -57,11 +73,12 @@ body{
     color: rgb(255, 2, 150);
     font-family: "Inter", sans-serif;
     font-weight: 900;
-    margin-top: 200px;
+    margin-top: 15%;
     margin-left: 100px;
     font-size: larger;
     position: absolute;
-    transform: translate(100%, -500%);
+    transform: translate(100%, -40%);
+    opacity: 1;
 }
 
 #funciona, #info, #como{
@@ -100,14 +117,14 @@ ol{
 /* BANNER, LOGO, SUBTITULO */
 
 .contenedor__transacciones{
-    background-image: url(../img/bg-cuentas.jpg);
+    background-image: url(../img/bg-cuentas.jpg); /* DESAPARECIÓ IMAGEN :/ */
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
     object-fit: cover;
     position: relative;
-    background-position-x:right;
     font-family: 'Inter', sans-serif;
+    background-position-y: 100%;
 }
 
 
@@ -424,8 +441,12 @@ ol{
     height: 500px;
     object-fit: cover;
     position: relative;
+    background-position-y: 50%;
 }
 
+.container__2{
+    font-family: "Inter", sans-serif;
+}
 /* END BANNER, LOGO, SUBTITULO */
 
 .image{
@@ -437,7 +458,7 @@ ol{
     border-color: #7a13be;
     color: #6699ff !important;
 }
-  
+
 .btn-enviar:hover{
     background-color: #9739d6 !important;
     border-color: #9739d6;
@@ -455,23 +476,41 @@ ol{
     height: 500px;
     object-fit: cover;
     position: relative;
+    background-position-y: 50%;
 }
 
+.container__feed{
+    font-family: "Inter", sans-serif;
+}
 
 /* END CONTACTUS */
 
 /* MEDIA QUERIES */
-@media (max-width: 576px) {
+
+@media (max-width: 800px){
+    .contenedor {
+        background-image: url(../img/banner.jpeg);
+        background-size: cover;
+        background-position-x: 70%;
+        height: 100%;
+    }
+    .subtitulo--modif {
+        opacity: 0;
+    }   
     .logo-img { 
         height: 100px;
-        width: 300px;
-        transform: translate(-2%, 30%);
+        margin-left: 50px;
     }
     .subtitulo--modif {
         font-size: medium;
         transform: translate(-8%, 0%);
     
-      }
+    }
+}
+
+
+@media (max-width: 576px) {
+    
 }
 
 
@@ -630,4 +669,62 @@ ol{
     }
 }
 
+@media (max-width: 600px){
+    .contenedor__transacciones{
+        background-image: url(../img/bg-cuentas.jpg);
+        background-size: cover;
+        background-position-x: right;
+        height: 100%;
+    }
+}
+
+@media (min-width: 700px){
+    .contenedor__transacciones{
+        background-image: url(../img/bg-cuentas.jpg);
+        background-size: cover;
+        background-position-y: inherit;
+        height: 100%;
+    }
+    .logo-img{
+        transform: translate(0%, -10%);
+    }
+    .subtitulo--modif{
+        transform: translate(0%, -1170%);
+    }
+}
+
+@media (min-width: 700px){
+    .contenedor__servicios{
+        background-image: url(../img/Accounting-Skills-You-Need-to-Succeed-on-the-Job-AT-Blog-05-26-20.jpg);
+        background-size: cover;
+        background-position-x:right;
+    }
+}
+
+@media (max-width: 600){
+    .contenedor__nosotros{
+        background-image: url(../img/nosotros.jpg); /* NO ME DEJA CAMBIAR LA FOTO???????????? */
+        background-size: inherit;
+        background-position-x:right;
+        height: 100%;
+    }
+}
+
+@media (max-width: 600px){
+    .contenedor__contacto{
+        background-image: url(../img/it_jobs.jpg);
+        background-size: cover;
+        background-position-x:right;
+        height: 100%;
+    }
+}
+
+@media (max-width: 600px){
+    .contenedor__billetera{
+        background-image: url(../img/openbankingfuture.png);
+        background-size: cover;
+        background-position-x:right;
+        height: 100%;
+    }
+}
 /* END MEDIA QUERIES */
