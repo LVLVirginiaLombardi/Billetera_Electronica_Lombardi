@@ -245,6 +245,10 @@ ol{
 
 /* CADS */
 
+.shadow-lg{
+    background: black;
+}
+
 .container__internet{
     height: 80vh;
     
@@ -299,6 +303,30 @@ ol{
     font-family: 'Inter', sans-serif;
 }
 
+.asterisco{
+    color: darkgrey;
+    font-weight: 600;
+}
+
+.container__multi{
+    height: 210vh;
+}
+
+.card__multi{
+    width: 50%;
+    transform: translate(50%, 0%);
+    font-family: 'Inter', sans-serif;
+}
+
+.container__disponible{
+    height: 80vh;
+}
+
+.card__disponible{
+    width: 50%;
+    transform: translate(50%, 0%);
+    font-family: 'Inter', sans-serif;
+}
 
 /* END CARDS */
 
@@ -451,6 +479,58 @@ ol{
     .columna{
         transform: translate(-0.2%, 0%);
         margin-left: 28px;
+    }
+}
+
+@media (max-width: 600px){
+    .contenedor__servicios{
+        background-image: url(../img/consultoria.jpg);
+        background-size: cover;
+        background-position-x:right;
+        height: 100%;
+    }
+    .subtitulo--modif{
+        opacity: 0;
+    }
+    .container__internet{
+        height: 115vh;
+    }
+    
+    .card__internet{
+        width: 100%;
+        transform: translate(-0.05%, 0%);
+    }
+    .container__telef{
+        height: 263vh;
+    }
+    
+    .card__telef{
+        width: 100%;
+        transform: translate(-0.05%, 0%);
+    }
+    .container__appmov{
+        height: 275vh;
+    }
+    
+    .card__appmov{
+        width: 100%;
+        transform: translate(-0.05%, 0%);
+    }
+    .container__multi{
+        height: 333vh;
+    }
+    
+    .card__multi{
+        width: 100%;
+        transform: translate(-0.05%, 0%);
+    }
+    .container__disponible{
+        height: 120vh;
+    }
+    
+    .card__disponible{
+        width: 100%;
+        transform: translate(-0.05%, 0%);
     }
 }
 
