@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
 /* BODY */
 
 body{
@@ -13,6 +15,7 @@ body{
 
 .nav-link {
     color: #fff !important;
+    font-family: 'Inter', sans-serif;
 }
 
 .nav-link:hover{
@@ -40,6 +43,7 @@ body{
     height: 500px;
     object-fit: cover;
     position: relative;
+    font-family: 'Inter', sans-serif;
 }
 
 .logo-img {
@@ -103,6 +107,7 @@ ol{
     object-fit: cover;
     position: relative;
     background-position-x:right;
+    font-family: 'Inter', sans-serif;
 }
 
 
@@ -117,6 +122,7 @@ ol{
     margin-bottom: 20px;
     margin-top: 20px;
     text-align: center;
+    font-family: 'Inter', sans-serif;
 }
 
 .row-content{
@@ -156,6 +162,7 @@ ol{
     padding: 0% !important;
     background: linear-gradient(to left, #2193b0, #6dd5ed);
     margin-top: 150px;
+    font-family: 'Inter', sans-serif;
   }
 
   .col-item{
@@ -181,6 +188,7 @@ ol{
   
   address {
     color: white;
+    font-family: 'Inter', sans-serif;
   }
   .carousel-item {
     max-height: 620px;
@@ -208,12 +216,14 @@ ol{
     height: 500px;
     object-fit: cover;
     position: relative;
+    font-family: 'Inter', sans-serif;
 }
 
 /* END BANNER, LOGO, SUBTITULO */
 .container{
     margin-top: 50px;
     color: #fff;
+    
 }
 
 
@@ -225,12 +235,73 @@ ol{
 .billetera a{
     text-decoration: none;
     align-items: center;
+    font-family: 'Inter', sans-serif;
 }
 
 .btn-primary{
     transform: translate(50%, 0%);
+    font-family: 'Inter', sans-serif;
 }
-  
+
+/* CADS */
+
+.container__internet{
+    height: 80vh;
+    
+}
+
+.card__internet{
+    width: 50%;
+    transform: translate(50%, 0%);
+    font-family: 'Inter', sans-serif;
+}
+
+.card-title{
+    color: #1769c2;
+}
+
+.card-text{
+    color: #7a13be;
+}
+
+.card-subtitle{
+    color: #1769c2;
+    margin-bottom: 10px;
+}
+
+.span-subtitle{
+    color: #7a13be;
+}
+
+.container__telef{
+    height: 150vh;
+}
+
+.card__telef{
+    width: 50%;
+    transform: translate(50%, 0%);
+    font-family: 'Inter', sans-serif;
+}
+
+.card-subtitle--modif{
+    color: #1769c2;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.container__appmov{
+    height: 150vh;
+}
+
+.card__appmov{
+    width: 50%;
+    transform: translate(50%, 0%);
+    font-family: 'Inter', sans-serif;
+}
+
+
+/* END CARDS */
+
 /* END SERVICES */
 
 /* WALLET */
@@ -265,14 +336,14 @@ ol{
 }
 
 .subtitulo--modificado{
-    color: rgb(79, 7, 88);
+    color: rgb(255, 1, 158);
     font-family: "Inter", sans-serif;
     font-weight: 900;
     margin-top: 200px;
-    margin-left: 100px;
+    margin-left: 50px;
     font-size: larger;
     position: absolute;
-    transform: translate(-5%, -200%);
+    transform: translate(-5%, -700%);
 }
 
 /* END WALLET */
