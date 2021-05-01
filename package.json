@@ -1,0 +1,24 @@
+{
+  "name": "billetera_electronica_lombardi",
+  "version": "1.0.0",
+  "description": "Billetera Electrónica Banco LANE (ficticio)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LVLVirginiaLombardi/Billetera_Electronica_Lombardi.git"
+  },
+  "author": "Lilian Virginia Lombardi López",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LVLVirginiaLombardi/Billetera_Electronica_Lombardi/issues"
+  },
+  "homepage": "https://github.com/LVLVirginiaLombardi/Billetera_Electronica_Lombardi#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7"
+  }
+}
