@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Ruda:wght@700&display=swap');
 /* BODY */
 
 body{
@@ -70,16 +70,6 @@ body{
     font-family: 'Inter', sans-serif;
 }
 
-/* .contenedor {
-    background-image: url(../img/banner.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
-    display: flex;
-    justify-content: left;
-    align-items: left;
-} */
-
 .logo-img {
     height: 200px; 
     margin-top: 200px;
@@ -89,14 +79,14 @@ body{
 
 .subtitulo--modif {
     color: rgb(255, 2, 150);
-    font-family: "Inter", sans-serif;
-    font-weight: 900;
-    margin-top: 20%;
-    margin-left: 100px;
+    font-family: 'Ruda', sans-serif;
+    margin-top: 15%;
+    margin-left: 20%;
     font-size: larger;
     position: absolute;
-    transform: translate(100%, -1400%);
+    transform: translate(0%, 0%);
     opacity: 1;
+
 }
 
 #funciona, #info, #como{
@@ -112,24 +102,24 @@ ol{
     color: white;
     margin-top: 50px;
     margin-bottom: 0px;
-  }
-  
-  .btn {
+}
+
+.btn {
     background-color: #7a13be;
     border-color: #7a13be;
     margin: 20px;
-  }
-  
+}
+
 .btn:hover{
     background-color: #9739d6;
     border-color: #9739d6;
 }
-  .banner {
+.banner {
     margin-top: 50px;
     margin-bottom: 20px;
     padding: 0% !important;
-  }
-  
+}
+
 /* TRANSACTIONS */
 
 /* BANNER, LOGO, SUBTITULO */
@@ -171,7 +161,7 @@ ol{
 }
 
 .card{
-    background-color: #530f81;
+    background-color: #8b1e43;
 }
 
 .card-body{
@@ -179,7 +169,7 @@ ol{
 }
 #accordion a {
     text-decoration: none;
-  }
+}
 .a{
     color: #007bff;
 }
@@ -193,18 +183,18 @@ ol{
 
 /* FOOTER */
 
-  footer {
+footer {
     padding: 0% !important;
     background: linear-gradient(to left, #2193b0, #6dd5ed);
     margin-top: 150px;
     font-family: 'Inter', sans-serif;
-  }
+}
 
-  .col-item{
-      color: #fff;
-      margin-top: 10px;
-      text-decoration: none;
-  }
+.col-item{
+    color: #fff;
+    margin-top: 10px;
+    text-decoration: none;
+}
 
 .col-item:hover{
     text-decoration: none;
@@ -213,33 +203,31 @@ ol{
 /* END FOOTER */
 
 
-  .fab {
+.fab {
     color: white;
-  }
-  
-  .footer-address-icon {
+}
+
+.footer-address-icon {
     padding-right: 10px;
-  }
-  
-  address {
+}
+
+address {
     color: white;
     font-family: 'Inter', sans-serif;
-  }
-  .carousel-item {
+}
+.carousel-item {
     max-height: 620px;
-  }
-  
-  .carousel-caption {
+}
+
+.carousel-caption {
     font-weight: bolder;
     color: cornsilk;
-  }
-  
- 
-  
-  .tab-content {
+}
+
+.tab-content {
     padding-top: 20px;
-  }
-  
+}
+
 /* SERVICES */
 
 /* BANNER, LOGO, SUBTITULO */
@@ -260,8 +248,6 @@ ol{
     color: #fff;
     
 }
-
-
 
 .billetera{
     width: 50%;
@@ -402,8 +388,7 @@ ol{
 
 .subtitulo--modificado{
     color: rgb(255, 1, 128);
-    font-family: "Inter", sans-serif;
-    font-weight: 900;
+    font-family: 'Ruda', sans-serif;
     margin-top: 200px;
     margin-left: 50px;
     font-size: larger;
@@ -819,4 +804,10 @@ ol{
   .signup-section {
     padding: 0.3rem 0rem;
   } 
+
+@media (min-width:1000){
+    .subtitulo--modif {
+        margin-left: 200%;
+    }   
+}
 /* END MEDIA QUERIES */
