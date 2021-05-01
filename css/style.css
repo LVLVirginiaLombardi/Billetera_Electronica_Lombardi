@@ -11,6 +11,9 @@ body{
 
 .navbar-light{
     background-color: rgba(7, 8, 90, 0.67);
+    top: 0;
+    left: 0;
+    width: 100vw;
 }
 
 .nav-link {
@@ -366,35 +369,17 @@ ol{
 
 /* WALLET */
 
-/* MODAL */
-
-.button-modal{
-    transform: translate(500%, -500%);
-}
-
-.modal-container{
-    height: 100%;
-}
-
-.modal-body{
-    height: 100%;
-}
-
-.modal-footer{
-    background-color: #fff;
-}
-
-/* END MODAL */
 
 /* BANNER, LOGO, SUBTITULO */
 
 .contenedor__billetera{
-    background-image: url(../img/openbankingfuture.png);
+    background-image: url(../img/istockphoto-1181008199-612x612.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
     object-fit: cover;
     position: relative;
+    background-position-y: 60%;
 }
 
 /* END BANNER, LOGO, SUBTITULO */
@@ -416,19 +401,41 @@ ol{
 }
 
 .subtitulo--modificado{
-    color: rgb(255, 1, 158);
+    color: rgb(255, 1, 128);
     font-family: "Inter", sans-serif;
     font-weight: 900;
     margin-top: 200px;
     margin-left: 50px;
     font-size: larger;
     position: absolute;
-    transform: translate(-5%, -900%);
+    transform: translate(80%, -1200%);
 }
 
 /* END WALLET */
 
 /* APPBILLETERA */
+
+/* MODAL */
+
+.button-modal{
+    transform: translate(500%, -500%);
+}
+
+.modal-container{
+    height: 100%;
+    width: 50%;
+}
+
+.modal-body{
+    height: 100%;
+}
+
+.modal-footer{
+    background-color: #fff;
+}
+
+/* END MODAL */
+
 
 .contenedor__app{
     background-image: url(../img/portadaEmpresasTarjetas.jpg);
@@ -626,10 +633,10 @@ ol{
 
 @media (max-width: 900px) {
     .contenedor__app {
-        background-image: url(../img/bg-sub-servicio.jpg);
-        background-size: inherit;
-        background-position-x:right;
-        height: 200%;
+        background-image: url(../img);
+        background-size: cover;
+        background-position-x: left;
+        height: 100%;
     }
     .subtitulo--modificado{
         opacity: 0;
@@ -641,11 +648,12 @@ ol{
     }
 }
 
-@media (max-width: 1050px){
+@media (max-width: 700px){
     .contenedor__app{
-        background-image: url(../img/portadaEmpresasTarjetas.jpg);
+        background-image: url(../img/undraw_Mobile_app_re_catg.png);
         background-size: cover;
-        background-position-x:right;
+        background-position-x: right;
+        height: 100%;
     }
     .logo-img{
         transform: translate(0%, 30%);
@@ -709,11 +717,11 @@ ol{
         background-image: url(../img/bg-cuentas.jpg);
         background-size: cover;
         background-position-x: right;
-        height: 100%;
+        height: 50%;
     }
 }
 
-/* @media (min-width: 900px){
+@media (min-width: 900px){
     .contenedor__transacciones{
         background-image: url(../img/bg-cuentas.jpg);
         background-size: cover;
@@ -726,7 +734,7 @@ ol{
     .subtitulo--modif{
         transform: translate(0%, -1170%);
     }
-} */
+}
 
 @media (min-width: 700px){
     .contenedor__servicios{
@@ -763,7 +771,52 @@ ol{
     }
 }
 
-@media (min-width: 900px){
+/* @media (max-width: 900px){
+    .contenedor__app{
+        background-image: url(../img/portadaEmpresasTarjetas.jpg);
+        background-size: cover;
+        background-position-x: right;
+        height: 100%;
+    }
+    .logo-img{
+        transform: translate(0%, -30%);
+    }
+
+} */
+
+
+  
+  @media (min-width: 500px){
+    .modal-dialog {
+      max-width: 400px;
+    }
+      .modal-content {
+        padding: 1rem;
+      }
+  }
+  
+  .modal-header {
     
-}
+      margin-top: -1.5rem;
+  }
+  
+  .form-title {
+    margin: -2rem 0rem 2rem;
+  }
+  
+  .btn-round {
+    border-radius: 3rem;
+  }
+  
+  .delimiter {
+    padding: 1rem;  
+  }
+  
+  .social-buttons {
+      margin: 0 0.5rem 1rem;
+  }
+  
+  .signup-section {
+    padding: 0.3rem 0rem;
+  } 
 /* END MEDIA QUERIES */
