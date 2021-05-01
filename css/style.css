@@ -53,13 +53,6 @@ body{
     text-decoration: none;
 }
 
-/* .lane__span{
-    font-size: 100px;
-    margin-left: 40px;
-    margin-top: 100% !important; 
-    font-family: 'Inter', sans-serif;
-    color: #ff006a;
-} */
 /* END NAVBAR */
 
 /* MAIN */
@@ -269,7 +262,7 @@ address {
     font-family: 'Inter', sans-serif;
 }
 
-/* CADS */
+/* CARDS */
 
 .shadow-lg{
     background: black;
@@ -347,20 +340,18 @@ address {
 .subtitulo--modificado{
     color: rgb(255, 1, 128);
     font-family: 'Ruda', sans-serif;
-    margin-top: 200px;
     margin-left: 50px;
     font-size: larger;
-    position: absolute;
-    transform: translate(80%, -1200%);
 }
 
+a{
+    text-decoration: none !important;
+}
 /* END WALLET */
 
 /* APPBILLETERA */
 
 /* MODAL */
-
-
 
 .modal-container{
     height: 100%;
@@ -409,6 +400,14 @@ address {
 .info-lista{
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.button-modal{
+    color: #007bff;
+}
+
+.button-modal:hover{
+    color: #1769c2 !important;
 }
 
 /* END APPBILLETERA */
@@ -477,31 +476,19 @@ address {
         background-position-x: 70%;
         height: 100%;
     }
-    /* .subtitulo--modif {
+    .subtitulo--modif {
         opacity: 0;
-    }    */
+    } 
     .logo-lane { 
         width: 40%;
         margin-left: 50px;
         margin-top: 20%;
-    }
-    
-    .subtitulo--modif {
-        font-size: medium;
-        transform: translate(-8%, 0%);
-    
     }
     .titulo-name {
         font-size: 50px;
         margin-right: 20px;
     }
 }
-
-
-@media (max-width: 576px) {
-    
-}
-
 
 @media (max-width: 576px) { 
     .columna{
@@ -512,7 +499,7 @@ address {
 
 @media (max-width: 600px){
     .contenedor__servicios{
-        background-image: url(../img/consultoria.jpg);
+        background-image: url(../img/online-banking-digital-money-technology_31965-2414.jpg);
         background-size: cover;
         background-position-x:right;
         height: 100%;
@@ -520,49 +507,6 @@ address {
     .subtitulo--modif{
         opacity: 0;
     }
-    .container__internet{
-        height: 115vh;
-    }
-    
-    .card__internet{
-        width: 100%;
-        transform: translate(-0.05%, 0%);
-    }
-    .container__telef{
-        height: 263vh;
-    }
-    
-    .card__telef{
-        width: 100%;
-        transform: translate(-0.05%, 0%);
-    }
-    .container__appmov{
-        height: 275vh;
-    }
-    
-    .card__appmov{
-        width: 100%;
-        transform: translate(-0.05%, 0%);
-    }
-    .container__multi{
-        height: 333vh;
-    }
-    
-    .card__multi{
-        width: 100%;
-        transform: translate(-0.05%, 0%);
-    }
-    .container__disponible{
-        height: 120vh;
-    }
-    
-    .card__disponible{
-        width: 100%;
-        transform: translate(-0.05%, 0%);
-    }
-}
-
-@media (max-width: 600px) {
     .contenedor__app {
         background-image: url(../img/bg-sub-servicio.jpg);
         background-size: inherit;
@@ -606,9 +550,6 @@ address {
         transform: translate(0%, 30%);
     }
 }
-
-
-
 
 @media (max-width: 600px){
     .billetera{
@@ -683,15 +624,6 @@ address {
     }
 }
 
-/* @media (max-width: 600){
-    .contenedor__nosotros{
-        background-image: url(../img/nosotros.jpg); /* NO ME DEJA CAMBIAR LA FOTO???????????? */
-       /*  background-size: inherit;
-        background-position-x:right;
-        height: 100%;
-    }
-} */ 
-
 @media (max-width: 600px){
     .contenedor__billetera{
         background-image: url(../img/openbankingfuture.png);
@@ -716,31 +648,16 @@ address {
     }
 }
 
-/* @media (max-width: 900px){
-    .contenedor__app{
-        background-image: url(../img/portadaEmpresasTarjetas.jpg);
-        background-size: cover;
-        background-position-x: right;
-        height: 100%;
-    }
-    .logo-img{
-        transform: translate(0%, -30%);
-    }
-
-} */
-
-
-  
-  @media (min-width: 500px){
+@media (min-width: 500px){
     .modal-dialog {
-      max-width: 400px;
+        max-width: 400px;
     }
-      .modal-content {
+    .modal-content {
         padding: 1rem;
-      }
-  }
-  
-  .modal-header {
+    }
+}
+
+.modal-header {
     
       margin-top: -1.5rem;
   }
