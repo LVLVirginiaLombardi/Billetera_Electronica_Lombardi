@@ -811,11 +811,11 @@ address {
     padding: 0.3rem 0rem;
   } 
 
-@media (min-width:1000px){
+/* @media (min-width:1000px){
     .subtitulo--modif {
         margin-left: 200%;
     }   
-}
+} */
 @media (max-width: 600px){
     .contenedor__nosotros{
         background-image: url(../img/nosotros.jpg);
