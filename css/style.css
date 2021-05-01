@@ -729,16 +729,22 @@ address {
     }
 }
 
-@media (max-width: 600){
+/* @media (max-width: 600){
     .contenedor__nosotros{
         background-image: url(../img/nosotros.jpg); /* NO ME DEJA CAMBIAR LA FOTO???????????? */
-        background-size: inherit;
+       /*  background-size: inherit;
         background-position-x:right;
         height: 100%;
     }
-}
+} */ 
 
 @media (max-width: 600px){
+    .contenedor__billetera{
+        background-image: url(../img/openbankingfuture.png);
+        background-size: cover;
+        background-position-x:right;
+        height: 100%;
+    }
     .contenedor__contacto{
         background-image: url(../img/it_jobs.jpg);
         background-size: cover;
@@ -805,9 +811,17 @@ address {
     padding: 0.3rem 0rem;
   } 
 
-@media (min-width:1000){
+@media (min-width:1000px){
     .subtitulo--modif {
         margin-left: 200%;
     }   
+}
+@media (max-width: 600px){
+    .contenedor__nosotros{
+        background-image: url(../img/nosotros.jpg);
+        background-size: cover;
+        background-position-x: left;
+        height: 100%;
+    }
 }
 /* END MEDIA QUERIES */
