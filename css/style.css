@@ -1,14 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Ruda:wght@700&display=swap');
-.logo-lane {
-    display: inline-block;
-    width: 200px;
 
-}
 
-.titulo-name {
-    font-size: 48px;
-}
+
 /* BODY */
 
 body{
@@ -59,42 +53,42 @@ body{
     text-decoration: none;
 }
 
-.lane__span{
+/* .lane__span{
     font-size: 100px;
     margin-left: 40px;
-    margin-top: 100% !important; /* NO LO PUEDO MOVER PARA ABAJO */
+    margin-top: 100% !important; 
     font-family: 'Inter', sans-serif;
     color: #ff006a;
-}
+} */
 /* END NAVBAR */
 
 /* MAIN */
 
-.contenedor {
+.contenedor__index {
     background-image: url(../img/banner.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
     object-fit: cover;
-    position: relative;
-    font-family: 'Inter', sans-serif;
 }
 
-.logo-img {
-    height: 200px; 
-    margin-top: 200px;
-    margin-left: 50px;
-    transform: translate(0%, 0%);
+.logo-lane {
+    display: inline-block;
+    width: 300px;
+    margin-top: 20%;
+}
+
+.titulo-name {
+    font-size: 100px;
+    color: rgb(255, 2, 107);
+    font-family: 'Inter', sans-serif;
+    margin-top: 8%;
 }
 
 .subtitulo--modif {
-    color: rgb(255, 2, 150);
+    color: rgb(255, 2, 107);
     font-family: 'Ruda', sans-serif;
-    margin-top: 15%;
-    margin-left: 20%;
     font-size: larger;
-    position: absolute;
-    transform: translate(0%, 0%);
     opacity: 1;
 
 }
@@ -197,6 +191,9 @@ footer {
     background: linear-gradient(to left, #2193b0, #6dd5ed);
     margin-top: 150px;
     font-family: 'Inter', sans-serif;
+    bottom: 0;
+    left: 0;
+
 }
 
 .col-item{
@@ -253,7 +250,7 @@ address {
 
 /* END BANNER, LOGO, SUBTITULO */
 .container{
-    padding-top: 50px; /* Leonardo */
+    padding-top: 50px; 
     color: #fff;
     
 }
@@ -278,17 +275,6 @@ address {
     background: black;
 }
 
-.container__internet{
-    height: 80vh;
-    
-}
-
-.card__internet{
-    width: 50%;
-    transform: translate(50%, 0%);
-    font-family: 'Inter', sans-serif;
-}
-
 .card-title{
     color: #1769c2;
 }
@@ -306,30 +292,10 @@ address {
     color: #7a13be;
 }
 
-.container__telef{
-    height: 150vh;
-}
-
-.card__telef{
-    width: 50%;
-    transform: translate(50%, 0%);
-    font-family: 'Inter', sans-serif;
-}
-
 .card-subtitle--modif{
     color: #1769c2;
     margin-bottom: 10px;
     margin-top: 20px;
-}
-
-.container__appmov{
-    height: 150vh;
-}
-
-.card__appmov{
-    width: 50%;
-    transform: translate(50%, 0%);
-    font-family: 'Inter', sans-serif;
 }
 
 .asterisco{
@@ -337,24 +303,8 @@ address {
     font-weight: 600;
 }
 
-.container__multi{
-    height: 210vh;
-}
-
-.card__multi{
-    width: 50%;
-    transform: translate(50%, 0%);
-    font-family: 'Inter', sans-serif;
-}
-
-.container__disponible{
-    height: 80vh;
-}
-
-.card__disponible{
-    width: 50%;
-    transform: translate(50%, 0%);
-    font-family: 'Inter', sans-serif;
+.a{
+    text-decoration: none !important;
 }
 
 /* END CARDS */
@@ -410,9 +360,7 @@ address {
 
 /* MODAL */
 
-.button-modal{
-    transform: translate(500%, -500%);
-}
+
 
 .modal-container{
     height: 100%;
@@ -523,23 +471,29 @@ address {
 /* MEDIA QUERIES */
 
 @media (max-width: 800px){
-    .contenedor {
+    .contenedor__index {
         background-image: url(../img/banner.jpeg);
         background-size: cover;
         background-position-x: 70%;
         height: 100%;
     }
-    .subtitulo--modif {
+    /* .subtitulo--modif {
         opacity: 0;
-    }   
-    .logo-img { 
-        height: 100px;
+    }    */
+    .logo-lane { 
+        width: 40%;
         margin-left: 50px;
+        margin-top: 20%;
     }
+    
     .subtitulo--modif {
         font-size: medium;
         transform: translate(-8%, 0%);
     
+    }
+    .titulo-name {
+        font-size: 50px;
+        margin-right: 20px;
     }
 }
 
