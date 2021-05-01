@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Ruda:wght@700&display=swap');
+.logo-lane {
+    display: inline-block;
+    width: 200px;
+
+}
+
+.titulo-name {
+    font-size: 48px;
+}
 /* BODY */
 
 body{
@@ -13,7 +22,8 @@ body{
     background-color: rgba(7, 8, 90, 0.67);
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
+    
 }
 
 .nav-link {
@@ -107,7 +117,6 @@ ol{
 .btn {
     background-color: #7a13be;
     border-color: #7a13be;
-    margin: 20px;
 }
 
 .btn:hover{
@@ -244,7 +253,7 @@ address {
 
 /* END BANNER, LOGO, SUBTITULO */
 .container{
-    margin-top: 50px;
+    padding-top: 50px; /* Leonardo */
     color: #fff;
     
 }
@@ -260,7 +269,6 @@ address {
 }
 
 .btn-primary{
-    transform: translate(50%, 0%);
     font-family: 'Inter', sans-serif;
 }
 
@@ -646,23 +654,15 @@ address {
 }
 
 
+
+
 @media (max-width: 600px){
     .billetera{
         width: 80%;
     }
-    .btn-primary{
 
-        transform: translate(4%, 0%);
-    }
-}
-
-@media (max-width: 600px){
     .app_billetera{
         width: 80%;
-    }
-    .btn-primary{
-
-        transform: translate(4%, 0%);
     }
     .subtitulo--modificado{
         transform: translate(-20%, -200%);
