@@ -1,0 +1,209 @@
+/* MEDIA QUERIES */
+
+@media (max-width: 800px){
+    .contenedor__index {
+        background-image: url(../img/banner.jpeg);
+        background-size: cover;
+        background-position-x: 70%;
+        height: 100%;
+    }
+    .subtitulo--modif {
+        opacity: 0;
+    } 
+    .logo-lane { 
+        width: 40%;
+        margin-left: 50px;
+        margin-top: 20%;
+    }
+    .titulo-name {
+        font-size: 50px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 576px) { 
+    .columna{
+        transform: translate(-0.2%, 0%);
+        margin-left: 28px;
+    }
+}
+
+@media (max-width: 600px){
+    .contenedor__servicios{
+        background-image: url(../img/online-banking-digital-money-technology_31965-2414.jpg);
+        background-size: cover;
+        background-position-x:right;
+        height: 100%;
+    }
+    .subtitulo--modif{
+        opacity: 0;
+    }
+    .contenedor__app {
+        background-image: url(../img/bg-sub-servicio.jpg);
+        background-size: inherit;
+        background-position-x:right;
+        height: 100%;
+    }
+
+    .subtitulo--modificado{
+        opacity: 0;
+    }
+    .logo-img{
+        margin-bottom: 40px;
+    }
+}
+
+
+
+@media (max-width: 800px){
+    .contenedor__app{
+        background-image: url(../img/undraw_Mobile_app_re_catg.png);
+        background-size: cover;
+        background-position-x: right;
+        height: 100%;
+    }
+    .logo-img{
+        transform: translate(0%, 30%);
+    }
+}
+
+@media (max-width: 600px){
+    .billetera{
+        width: 80%;
+    }
+
+    .app_billetera{
+        width: 80%;
+    }
+    .subtitulo--modificado{
+        transform: translate(-20%, -200%);
+    }
+}
+
+@media (max-width: 600px){
+    .wallet_img{
+        width: 80%;
+        transform: translate(-2%, 0%);
+    }
+    .information{
+        text-align: center;
+    }
+    
+    .section{
+        margin-left: 10px;
+        margin-top: 40px;
+    }
+    .contenedor-p{
+        margin-right: 5px;
+    }
+    .titulo-cent{
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 600px){
+    .image{
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px){
+    .contenedor__transacciones{
+        background-image: url(../img/bg-cuentas.jpg);
+        background-size: cover;
+        background-position-x: right;
+        height: 50%;
+    }
+}
+
+@media (min-width: 900px){
+    .contenedor__transacciones{
+        background-image: url(../img/bg-cuentas.jpg);
+        background-size: cover;
+        background-position-y: inherit;
+        height: 100%;
+    }
+    .logo-img{
+        transform: translate(0%, -10%);
+    }
+    .subtitulo--modif{
+        transform: translate(0%, -1170%);
+    }
+}
+
+@media (min-width: 700px){
+    .contenedor__servicios{
+        background-image: url(../img/Accounting-Skills-You-Need-to-Succeed-on-the-Job-AT-Blog-05-26-20.jpg);
+        background-size: cover;
+        background-position-x:right;
+    }
+}
+
+@media (max-width: 600px){
+    .contenedor__billetera{
+        background-image: url(../img/openbankingfuture.png);
+        background-size: cover;
+        background-position-x:right;
+        height: 100%;
+    }
+    .contenedor__contacto{
+        background-image: url(../img/it_jobs.jpg);
+        background-size: cover;
+        background-position-x:right;
+        height: 100%;
+    }
+}
+
+@media (max-width: 600px){
+    .contenedor__billetera{
+        background-image: url(../img/openbankingfuture.png);
+        background-size: cover;
+        background-position-x:right;
+        height: 100%;
+    }
+}
+
+@media (min-width: 500px){
+    .modal-dialog {
+        max-width: 400px;
+    }
+    .modal-content {
+        padding: 1rem;
+    }
+}
+
+.modal-header {
+    
+    margin-top: -1.5rem;
+}
+
+.form-title {
+    margin: -2rem 0rem 2rem;
+}
+
+.btn-round {
+    border-radius: 3rem;
+}
+
+.delimiter {
+    padding: 1rem;  
+}
+
+.social-buttons {
+    margin: 0 0.5rem 1rem;
+}
+
+.signup-section {
+    padding: 0.3rem 0rem;
+} 
+
+@media (max-width: 600px){
+    .contenedor__nosotros{
+        background-image: url(../img/nosotros.jpg);
+        background-size: cover;
+        background-position-x: left;
+        height: 100%;
+    }
+}
+/* END MEDIA QUERIES */

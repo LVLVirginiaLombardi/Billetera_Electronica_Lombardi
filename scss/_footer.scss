@@ -1,0 +1,41 @@
+/* FOOTER */
+
+footer {
+    padding: 0% !important;
+    background: linear-gradient(to left, #2193b0, #6dd5ed);
+    margin-top: 150px;
+    font-family: $font-family-1;
+    bottom: 0;
+    left: 0;
+
+}
+
+.col-item{
+    color: #fff;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.col-item:hover{
+    text-decoration: none;
+    color: rgb(184, 32, 108);
+}
+
+.fab {
+    color: white;
+}
+
+.footer-address-icon {
+    padding-right: 10px;
+}
+
+address {
+    color: white;
+    font-family: $font-family-1;
+}
+
+
+.tab-content {
+    padding-top: 20px;
+}
+/* END FOOTER */

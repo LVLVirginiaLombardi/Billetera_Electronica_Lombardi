@@ -1,0 +1,76 @@
+/* SERVICES */
+
+/* BANNER, LOGO, SUBTITULO */
+
+.contenedor__servicios{
+    background-image: url(../img/Accounting-Skills-You-Need-to-Succeed-on-the-Job-AT-Blog-05-26-20.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    font-family: $font-family-1;
+    background-position-y: bottom;
+}
+
+/* END BANNER, LOGO, SUBTITULO */
+.container{
+    padding-top: 50px; 
+    color: #fff;
+    
+}
+
+.billetera{
+    width: 50%;
+}
+
+.billetera a{
+    text-decoration: none;
+    align-items: center;
+    font-family: $font-family-1;
+}
+
+.btn-primary{
+    font-family: $font-family-1;
+}
+
+/* CARDS */
+
+.shadow-lg{
+    background: black;
+}
+
+.card-title{
+    color: #1769c2;
+}
+
+.card-text{
+    color: #7a13be;
+}
+
+.card-subtitle{
+    color: #1769c2;
+    margin-bottom: 10px;
+}
+
+.span-subtitle{
+    color: #7a13be;
+}
+
+.card-subtitle--modif{
+    color: #1769c2;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.asterisco{
+    color: darkgrey;
+    font-weight: 600;
+}
+
+.a{
+    text-decoration: none !important;
+}
+
+/* END CARDS */
+
+/* END SERVICES */

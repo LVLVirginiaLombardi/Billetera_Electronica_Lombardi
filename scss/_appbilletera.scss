@@ -1,0 +1,68 @@
+/* APPBILLETERA */
+
+/* MODAL */
+
+.modal-container{
+    height: 100%;
+    width: 50%;
+}
+
+.modal-body{
+    height: 100%;
+}
+
+.modal-footer{
+    background-color: #fff;
+}
+
+/* END MODAL */
+
+
+.contenedor__app{
+    background-image: url(../img/portadaEmpresasTarjetas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    object-fit: cover;
+    position: relative;
+}
+
+.wallet_img{
+    width: 20%;
+    transform: translate(100%, 0%);
+}
+
+.section{
+    color: #fff;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.information{
+    text-align: center;
+    font-family: $font-family-1;
+}
+
+.contenedor-p{
+    margin-top: 20px;
+}
+
+.info-lista{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: $font-family-1;
+}
+
+.button-modal{
+    color: #007bff;
+}
+
+.button-modal:hover{
+    color: $color-hover !important;
+}
+
+.titulo-cent{
+    font-family: $font-family-1;
+}
+
+/* END APPBILLETERA */

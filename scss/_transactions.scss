@@ -1,0 +1,58 @@
+/* TRANSACTIONS */
+
+/* BANNER, LOGO, SUBTITULO */
+
+.contenedor__transacciones{
+    background-image: url(../img/depositphotos_46160279-stock-photo-woman-doing-online-shopping.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    object-fit: cover;
+    position: relative;
+    font-family: $font-family-1;
+    background-position-y: 100%;
+}
+
+
+/* END BANNER, LOGO, SUBTITULO */
+
+/* ACCORDION */
+
+.transacciones-titulo{
+    color: #fff;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: $font-family-1;
+}
+
+.row-content{
+    position: relative;
+    width: 100%;
+}
+
+.columna{
+    position: relative;
+    transform: translate(50%, 0%);
+}
+
+.card{
+    background-color: #8b1e43;
+}
+
+.card-body{
+    background-color: #fff;
+}
+#accordion a {
+    text-decoration: none;
+}
+.a{
+    color: #007bff;
+}
+.a:hover{
+    color: #1769c2 !important;
+}
+
+/* END ACCORDION */
+
+/* END TRANSACTIONS */

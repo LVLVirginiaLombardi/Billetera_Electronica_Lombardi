@@ -1,9 +1,65 @@
+/* ABOUT */
+/* END ABOUT */
+/* FONT FAMILY */
+/* END FONT FAMILY */
+/* MAIN */
+/* END MAIN */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Ruda:wght@700&display=swap");
 /* BODY */
 body {
   background-image: linear-gradient(to right, #0b8793, #360033);
   z-index: 0; }
+
+/* MAIN */
+.contenedor__index {
+  background-image: url(../img/banner.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  object-fit: cover; }
+
+.logo-lane {
+  display: inline-block;
+  width: 300px;
+  margin-top: 20%; }
+
+.titulo-name {
+  font-size: 100px;
+  color: #ff026b;
+  font-family: "Inter", sans-serif;
+  margin-top: 8%; }
+
+.subtitulo--modif {
+  color: #ff026b;
+  font-family: "Ruda", sans-serif;
+  font-size: larger;
+  opacity: 1; }
+
+#funciona, #info, #como {
+  color: #fff; }
+
+ol {
+  margin-top: 20%; }
+
+.jumbotron {
+  background-color: #6699ff;
+  color: #fff;
+  margin-top: 50px;
+  margin-bottom: 0px; }
+
+.btn {
+  background-color: #7a13be;
+  border-color: #7a13be; }
+
+.btn:hover {
+  background-color: #9739d6;
+  border-color: #9739d6; }
+
+.banner {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  padding: 0% !important; }
 
 /* NAVBAR */
 .navbar-light {
@@ -14,7 +70,7 @@ body {
 
 .nav-link {
   color: #fff !important;
-  font-family: 'Inter', sans-serif; }
+  font-family: "Inter", sans-serif; }
 
 .nav-link:hover {
   color: #c5bea2 !important; }
@@ -36,56 +92,45 @@ body {
   text-decoration: none; }
 
 /* END NAVBAR */
-/* MAIN */
-.contenedor__index {
-  background-image: url(../img/banner.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 500px;
-  object-fit: cover; }
+.carousel-item {
+  max-height: 620px; }
 
-.logo-lane {
-  display: inline-block;
-  width: 300px;
-  margin-top: 20%; }
+.carousel-caption {
+  font-weight: bolder;
+  color: cornsilk; }
 
-.titulo-name {
-  font-size: 100px;
-  color: #ff026b;
-  font-family: 'Inter', sans-serif;
-  margin-top: 8%; }
+/* FOOTER */
+footer {
+  padding: 0% !important;
+  background: linear-gradient(to left, #2193b0, #6dd5ed);
+  margin-top: 150px;
+  font-family: "Inter", sans-serif;
+  bottom: 0;
+  left: 0; }
 
-.subtitulo--modif {
-  color: #ff026b;
-  font-family: 'Ruda', sans-serif;
-  font-size: larger;
-  opacity: 1; }
+.col-item {
+  color: #fff;
+  margin-top: 10px;
+  text-decoration: none; }
 
-#funciona, #info, #como {
-  color: #fff; }
+.col-item:hover {
+  text-decoration: none;
+  color: #b8206c; }
 
-ol {
-  margin-top: 20%; }
+.fab {
+  color: white; }
 
-.jumbotron {
-  background-color: #6699ff;
+.footer-address-icon {
+  padding-right: 10px; }
+
+address {
   color: white;
-  margin-top: 50px;
-  margin-bottom: 0px; }
+  font-family: "Inter", sans-serif; }
 
-.btn {
-  background-color: #7a13be;
-  border-color: #7a13be; }
+.tab-content {
+  padding-top: 20px; }
 
-.btn:hover {
-  background-color: #9739d6;
-  border-color: #9739d6; }
-
-.banner {
-  margin-top: 50px;
-  margin-bottom: 20px;
-  padding: 0% !important; }
-
+/* END FOOTER */
 /* TRANSACTIONS */
 /* BANNER, LOGO, SUBTITULO */
 .contenedor__transacciones {
@@ -95,7 +140,7 @@ ol {
   height: 500px;
   object-fit: cover;
   position: relative;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background-position-y: 100%; }
 
 /* END BANNER, LOGO, SUBTITULO */
@@ -105,7 +150,7 @@ ol {
   margin-bottom: 20px;
   margin-top: 20px;
   text-align: center;
-  font-family: 'Inter', sans-serif; }
+  font-family: "Inter", sans-serif; }
 
 .row-content {
   position: relative;
@@ -132,45 +177,6 @@ ol {
 
 /* END ACCORDION */
 /* END TRANSACTIONS */
-/* FOOTER */
-footer {
-  padding: 0% !important;
-  background: linear-gradient(to left, #2193b0, #6dd5ed);
-  margin-top: 150px;
-  font-family: 'Inter', sans-serif;
-  bottom: 0;
-  left: 0; }
-
-.col-item {
-  color: #fff;
-  margin-top: 10px;
-  text-decoration: none; }
-
-.col-item:hover {
-  text-decoration: none;
-  color: #b8206c; }
-
-/* END FOOTER */
-.fab {
-  color: white; }
-
-.footer-address-icon {
-  padding-right: 10px; }
-
-address {
-  color: white;
-  font-family: 'Inter', sans-serif; }
-
-.carousel-item {
-  max-height: 620px; }
-
-.carousel-caption {
-  font-weight: bolder;
-  color: cornsilk; }
-
-.tab-content {
-  padding-top: 20px; }
-
 /* SERVICES */
 /* BANNER, LOGO, SUBTITULO */
 .contenedor__servicios {
@@ -179,7 +185,7 @@ address {
   background-size: cover;
   height: 500px;
   position: relative;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background-position-y: bottom; }
 
 /* END BANNER, LOGO, SUBTITULO */
@@ -193,10 +199,10 @@ address {
 .billetera a {
   text-decoration: none;
   align-items: center;
-  font-family: 'Inter', sans-serif; }
+  font-family: "Inter", sans-serif; }
 
 .btn-primary {
-  font-family: 'Inter', sans-serif; }
+  font-family: "Inter", sans-serif; }
 
 /* CARDS */
 .shadow-lg {
@@ -255,12 +261,15 @@ address {
 
 .subtitulo--modificado {
   color: #ff0180;
-  font-family: 'Ruda', sans-serif;
+  font-family: "Ruda", sans-serif;
   margin-left: 50px;
   font-size: larger; }
 
 a {
   text-decoration: none !important; }
+
+.section1, .section2, .section3, .section4, .section5, .section6 {
+  font-family: "Inter", sans-serif; }
 
 /* END WALLET */
 /* APPBILLETERA */
@@ -294,14 +303,16 @@ a {
   margin-top: 40px; }
 
 .information {
-  text-align: center; }
+  text-align: center;
+  font-family: "Inter", sans-serif; }
 
 .contenedor-p {
   margin-top: 20px; }
 
 .info-lista {
   margin-top: 20px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  font-family: "Inter", sans-serif; }
 
 .button-modal {
   color: #007bff; }
@@ -309,7 +320,24 @@ a {
 .button-modal:hover {
   color: #1769c2 !important; }
 
+.titulo-cent {
+  font-family: "Inter", sans-serif; }
+
 /* END APPBILLETERA */
+/* CONTACTUS */
+.contenedor__contacto {
+  background-image: url(../img/it_jobs.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  object-fit: cover;
+  position: relative;
+  background-position-y: 50%; }
+
+.container__feed {
+  font-family: "Inter", sans-serif; }
+
+/* END CONTACTUS */
 /* ABOUT */
 /* BANNER, LOGO, SUBTITULO */
 .contenedor__nosotros {
@@ -339,20 +367,6 @@ a {
   color: #1769c2 !important; }
 
 /* END ABOUT */
-/* CONTACTUS */
-.contenedor__contacto {
-  background-image: url(../img/it_jobs.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 500px;
-  object-fit: cover;
-  position: relative;
-  background-position-y: 50%; }
-
-.container__feed {
-  font-family: "Inter", sans-serif; }
-
-/* END CONTACTUS */
 /* MEDIA QUERIES */
 @media (max-width: 800px) {
   .contenedor__index {
@@ -392,17 +406,6 @@ a {
     opacity: 0; }
   .logo-img {
     margin-bottom: 40px; } }
-
-@media (max-width: 900px) {
-  .contenedor__app {
-    background-image: url(../img);
-    background-size: cover;
-    background-position-x: left;
-    height: 100%; }
-  .subtitulo--modificado {
-    opacity: 0; }
-  .logo-img {
-    margin-top: 40px; } }
 
 @media (max-width: 800px) {
   .contenedor__app {

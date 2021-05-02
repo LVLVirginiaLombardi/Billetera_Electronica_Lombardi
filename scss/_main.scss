@@ -1,0 +1,60 @@
+/* MAIN */
+
+.contenedor__index {
+    background-image: url(../img/banner.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    object-fit: cover;
+}
+
+.logo-lane {
+    display: inline-block;
+    width: 300px;
+    margin-top: 20%;
+}
+
+.titulo-name {
+    font-size: 100px;
+    color: $color;
+    font-family: $font-family-1;
+    margin-top: 8%;
+}
+
+.subtitulo--modif {
+    color: $color;
+    font-family: $font-family-2;
+    font-size: larger;
+    opacity: 1;
+
+}
+
+#funciona, #info, #como{
+    color: #fff;
+}
+
+ol{
+    margin-top: 20%;
+}
+
+.jumbotron {
+    background-color: $color-btn;
+    color: #fff;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.btn {
+    background-color: $btn-enviar;
+    border-color: $btn-enviar;
+}
+
+.btn:hover{
+    background-color: $btn-hover;
+    border-color: $btn-hover
+}
+.banner {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 0% !important;
+}

@@ -1,0 +1,36 @@
+/* ABOUT */
+
+/* BANNER, LOGO, SUBTITULO */
+
+.contenedor__nosotros{
+    background-image: url(../img/Our+Story-overview-simg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    object-fit: cover;
+    position: relative;
+    background-position-y: 50%;
+}
+
+.container__2{
+    font-family: $font-family-1;
+}
+/* END BANNER, LOGO, SUBTITULO */
+
+.image{
+    width: 40%;
+}
+
+.btn-enviar{
+    background-color: $btn-enviar !important;
+    border-color: $btn-enviar;
+    color: $color-btn !important;
+}
+
+.btn-enviar:hover{
+    background-color: $btn-hover !important;
+    border-color: $btn-hover;
+    color: $color-hover !important;
+}
+
+/* END ABOUT */

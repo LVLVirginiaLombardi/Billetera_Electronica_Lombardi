@@ -1,0 +1,70 @@
+/* WALLET */
+
+
+/* BANNER, LOGO, SUBTITULO */
+
+.contenedor__billetera{
+    background-image: url(../img/istockphoto-1181008199-612x612.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    object-fit: cover;
+    position: relative;
+    background-position-y: 60%;
+}
+
+/* END BANNER, LOGO, SUBTITULO */
+
+
+.container-info{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.app_billetera a{
+    text-decoration: none;
+    align-items: center;
+}
+
+.app_billetera{
+    width: 50%;
+    margin-top: 30px;
+}
+
+.subtitulo--modificado{
+    color: rgb(255, 1, 128);
+    font-family: $font-family-2;
+    margin-left: 50px;
+    font-size: larger;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.section1{
+    font-family: $font-family-1;
+}
+
+.section2{
+    @extend.section1;
+}
+
+.section3{
+    @extend.section1;
+}
+
+.section4{
+    @extend.section1;
+}
+
+.section5{
+    @extend.section1;
+}
+
+.section6{
+    @extend.section1;
+}
+
+
+/* END WALLET */
