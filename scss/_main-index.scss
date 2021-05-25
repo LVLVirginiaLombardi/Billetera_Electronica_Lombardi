@@ -1,7 +1,7 @@
 /* MAIN */
 
 .contenedor__index {
-    background-image: url(../img/banner.jpeg);
+    background-image: url(../img/banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
@@ -10,8 +10,11 @@
 
 .logo-lane {
     display: inline-block;
+    position: relative;
     width: 300px;
     margin-top: 20%;
+    right: 40vh;
+    opacity: 1;
 }
 
 .titulo-name {
@@ -19,6 +22,7 @@
     color: $color;
     font-family: $font-family-1;
     margin-top: 8%;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .subtitulo--modif {
@@ -26,7 +30,7 @@
     font-family: $font-family-2;
     font-size: larger;
     opacity: 1;
-
+    text-shadow: 2px 2px 4px #000000;
 }
 
 #funciona, #info, #como{
@@ -44,17 +48,13 @@ ol{
     margin-bottom: 0px;
 }
 
-.btn {
-    background-color: $btn-enviar;
-    border-color: $btn-enviar;
-}
 
-.btn:hover{
-    background-color: $btn-hover;
-    border-color: $btn-hover
-}
 .banner {
     margin-top: 50px;
     margin-bottom: 20px;
     padding: 0% !important;
+}
+
+.color-copy{
+    background-color: rgb(2, 157, 195);
 }

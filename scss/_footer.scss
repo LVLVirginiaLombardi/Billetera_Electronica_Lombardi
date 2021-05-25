@@ -25,8 +25,17 @@ footer {
     color: white;
 }
 
+.font{
+    font-size: 2rem;
+}
+
 .footer-address-icon {
+
     padding-right: 10px;
+}
+
+.footer-address-icon:hover{
+    color: #d31966;
 }
 
 address {

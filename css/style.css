@@ -6,6 +6,59 @@
 /* END MAIN */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Ruda:wght@700&display=swap");
+@keyframes pulse {
+  to {
+    box-shadow: 0 0 0 18px rgba(255, 255, 255, 0); } }
+
+/* BUTTONS */
+.btn {
+  background-color: #5a0990;
+  border-color: #5a0990;
+  color: #fff !important;
+  font-family: "Inter", sans-serif; }
+
+.btn:hover {
+  background-color: #8552a7;
+  border-color: #8552a7;
+  color: #003062 !important; }
+
+.btn-enviar {
+  background-color: #5a0990 !important;
+  border-color: #5a0990;
+  color: #fff !important;
+  font-weight: 900 !important;
+  font-family: "Inter", sans-serif; }
+
+.btn-enviar:hover {
+  background-color: #8552a7 !important;
+  border-color: #8552a7;
+  color: #003062 !important; }
+
+.button-modal {
+  color: #062546; }
+
+.button-modal:hover {
+  color: #003062 !important;
+  font-family: "Inter", sans-serif; }
+
+.btn-pulse {
+  font-family: "Inter", sans-serif;
+  animation: pulse 2s infinite 3s cubic-bezier(0.25, 0, 0, 1);
+  box-shadow: 0 0 0 0 white; }
+
+.btn-pulse:hover {
+  animation: none; }
+
+#login-button {
+  color: #800c38;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 900 !important; }
+
+#login-button:hover {
+  color: #062546; }
+
+/* END BUTTONS */
 /* BODY */
 body {
   background-image: linear-gradient(to right, #0b8793, #360033);
@@ -13,7 +66,7 @@ body {
 
 /* MAIN */
 .contenedor__index {
-  background-image: url(../img/banner.jpeg);
+  background-image: url(../img/banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
@@ -21,20 +74,25 @@ body {
 
 .logo-lane {
   display: inline-block;
+  position: relative;
   width: 300px;
-  margin-top: 20%; }
+  margin-top: 20%;
+  right: 40vh;
+  opacity: 1; }
 
 .titulo-name {
   font-size: 100px;
   color: #ff026b;
   font-family: "Inter", sans-serif;
-  margin-top: 8%; }
+  margin-top: 8%;
+  text-shadow: 2px 2px 4px #000000; }
 
 .subtitulo--modif {
   color: #ff026b;
   font-family: "Ruda", sans-serif;
   font-size: larger;
-  opacity: 1; }
+  opacity: 1;
+  text-shadow: 2px 2px 4px #000000; }
 
 #funciona, #info, #como {
   color: #fff; }
@@ -43,23 +101,18 @@ ol {
   margin-top: 20%; }
 
 .jumbotron {
-  background-color: #6699ff;
+  background-color: #fff;
   color: #fff;
   margin-top: 50px;
   margin-bottom: 0px; }
-
-.btn {
-  background-color: #7a13be;
-  border-color: #7a13be; }
-
-.btn:hover {
-  background-color: #9739d6;
-  border-color: #9739d6; }
 
 .banner {
   margin-top: 50px;
   margin-bottom: 20px;
   padding: 0% !important; }
+
+.color-copy {
+  background-color: #029dc3; }
 
 /* NAVBAR */
 .navbar-light {
@@ -87,17 +140,19 @@ ol {
 .lane {
   text-decoration: none !important; }
 
-#login-button {
-  color: #6699ff;
-  text-decoration: none; }
-
 /* END NAVBAR */
-.carousel-item {
-  max-height: 620px; }
-
 .carousel-caption {
   font-weight: bolder;
   color: cornsilk; }
+
+.carousel-img {
+  height: 100% !important;
+  object-fit: contain !important; }
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%; }
 
 /* FOOTER */
 footer {
@@ -120,8 +175,14 @@ footer {
 .fab {
   color: white; }
 
+.font {
+  font-size: 2rem; }
+
 .footer-address-icon {
   padding-right: 10px; }
+
+.footer-address-icon:hover {
+  color: #d31966; }
 
 address {
   color: white;
@@ -134,7 +195,7 @@ address {
 /* TRANSACTIONS */
 /* BANNER, LOGO, SUBTITULO */
 .contenedor__transacciones {
-  background-image: url(../img/depositphotos_46160279-stock-photo-woman-doing-online-shopping.jpg);
+  background-image: url(../img/bank.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
@@ -147,8 +208,8 @@ address {
 /* ACCORDION */
 .transacciones-titulo {
   color: #fff;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
   text-align: center;
   font-family: "Inter", sans-serif; }
 
@@ -161,26 +222,28 @@ address {
   transform: translate(50%, 0%); }
 
 .card {
-  background-color: #8b1e43; }
+  background-color: transparent;
+  box-shadow: 10px 10px 10px 10px #00000042; }
 
 .card-body {
-  background-color: #fff; }
+  background-color: transparent;
+  color: #fff; }
 
 #accordion a {
   text-decoration: none; }
 
-.a {
-  color: #007bff; }
+.colapsado {
+  color: #280f3f !important; }
 
-.a:hover {
-  color: #1769c2 !important; }
+.colapsado:hover {
+  color: #110090 !important; }
 
 /* END ACCORDION */
 /* END TRANSACTIONS */
 /* SERVICES */
 /* BANNER, LOGO, SUBTITULO */
 .contenedor__servicios {
-  background-image: url(../img/Accounting-Skills-You-Need-to-Succeed-on-the-Job-AT-Blog-05-26-20.jpg);
+  background-image: url(../img/services2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
@@ -199,9 +262,6 @@ address {
 .billetera a {
   text-decoration: none;
   align-items: center;
-  font-family: "Inter", sans-serif; }
-
-.btn-primary {
   font-family: "Inter", sans-serif; }
 
 /* CARDS */
@@ -230,15 +290,24 @@ address {
   color: darkgrey;
   font-weight: 600; }
 
-.a {
-  text-decoration: none !important; }
+a.a {
+  /* padding:0.5rem 0.5rem; */
+  text-decoration: none !important;
+  color: #fff !important;
+  font-family: "Inter", sans-serif; }
+
+a.a:hover {
+  background-color: #8552a7;
+  border-color: #8552a7;
+  color: #003062 !important;
+  font-weight: 900; }
 
 /* END CARDS */
 /* END SERVICES */
 /* WALLET */
 /* BANNER, LOGO, SUBTITULO */
 .contenedor__billetera {
-  background-image: url(../img/istockphoto-1181008199-612x612.jpg);
+  background-image: url(../img/wallet.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
@@ -265,11 +334,32 @@ address {
   margin-left: 50px;
   font-size: larger; }
 
-a {
-  text-decoration: none !important; }
-
-.section1, .section2, .section3, .section4, .section5, .section6 {
+a.link-text {
+  text-decoration: none !important;
+  color: #fff !important;
   font-family: "Inter", sans-serif; }
+
+a.link-text:hover {
+  background-color: #8552a7;
+  border-color: #8552a7;
+  color: #003062 !important;
+  font-weight: 900; }
+
+.tituloPrincipal {
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 700; }
+
+.textoP, .ul {
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  margin-bottom: 2rem; }
+
+.pAsterisco {
+  color: #8c8d8d;
+  margin-bottom: 2rem; }
 
 /* END WALLET */
 /* APPBILLETERA */
@@ -285,6 +375,9 @@ a {
   background-color: #fff; }
 
 /* END MODAL */
+.tituloBilletera {
+  margin: 2rem; }
+
 .contenedor__app {
   background-image: url(../img/portadaEmpresasTarjetas.jpg);
   background-repeat: no-repeat;
@@ -294,8 +387,7 @@ a {
   position: relative; }
 
 .wallet_img {
-  width: 20%;
-  transform: translate(100%, 0%); }
+  width: 70%; }
 
 .section {
   color: #fff;
@@ -303,25 +395,21 @@ a {
   margin-top: 40px; }
 
 .information {
-  text-align: center;
+  margin-top: 10rem;
   font-family: "Inter", sans-serif; }
 
 .contenedor-p {
-  margin-top: 20px; }
+  margin-top: 2rem; }
 
 .info-lista {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 8rem;
   font-family: "Inter", sans-serif; }
-
-.button-modal {
-  color: #007bff; }
-
-.button-modal:hover {
-  color: #1769c2 !important; }
 
 .titulo-cent {
-  font-family: "Inter", sans-serif; }
+  font-family: "Inter", sans-serif;
+  margin-left: 8rem; }
 
 /* END APPBILLETERA */
 /* CONTACTUS */
@@ -337,11 +425,14 @@ a {
 .container__feed {
   font-family: "Inter", sans-serif; }
 
+.feedTtiulo {
+  color: #fff; }
+
 /* END CONTACTUS */
 /* ABOUT */
 /* BANNER, LOGO, SUBTITULO */
 .contenedor__nosotros {
-  background-image: url(../img/Our+Story-overview-simg1.jpg);
+  background-image: url(../img/nick-fewings-vYpFwcBoUwU-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
@@ -354,42 +445,43 @@ a {
 
 /* END BANNER, LOGO, SUBTITULO */
 .image {
-  width: 40%; }
+  width: 80%; }
 
-.btn-enviar {
-  background-color: #7a13be !important;
-  border-color: #7a13be;
-  color: #6699ff !important; }
-
-.btn-enviar:hover {
-  background-color: #9739d6 !important;
-  border-color: #9739d6;
-  color: #1769c2 !important; }
+.p {
+  margin-top: 5rem; }
 
 /* END ABOUT */
 /* MEDIA QUERIES */
-@media (max-width: 800px) {
-  .contenedor__index {
-    background-image: url(../img/banner.jpeg);
-    background-size: cover;
-    background-position-x: 70%;
-    height: 100%; }
-  .subtitulo--modif {
-    opacity: 0; }
-  .logo-lane {
-    width: 40%;
-    margin-left: 50px;
-    margin-top: 20%; }
-  .titulo-name {
-    font-size: 50px;
-    margin-right: 20px; } }
-
 @media (max-width: 576px) {
   .columna {
     transform: translate(-0.2%, 0%);
     margin-left: 28px; } }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .titulo-name {
+    font-size: 100px !important;
+    margin-right: 5rem; } }
+
+@media (max-width: 800px) {
+  .contenedor__index {
+    background-image: url(../img/banner2.jpg);
+    background-size: cover;
+    background-position-x: 70%;
+    height: 100%; }
+  .subtitulo--modif {
+    opacity: 0; }
+  .titulo-name {
+    font-size: 50px;
+    margin-right: 5rem; }
+  .contenedor__app {
+    background-image: url(../img/undraw_Mobile_app_re_catg.png);
+    background-size: cover;
+    background-position-x: right;
+    height: 100%; } }
+
 @media (max-width: 600px) {
+  .image {
+    width: 80%; }
   .contenedor__servicios {
     background-image: url(../img/online-banking-digital-money-technology_31965-2414.jpg);
     background-size: cover;
@@ -405,26 +497,13 @@ a {
   .subtitulo--modificado {
     opacity: 0; }
   .logo-img {
-    margin-bottom: 40px; } }
-
-@media (max-width: 800px) {
-  .contenedor__app {
-    background-image: url(../img/undraw_Mobile_app_re_catg.png);
-    background-size: cover;
-    background-position-x: right;
-    height: 100%; }
-  .logo-img {
-    transform: translate(0%, 30%); } }
-
-@media (max-width: 600px) {
+    margin-bottom: 40px; }
   .billetera {
     width: 80%; }
   .app_billetera {
     width: 80%; }
   .subtitulo--modificado {
-    transform: translate(-20%, -200%); } }
-
-@media (max-width: 600px) {
+    transform: translate(-20%, -200%); }
   .wallet_img {
     width: 80%;
     transform: translate(-2%, 0%); }
@@ -438,37 +517,15 @@ a {
   .titulo-cent {
     text-align: center;
     margin-top: 40px;
-    margin-bottom: 40px; } }
-
-@media (max-width: 600px) {
-  .image {
-    width: 80%; } }
-
-@media (max-width: 600px) {
+    margin-bottom: 40px; }
   .contenedor__transacciones {
     background-image: url(../img/bg-cuentas.jpg);
     background-size: cover;
     background-position-x: right;
-    height: 50%; } }
-
-@media (min-width: 900px) {
-  .contenedor__transacciones {
-    background-image: url(../img/bg-cuentas.jpg);
-    background-size: cover;
-    background-position-y: inherit;
+    object-fit: cover;
     height: 100%; }
-  .logo-img {
-    transform: translate(0%, -10%); }
-  .subtitulo--modif {
-    transform: translate(0%, -1170%); } }
-
-@media (min-width: 700px) {
-  .contenedor__servicios {
-    background-image: url(../img/Accounting-Skills-You-Need-to-Succeed-on-the-Job-AT-Blog-05-26-20.jpg);
-    background-size: cover;
-    background-position-x: right; } }
-
-@media (max-width: 600px) {
+  .titulo-name {
+    margin: 0.5rem; }
   .contenedor__billetera {
     background-image: url(../img/openbankingfuture.png);
     background-size: cover;
@@ -478,44 +535,55 @@ a {
     background-image: url(../img/it_jobs.jpg);
     background-size: cover;
     background-position-x: right;
-    height: 100%; } }
-
-@media (max-width: 600px) {
+    height: 100%; }
   .contenedor__billetera {
     background-image: url(../img/openbankingfuture.png);
     background-size: cover;
     background-position-x: right;
-    height: 100%; } }
-
-@media (min-width: 500px) {
-  .modal-dialog {
-    max-width: 400px; }
-  .modal-content {
-    padding: 1rem; } }
-
-.modal-header {
-  margin-top: -1.5rem; }
-
-.form-title {
-  margin: -2rem 0rem 2rem; }
-
-.btn-round {
-  border-radius: 3rem; }
-
-.delimiter {
-  padding: 1rem; }
-
-.social-buttons {
-  margin: 0 0.5rem 1rem; }
-
-.signup-section {
-  padding: 0.3rem 0rem; }
-
-@media (max-width: 600px) {
+    height: 100%; }
   .contenedor__nosotros {
     background-image: url(../img/nosotros.jpg);
     background-size: cover;
     background-position-x: left;
     height: 100%; } }
+
+@media (min-width: 900px) and (max-width: 1000px) {
+  .contenedor__transacciones {
+    background-image: url(../img/bg-cuentas.jpg);
+    background-size: cover;
+    background-position-y: inherit;
+    height: 100%;
+    object-fit: cover; }
+  .subtitulo--modif {
+    transform: translate(0%, -1170%); } }
+
+@media (min-width: 700px) and (max-width: 1000px) {
+  .contenedor__servicios {
+    background-image: url(../img/Accounting-Skills-You-Need-to-Succeed-on-the-Job-AT-Blog-05-26-20.jpg);
+    background-size: cover;
+    background-position-x: right; } }
+
+@media (min-width: 500px) {
+  .modal-dialog {
+    max-width: 400px; }
+  .modal-content {
+    padding: 1rem; }
+  .modal-header {
+    margin-top: -1.5rem; }
+  .form-title {
+    margin: -2rem 0rem 2rem; }
+  .btn-round {
+    border-radius: 3rem; }
+  .delimiter {
+    padding: 1rem; }
+  .social-buttons {
+    margin: 0 0.5rem 1rem; }
+  .signup-section {
+    padding: 0.3rem 0rem; } }
+
+@media (max-width: 1441) {
+  img.logo-lane {
+    display: none !important;
+    opacity: 0 !important; } }
 
 /* END MEDIA QUERIES */

@@ -1,8 +1,17 @@
-.carousel-item {
-    max-height: 620px;
-}
 
 .carousel-caption {
     font-weight: bolder;
     color: cornsilk;
+}
+
+.carousel-img{
+    height: 100% !important;
+    object-fit: contain !important;
+
+}
+
+.carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
 }

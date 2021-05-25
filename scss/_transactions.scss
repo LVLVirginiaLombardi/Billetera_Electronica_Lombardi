@@ -3,7 +3,7 @@
 /* BANNER, LOGO, SUBTITULO */
 
 .contenedor__transacciones{
-    background-image: url(../img/depositphotos_46160279-stock-photo-woman-doing-online-shopping.jpg);
+    background-image: url(../img/bank.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
@@ -11,6 +11,7 @@
     position: relative;
     font-family: $font-family-1;
     background-position-y: 100%;
+
 }
 
 
@@ -20,8 +21,8 @@
 
 .transacciones-titulo{
     color: #fff;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
     text-align: center;
     font-family: $font-family-1;
 }
@@ -37,20 +38,24 @@
 }
 
 .card{
-    background-color: #8b1e43;
+    background-color: transparent;
+    box-shadow: 10px 10px 10px 10px #00000042;
 }
 
 .card-body{
-    background-color: #fff;
+    background-color: transparent;
+    color: #fff;
 }
 #accordion a {
     text-decoration: none;
 }
-.a{
-    color: #007bff;
+
+.colapsado{
+    color: rgb(40, 15, 63) !important;
 }
-.a:hover{
-    color: #1769c2 !important;
+
+.colapsado:hover{
+    color: rgb(17, 0, 144) !important;
 }
 
 /* END ACCORDION */

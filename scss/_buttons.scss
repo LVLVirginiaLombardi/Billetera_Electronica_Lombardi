@@ -1,0 +1,61 @@
+/* BUTTONS */
+
+.btn {
+    background-color: $btn-enviar;
+    border-color: $btn-enviar;
+    color: $color-btn !important;
+    font-family: $font-family-1;
+}
+
+.btn:hover{
+    background-color: $btn-hover;
+    border-color: $btn-hover;
+    color: $color-hover !important;
+}
+
+.btn-enviar{
+    background-color: $btn-enviar !important;
+    border-color: $btn-enviar;
+    color: $color-btn !important;
+    font-weight: 900 !important;
+    font-family: $font-family-1;
+}
+
+.btn-enviar:hover{
+    background-color: $btn-hover !important;
+    border-color: $btn-hover;
+    color: $color-hover !important;
+}
+
+.button-modal{
+    color: #062546;
+}
+
+.button-modal:hover{
+    color: $color-hover !important;
+    font-family: $font-family-1;
+}
+
+.btn-pulse {
+    font-family: $font-family-1;
+    animation: pulse 2s infinite 3s cubic-bezier(0.25, 0, 0, 1);
+    box-shadow: 0 0 0 0 rgb(255, 255, 255);
+}
+.btn-pulse:hover{
+    animation: none;
+}
+
+#login-button{
+    color: #800c38;
+    text-decoration: none;
+    font-family: $font-family-1;
+    font-weight: 900 !important;
+}
+
+#login-button:hover{
+    color: #062546;
+}
+
+
+
+/* END BUTTONS */

@@ -3,7 +3,7 @@
 /* BANNER, LOGO, SUBTITULO */
 
 .contenedor__servicios{
-    background-image: url(../img/Accounting-Skills-You-Need-to-Succeed-on-the-Job-AT-Blog-05-26-20.jpg);
+    background-image: url(../img/services2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
@@ -16,7 +16,6 @@
 .container{
     padding-top: 50px; 
     color: #fff;
-    
 }
 
 .billetera{
@@ -29,9 +28,8 @@
     font-family: $font-family-1;
 }
 
-.btn-primary{
-    font-family: $font-family-1;
-}
+
+
 
 /* CARDS */
 
@@ -67,8 +65,18 @@
     font-weight: 600;
 }
 
-.a{
+a.a{
+    /* padding:0.5rem 0.5rem; */
     text-decoration: none !important;
+    color: $color-btn !important;
+    font-family: $font-family-1;
+}
+
+a.a:hover{
+    background-color: $btn-hover;
+    border-color: $btn-hover;
+    color: $color-hover !important;
+    font-weight: 900;
 }
 
 /* END CARDS */

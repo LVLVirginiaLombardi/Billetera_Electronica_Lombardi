@@ -17,7 +17,10 @@
 
 /* END MODAL */
 
-
+.tituloBilletera{
+    $font-family-2: 'Ruda', sans-serif;
+    margin: 2rem;
+}
 .contenedor__app{
     background-image: url(../img/portadaEmpresasTarjetas.jpg);
     background-repeat: no-repeat;
@@ -28,8 +31,7 @@
 }
 
 .wallet_img{
-    width: 20%;
-    transform: translate(100%, 0%);
+    width: 70%;
 }
 
 .section{
@@ -39,30 +41,25 @@
 }
 
 .information{
-    text-align: center;
+    margin-top: 10rem;
     font-family: $font-family-1;
 }
 
 .contenedor-p{
-    margin-top: 20px;
+    margin-top: 2rem;
 }
 
 .info-lista{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 8rem;
     font-family: $font-family-1;
 }
 
-.button-modal{
-    color: #007bff;
-}
-
-.button-modal:hover{
-    color: $color-hover !important;
-}
 
 .titulo-cent{
     font-family: $font-family-1;
+    margin-left: 8rem;
 }
 
 /* END APPBILLETERA */

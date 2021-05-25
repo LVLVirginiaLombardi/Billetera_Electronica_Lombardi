@@ -3,7 +3,7 @@
 /* BANNER, LOGO, SUBTITULO */
 
 .contenedor__nosotros{
-    background-image: url(../img/Our+Story-overview-simg1.jpg);
+    background-image: url(../img/nick-fewings-vYpFwcBoUwU-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
@@ -18,19 +18,13 @@
 /* END BANNER, LOGO, SUBTITULO */
 
 .image{
-    width: 40%;
+    width: 80%;
 }
 
-.btn-enviar{
-    background-color: $btn-enviar !important;
-    border-color: $btn-enviar;
-    color: $color-btn !important;
+.p{
+    margin-top: 5rem;
 }
 
-.btn-enviar:hover{
-    background-color: $btn-hover !important;
-    border-color: $btn-hover;
-    color: $color-hover !important;
-}
+
 
 /* END ABOUT */

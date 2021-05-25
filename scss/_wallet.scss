@@ -4,7 +4,7 @@
 /* BANNER, LOGO, SUBTITULO */
 
 .contenedor__billetera{
-    background-image: url(../img/istockphoto-1181008199-612x612.jpg);
+    background-image: url(../img/wallet.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
@@ -38,33 +38,40 @@
     font-size: larger;
 }
 
-a{
+a.link-text{
     text-decoration: none !important;
-}
-
-.section1{
+    color: $color-btn !important;
     font-family: $font-family-1;
 }
 
-.section2{
-    @extend.section1;
+a.link-text:hover{
+    background-color: $btn-hover;
+    border-color: $btn-hover;
+    color: $color-hover !important;
+    font-weight: 900;
 }
 
-.section3{
-    @extend.section1;
+.tituloPrincipal{
+    font-family: $font-family-1;
+    color: #fff;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
-.section4{
-    @extend.section1;
+.textoP{
+    font-family: $font-family-1;
+    color: #fff;
+    margin-bottom: 2rem;
 }
 
-.section5{
-    @extend.section1;
+.ul{
+    @extend.textoP;
 }
 
-.section6{
-    @extend.section1;
+.pAsterisco{
+    color: rgb(140, 141, 141);
+    margin-bottom: 2rem;
 }
-
 
 /* END WALLET */
