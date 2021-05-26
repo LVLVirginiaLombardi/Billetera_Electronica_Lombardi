@@ -5,33 +5,48 @@
         transform: translate(-0.2%, 0%);
         margin-left: 28px;
     }
+    .titulo-index{
+        font-size: 1rem;
+    }
+    .titulo-transacciones{
+        font-size: 1rem;
+    }
+    .transacciones-titulo{
+        font-size: 1rem;
+    }
+    .titulo-servicios{
+        font-size: 1rem;
+    }
 }
 
-@media (min-width: 768px) and (max-width:1023px){
+@media (min-width: 768px) and (max-width:1022px){
     .titulo-name {
         font-size: 100px !important;
         margin-right: 5rem;
     }
 }
 
-@media (max-width: 800px){
+@media (min-width: 601px) and (max-width: 800px){
     .contenedor__index {
         background-image: url(../img/banner2.jpg);
         background-size: cover;
         background-position-x: 70%;
         height: 100%;
     }
-    .subtitulo--modif {
-        opacity: 0;
-    } 
     .titulo-name {
         font-size: 50px;
-        margin-right: 5rem;
+        margin-right: 8rem;
     }
     .contenedor__app{
         background-image: url(../img/undraw_Mobile_app_re_catg.png);
         background-size: cover;
         background-position-x: right;
+        height: 100%;
+    }
+    .contenedor__transacciones{
+        background-size: cover;
+        background-position-x: right;
+        object-fit: cover;
         height: 100%;
     }
 }
@@ -126,9 +141,28 @@
         background-position-x: left;
         height: 100%;
     }
+    .contenedor__index {
+        background-image: url(../img/banner2.jpg);
+        background-size: cover;
+        background-position-x: 70%;
+        height: 100%;
+    }
+    .subtitulo--modif {
+        opacity: 0;
+    } 
+    .titulo-name {
+        font-size: 50px;
+        margin: 0 auto;
+    }
+    .contenedor__app{
+        background-image: url(../img/undraw_Mobile_app_re_catg.png);
+        background-size: cover;
+        background-position-x: right;
+        height: 100%;
+    }
 }
 
-@media (min-width: 900px) and (max-width: 1000px){
+/* @media (min-width: 900px) and (max-width: 1000px){
     .contenedor__transacciones{
         background-image: url(../img/bg-cuentas.jpg);
         background-size: cover;
@@ -136,10 +170,7 @@
         height: 100%;
         object-fit: cover;
     }
-    .subtitulo--modif{
-        transform: translate(0%, -1170%);
-    }
-}
+} */
 
 @media (min-width: 700px) and (max-width: 1000px){
     .contenedor__servicios{
@@ -177,10 +208,43 @@
     } 
 }
 
-@media (max-width: 1441){
+@media (max-width: 1441px){
     img.logo-lane{ 
         display: none !important;
-        opacity: 0 !important;
+    }
+
+}
+
+@media (min-width: 1439px){
+    .titulo-name {
+        font-size: 10rem !important;
+        margin-left: 40rem;
+    }
+    .subtitulo--modif{
+        margin-top: 60rem !important;
+        font-size: 3rem;
+    }
+    .contenedor__transacciones{
+        background-size: cover;
+        background-position-x: center;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 1023px) and (max-width: 1438px){
+    .titulo-name {
+        margin-bottom: 4rem;
+        font-size: 8rem !important;
+        margin-left: 40rem;
+    }
+    .subtitulo--modif{
+        font-size: 2rem;
+        top: 2px;
+    }
+    .contenedor__index {
+        background-size: cover;
+        background-position-x: 70%;
+        height: 100%;
     }
 }
 /* END MEDIA QUERIES */

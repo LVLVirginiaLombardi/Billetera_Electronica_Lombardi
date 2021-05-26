@@ -50,7 +50,7 @@
   animation: none; }
 
 #login-button {
-  color: #800c38;
+  color: #ffffff;
   text-decoration: none;
   font-family: "Inter", sans-serif;
   font-weight: 900 !important; }
@@ -77,7 +77,7 @@ body {
   position: relative;
   width: 300px;
   margin-top: 20%;
-  right: 40vh;
+  right: 10vh;
   opacity: 1; }
 
 .titulo-name {
@@ -88,10 +88,13 @@ body {
   text-shadow: 2px 2px 4px #000000; }
 
 .subtitulo--modif {
+  position: relative;
+  top: 0;
   color: #ff026b;
   font-family: "Ruda", sans-serif;
   font-size: larger;
   opacity: 1;
+  margin: 0;
   text-shadow: 2px 2px 4px #000000; }
 
 #funciona, #info, #como {
@@ -110,6 +113,10 @@ ol {
   margin-top: 50px;
   margin-bottom: 20px;
   padding: 0% !important; }
+
+.titulo-index {
+  font-family: "Ruda", sans-serif;
+  font-size: 2.5rem; }
 
 .color-copy {
   background-color: #029dc3; }
@@ -195,7 +202,7 @@ address {
 /* TRANSACTIONS */
 /* BANNER, LOGO, SUBTITULO */
 .contenedor__transacciones {
-  background-image: url(../img/bank.jpg);
+  background-image: url(../img/services.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
@@ -239,6 +246,10 @@ address {
   color: #110090 !important; }
 
 /* END ACCORDION */
+.titulo-transacciones {
+  font-family: "Ruda", sans-serif;
+  font-size: 3rem; }
+
 /* END TRANSACTIONS */
 /* SERVICES */
 /* BANNER, LOGO, SUBTITULO */
@@ -291,7 +302,6 @@ address {
   font-weight: 600; }
 
 a.a {
-  /* padding:0.5rem 0.5rem; */
   text-decoration: none !important;
   color: #fff !important;
   font-family: "Inter", sans-serif; }
@@ -303,6 +313,10 @@ a.a:hover {
   font-weight: 900; }
 
 /* END CARDS */
+.titulo-servicios {
+  font-family: "Ruda", sans-serif;
+  font-size: 3rem; }
+
 /* END SERVICES */
 /* WALLET */
 /* BANNER, LOGO, SUBTITULO */
@@ -455,28 +469,39 @@ a.link-text:hover {
 @media (max-width: 576px) {
   .columna {
     transform: translate(-0.2%, 0%);
-    margin-left: 28px; } }
+    margin-left: 28px; }
+  .titulo-index {
+    font-size: 1rem; }
+  .titulo-transacciones {
+    font-size: 1rem; }
+  .transacciones-titulo {
+    font-size: 1rem; }
+  .titulo-servicios {
+    font-size: 1rem; } }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1022px) {
   .titulo-name {
     font-size: 100px !important;
     margin-right: 5rem; } }
 
-@media (max-width: 800px) {
+@media (min-width: 601px) and (max-width: 800px) {
   .contenedor__index {
     background-image: url(../img/banner2.jpg);
     background-size: cover;
     background-position-x: 70%;
     height: 100%; }
-  .subtitulo--modif {
-    opacity: 0; }
   .titulo-name {
     font-size: 50px;
-    margin-right: 5rem; }
+    margin-right: 8rem; }
   .contenedor__app {
     background-image: url(../img/undraw_Mobile_app_re_catg.png);
     background-size: cover;
     background-position-x: right;
+    height: 100%; }
+  .contenedor__transacciones {
+    background-size: cover;
+    background-position-x: right;
+    object-fit: cover;
     height: 100%; } }
 
 @media (max-width: 600px) {
@@ -545,18 +570,32 @@ a.link-text:hover {
     background-image: url(../img/nosotros.jpg);
     background-size: cover;
     background-position-x: left;
+    height: 100%; }
+  .contenedor__index {
+    background-image: url(../img/banner2.jpg);
+    background-size: cover;
+    background-position-x: 70%;
+    height: 100%; }
+  .subtitulo--modif {
+    opacity: 0; }
+  .titulo-name {
+    font-size: 50px;
+    margin: 0 auto; }
+  .contenedor__app {
+    background-image: url(../img/undraw_Mobile_app_re_catg.png);
+    background-size: cover;
+    background-position-x: right;
     height: 100%; } }
 
-@media (min-width: 900px) and (max-width: 1000px) {
-  .contenedor__transacciones {
-    background-image: url(../img/bg-cuentas.jpg);
-    background-size: cover;
-    background-position-y: inherit;
-    height: 100%;
-    object-fit: cover; }
-  .subtitulo--modif {
-    transform: translate(0%, -1170%); } }
-
+/* @media (min-width: 900px) and (max-width: 1000px){
+    .contenedor__transacciones{
+        background-image: url(../img/bg-cuentas.jpg);
+        background-size: cover;
+        background-position-y: inherit;
+        height: 100%;
+        object-fit: cover;
+    }
+} */
 @media (min-width: 700px) and (max-width: 1000px) {
   .contenedor__servicios {
     background-image: url(../img/Accounting-Skills-You-Need-to-Succeed-on-the-Job-AT-Blog-05-26-20.jpg);
@@ -581,9 +620,33 @@ a.link-text:hover {
   .signup-section {
     padding: 0.3rem 0rem; } }
 
-@media (max-width: 1441) {
+@media (max-width: 1441px) {
   img.logo-lane {
-    display: none !important;
-    opacity: 0 !important; } }
+    display: none !important; } }
+
+@media (min-width: 1439px) {
+  .titulo-name {
+    font-size: 10rem !important;
+    margin-left: 40rem; }
+  .subtitulo--modif {
+    margin-top: 60rem !important;
+    font-size: 3rem; }
+  .contenedor__transacciones {
+    background-size: cover;
+    background-position-x: center;
+    object-fit: cover; } }
+
+@media (min-width: 1023px) and (max-width: 1438px) {
+  .titulo-name {
+    margin-bottom: 4rem;
+    font-size: 8rem !important;
+    margin-left: 40rem; }
+  .subtitulo--modif {
+    font-size: 2rem;
+    top: 2px; }
+  .contenedor__index {
+    background-size: cover;
+    background-position-x: 70%;
+    height: 100%; } }
 
 /* END MEDIA QUERIES */
