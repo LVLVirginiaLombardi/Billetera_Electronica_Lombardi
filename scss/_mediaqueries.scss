@@ -192,6 +192,11 @@
 }
 
 @media (min-width: 700px) and (max-width: 1000px){
+    .contenedor__servicios{
+        background-image: url(../img/servicios.jpg);
+        background-size: cover;
+        background-position-x:right;
+    }
     .btn-enviar{
         width: auto;
     }
