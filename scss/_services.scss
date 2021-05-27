@@ -31,7 +31,7 @@
 /* CARDS */
 
 .shadow-lg{
-    background: black;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.3) !important;
 }
 
 .card-title{
@@ -75,6 +75,24 @@ a.a:hover{
     font-weight: 900;
 }
 
+.card-img-top{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+.card-title--modif{
+    color: #1769c2;
+}
+
+.rounded{
+    background-color: transparent;
+}
+/* MODAL */
+
+
+
+/* END MODAL */
 /* END CARDS */
 
 .titulo-servicios{

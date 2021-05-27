@@ -17,9 +17,10 @@
 
 /* END MODAL */
 
-.tituloBilletera{
-    $font-family-2: 'Ruda', sans-serif;
-    margin: 2rem;
+.titulo-billetera{
+    font-family: $font-family-2;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 .contenedor__app{
     background-image: url(../img/portadaEmpresasTarjetas.jpg);
@@ -43,6 +44,7 @@
 .information{
     margin-top: 10rem;
     font-family: $font-family-1;
+    font-size: 2.5rem;
 }
 
 .contenedor-p{
@@ -52,14 +54,12 @@
 .info-lista{
     margin-top: 2rem;
     margin-bottom: 2rem;
-    margin-left: 8rem;
     font-family: $font-family-1;
 }
 
 
 .titulo-cent{
     font-family: $font-family-1;
-    margin-left: 8rem;
 }
 
 /* END APPBILLETERA */

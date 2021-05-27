@@ -17,6 +17,10 @@
     .titulo-servicios{
         font-size: 1rem;
     }
+    .titulo-billetera{
+        font-size: 1rem;
+        text-align: center;
+    }
 }
 
 @media (min-width: 768px) and (max-width:1022px){
@@ -40,7 +44,7 @@
     .contenedor__app{
         background-image: url(../img/undraw_Mobile_app_re_catg.png);
         background-size: cover;
-        background-position-x: right;
+        background-position: center;
         height: 100%;
     }
     .contenedor__transacciones{
@@ -49,6 +53,7 @@
         object-fit: cover;
         height: 100%;
     }
+    
 }
 
 @media (max-width: 600px){
@@ -84,15 +89,13 @@
     .app_billetera{
         width: 80%;
     }
-    .subtitulo--modificado{
-        transform: translate(-20%, -200%);
-    }
+
     .wallet_img{
         width: 80%;
-        transform: translate(-2%, 0%);
+        margin: 0 auto;
     }
     .information{
-        text-align: center;
+        font-size: 1.5rem;
     }
     
     .section{
@@ -103,7 +106,6 @@
         margin-right: 5px;
     }
     .titulo-cent{
-        text-align: center;
         margin-top: 40px;
         margin-bottom: 40px;
     }
@@ -117,12 +119,6 @@
     .titulo-name{
         margin: 0.5rem;
     }
-    .contenedor__billetera{
-        background-image: url(../img/openbankingfuture.png);
-        background-size: cover;
-        background-position-x: right;
-        height: 100%;
-    }
     .contenedor__contacto{
         background-image: url(../img/it_jobs.jpg);
         background-size: cover;
@@ -130,10 +126,10 @@
         height: 100%;
     }
     .contenedor__billetera{
-        background-image: url(../img/openbankingfuture.png);
+        background-image: url(../img/wallet2.jpg);
         background-size: cover;
-        background-position-x:right;
-        height: 100%;
+        background-position-x: center;
+        object-fit: cover;
     }
     .contenedor__nosotros{
         background-image: url(../img/nosotros.jpg);
@@ -157,26 +153,31 @@
     .contenedor__app{
         background-image: url(../img/undraw_Mobile_app_re_catg.png);
         background-size: cover;
-        background-position-x: right;
+        background-position: center center;
         height: 100%;
-    }
-}
 
-/* @media (min-width: 900px) and (max-width: 1000px){
-    .contenedor__transacciones{
-        background-image: url(../img/bg-cuentas.jpg);
-        background-size: cover;
-        background-position-y: inherit;
-        height: 100%;
-        object-fit: cover;
     }
-} */
+    .titulo-wallet{
+        font-size: 20px;
+        text-align: center;
+    }
+    .tituloPrincipal{
+        font-size: 1.5rem;
+    }
+    .titulo{
+        margin: 0 auto !important;
+    }
+    
+}
 
 @media (min-width: 700px) and (max-width: 1000px){
     .contenedor__servicios{
         background-image: url(../img/Accounting-Skills-You-Need-to-Succeed-on-the-Job-AT-Blog-05-26-20.jpg);
         background-size: cover;
         background-position-x:right;
+    }
+    .btn-enviar{
+        width: auto;
     }
 }
 
@@ -212,6 +213,13 @@
     img.logo-lane{ 
         display: none !important;
     }
+    .subtitulo--modificado{
+        font-size: 3rem !important;
+        margin-bottom: 5rem;
+    }
+    .btn-enviar{
+        width: auto;
+    }
 
 }
 
@@ -220,14 +228,13 @@
         font-size: 10rem !important;
         margin-left: 40rem;
     }
-    .subtitulo--modif{
-        margin-top: 60rem !important;
-        font-size: 3rem;
-    }
     .contenedor__transacciones{
         background-size: cover;
         background-position-x: center;
         object-fit: cover;
+    }
+    .btn-enviar{
+        width: auto;
     }
 }
 
@@ -247,4 +254,5 @@
         height: 100%;
     }
 }
+
 /* END MEDIA QUERIES */

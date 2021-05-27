@@ -15,6 +15,22 @@
 
 /* END BANNER, LOGO, SUBTITULO */
 
+.titulo-wallet{
+    font-family: $font-family-2;
+    margin: 2rem;
+}
+
+.subtitulo--modificado{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    color: $color;
+    font-family: $font-family-2;
+    margin-top: 60rem;
+    font-size: 3rem;
+    opacity: 1;
+    text-shadow: 2px 2px 4px #000000;
+}
 
 .container-info{
     margin-top: 10px;
