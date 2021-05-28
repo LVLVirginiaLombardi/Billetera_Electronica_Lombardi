@@ -469,7 +469,7 @@ a.link-text:hover {
 /* END APPBILLETERA */
 /* CONTACTUS */
 .contenedor__contacto {
-  background-image: url(../img/it_jobs.jpg);
+  background-image: url(../img/contacto.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
@@ -487,7 +487,7 @@ a.link-text:hover {
 /* ABOUT */
 /* BANNER, LOGO, SUBTITULO */
 .contenedor__nosotros {
-  background-image: url(../img/nick-fewings-vYpFwcBoUwU-unsplash.jpg);
+  background-image: url(../img/about.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
@@ -507,6 +507,24 @@ a.link-text:hover {
 
 /* END ABOUT */
 /* MEDIA QUERIES */
+@media (min-width: 500px) {
+  .modal-dialog {
+    max-width: 400px; }
+  .modal-content {
+    padding: 1rem; }
+  .modal-header {
+    margin-top: -1.5rem; }
+  .form-title {
+    margin: -2rem 0rem 2rem; }
+  .btn-round {
+    border-radius: 3rem; }
+  .delimiter {
+    padding: 1rem; }
+  .social-buttons {
+    margin: 0 0.5rem 1rem; }
+  .signup-section {
+    padding: 0.3rem 0rem; } }
+
 @media (max-width: 576px) {
   .columna {
     transform: translate(-0.2%, 0%);
@@ -523,36 +541,11 @@ a.link-text:hover {
     font-size: 1rem;
     text-align: center; } }
 
-@media (min-width: 768px) and (max-width: 1022px) {
-  .titulo-name {
-    font-size: 100px !important;
-    margin-right: 5rem; } }
-
-@media (min-width: 601px) and (max-width: 800px) {
-  .contenedor__index {
-    background-image: url(../img/banner2.jpg);
-    background-size: cover;
-    background-position-x: 70%;
-    height: 100%; }
-  .titulo-name {
-    font-size: 50px;
-    margin-right: 8rem; }
-  .contenedor__app {
-    background-image: url(../img/undraw_Mobile_app_re_catg.png);
-    background-size: cover;
-    background-position: center;
-    height: 100%; }
-  .contenedor__transacciones {
-    background-size: cover;
-    background-position-x: right;
-    object-fit: cover;
-    height: 100%; } }
-
 @media (max-width: 600px) {
   .image {
     width: 80%; }
   .contenedor__servicios {
-    background-image: url(../img/online-banking-digital-money-technology_31965-2414.jpg);
+    background-image: url(../img/contenedor_servicios.jpg);
     background-size: cover;
     background-position-x: right;
     height: 100%; }
@@ -593,7 +586,7 @@ a.link-text:hover {
   .titulo-name {
     margin: 0.5rem; }
   .contenedor__contacto {
-    background-image: url(../img/it_jobs.jpg);
+    background-image: url(../img/contacto.jpg);
     background-size: cover;
     background-position-x: right;
     height: 100%; }
@@ -618,7 +611,7 @@ a.link-text:hover {
     font-size: 50px;
     margin: 0 auto; }
   .contenedor__app {
-    background-image: url(../img/undraw_Mobile_app_re_catg.png);
+    background-image: url(../img/app.png);
     background-size: cover;
     background-position: center center;
     height: 100%; }
@@ -630,31 +623,51 @@ a.link-text:hover {
   .titulo {
     margin: 0 auto !important; } }
 
+@media (min-width: 601px) and (max-width: 800px) {
+  .contenedor__index {
+    background-image: url(../img/banner2.jpg);
+    background-size: cover;
+    background-position-x: 70%;
+    height: 100%; }
+  .titulo-name {
+    font-size: 50px;
+    margin-right: 8rem; }
+  .contenedor__app {
+    background-image: url(../img/app.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%; }
+  .contenedor__transacciones {
+    background-size: cover;
+    background-position-x: right;
+    object-fit: cover;
+    height: 100%; } }
+
 @media (min-width: 700px) and (max-width: 1000px) {
   .contenedor__servicios {
-    background-image: url(../img/Accounting-Skills-You-Need-to-Succeed-on-the-Job-AT-Blog-05-26-20.jpg);
+    background-image: url(../img/servicios.jpg);
     background-size: cover;
     background-position-x: right; }
   .btn-enviar {
     width: auto; } }
 
-@media (min-width: 500px) {
-  .modal-dialog {
-    max-width: 400px; }
-  .modal-content {
-    padding: 1rem; }
-  .modal-header {
-    margin-top: -1.5rem; }
-  .form-title {
-    margin: -2rem 0rem 2rem; }
-  .btn-round {
-    border-radius: 3rem; }
-  .delimiter {
-    padding: 1rem; }
-  .social-buttons {
-    margin: 0 0.5rem 1rem; }
-  .signup-section {
-    padding: 0.3rem 0rem; } }
+@media (min-width: 768px) and (max-width: 1022px) {
+  .titulo-name {
+    font-size: 100px !important;
+    margin-right: 5rem; } }
+
+@media (min-width: 1023px) and (max-width: 1438px) {
+  .titulo-name {
+    margin-bottom: 4rem;
+    font-size: 8rem !important;
+    margin-left: 40rem; }
+  .subtitulo--modif {
+    font-size: 2rem;
+    top: 2px; }
+  .contenedor__index {
+    background-size: cover;
+    background-position-x: 70%;
+    height: 100%; } }
 
 @media (max-width: 1441px) {
   img.logo-lane {
@@ -675,18 +688,5 @@ a.link-text:hover {
     object-fit: cover; }
   .btn-enviar {
     width: auto; } }
-
-@media (min-width: 1023px) and (max-width: 1438px) {
-  .titulo-name {
-    margin-bottom: 4rem;
-    font-size: 8rem !important;
-    margin-left: 40rem; }
-  .subtitulo--modif {
-    font-size: 2rem;
-    top: 2px; }
-  .contenedor__index {
-    background-size: cover;
-    background-position-x: 70%;
-    height: 100%; } }
 
 /* END MEDIA QUERIES */
