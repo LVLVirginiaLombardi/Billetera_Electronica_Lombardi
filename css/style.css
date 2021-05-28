@@ -4,6 +4,8 @@
 /* END FONT FAMILY */
 /* MAIN */
 /* END MAIN */
+/* BACKGROUND */
+/* END BACKGROUND */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Ruda:wght@700&display=swap");
 @keyframes pulse {
@@ -643,13 +645,15 @@ a.link-text:hover {
     object-fit: cover;
     height: 100%; } }
 
+@media (min-width: 700px) {
+  .btn-enviar {
+    width: auto; } }
+
 @media (min-width: 700px) and (max-width: 1000px) {
   .contenedor__servicios {
     background-image: url(../img/servicios.jpg);
     background-size: cover;
-    background-position-x: right; }
-  .btn-enviar {
-    width: auto; } }
+    background-position-x: right; } }
 
 @media (min-width: 768px) and (max-width: 1022px) {
   .titulo-name {
@@ -674,9 +678,7 @@ a.link-text:hover {
     display: none !important; }
   .subtitulo--modificado {
     font-size: 3rem !important;
-    margin-bottom: 5rem; }
-  .btn-enviar {
-    width: auto; } }
+    margin-bottom: 5rem; } }
 
 @media (min-width: 1439px) {
   .titulo-name {
@@ -685,8 +687,6 @@ a.link-text:hover {
   .contenedor__transacciones {
     background-size: cover;
     background-position-x: center;
-    object-fit: cover; }
-  .btn-enviar {
-    width: auto; } }
+    object-fit: cover; } }
 
 /* END MEDIA QUERIES */

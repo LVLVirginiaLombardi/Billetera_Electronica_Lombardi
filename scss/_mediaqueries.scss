@@ -47,7 +47,7 @@
     }
     .titulo-billetera{
         font-size: 1rem;
-        text-align: center;
+        text-align: $position-center;
     }
 }
 
@@ -57,9 +57,9 @@
     }
     .contenedor__servicios{
         background-image: url(../img/contenedor_servicios.jpg);
-        background-size: cover;
+        background-size: $background-size;
         background-position-x:right;
-        height: 100%;
+        height: $height;
     }
     .subtitulo--modif{
         opacity: 0;
@@ -68,7 +68,7 @@
         background-image: url(../img/bg-sub-servicio.jpg);
         background-size: inherit;
         background-position-x:right;
-        height: 100%;
+        height: $height;
     }
 
     .subtitulo--modificado{
@@ -106,37 +106,37 @@
     }
     .contenedor__transacciones{
         background-image: url(../img/bg-cuentas.jpg);
-        background-size: cover;
+        background-size: $background-size;
         background-position-x: right;
-        object-fit: cover;
-        height: 100%;
+        object-fit: $background-size;
+        height: $height;
     }
     .titulo-name{
         margin: 0.5rem;
     }
     .contenedor__contacto{
         background-image: url(../img/contacto.jpg);
-        background-size: cover;
+        background-size: $background-size;
         background-position-x:right;
-        height: 100%;
+        height: $height;
     }
     .contenedor__billetera{
         background-image: url(../img/wallet2.jpg);
-        background-size: cover;
-        background-position-x: center;
-        object-fit: cover;
+        background-size: $background-size;
+        background-position-x: $position-center;
+        object-fit: $background-size;
     }
     .contenedor__nosotros{
         background-image: url(../img/nosotros.jpg);
-        background-size: cover;
+        background-size: $background-size;
         background-position-x: left;
-        height: 100%;
+        height: $height;
     }
     .contenedor__index {
         background-image: url(../img/banner2.jpg);
-        background-size: cover;
+        background-size: $background-size;
         background-position-x: 70%;
-        height: 100%;
+        height: $height;
     }
     .subtitulo--modif {
         opacity: 0;
@@ -147,14 +147,14 @@
     }
     .contenedor__app{
         background-image: url(../img/app.png);
-        background-size: cover;
+        background-size: $background-size;
         background-position: center center;
-        height: 100%;
+        height: $height;
 
     }
     .titulo-wallet{
         font-size: 20px;
-        text-align: center;
+        text-align: $position-center;
     }
     .tituloPrincipal{
         font-size: 1.5rem;
@@ -168,9 +168,9 @@
 @media (min-width: 601px) and (max-width: 800px){
     .contenedor__index {
         background-image: url(../img/banner2.jpg);
-        background-size: cover;
+        background-size: $background-size;
         background-position-x: 70%;
-        height: 100%;
+        height: $height;
     }
     .titulo-name {
         font-size: 50px;
@@ -178,27 +178,30 @@
     }
     .contenedor__app{
         background-image: url(../img/app.png);
-        background-size: cover;
-        background-position: center;
-        height: 100%;
+        background-size: $background-size;
+        background-position: $position-center;
+        height: $height;
     }
     .contenedor__transacciones{
-        background-size: cover;
+        background-size: $background-size;
         background-position-x: right;
-        object-fit: cover;
-        height: 100%;
+        object-fit: $background-size;
+        height: $height;
     }
     
+}
+
+@media (min-width: 700px){
+    .btn-enviar{
+        width: auto;
+    }
 }
 
 @media (min-width: 700px) and (max-width: 1000px){
     .contenedor__servicios{
         background-image: url(../img/servicios.jpg);
-        background-size: cover;
+        background-size: $background-size;
         background-position-x:right;
-    }
-    .btn-enviar{
-        width: auto;
     }
 }
 
@@ -220,9 +223,9 @@
         top: 2px;
     }
     .contenedor__index {
-        background-size: cover;
+        background-size: $background-size;
         background-position-x: 70%;
-        height: 100%;
+        height: $height;
     }
 }
 
@@ -234,9 +237,6 @@
         font-size: 3rem !important;
         margin-bottom: 5rem;
     }
-    .btn-enviar{
-        width: auto;
-    }
 
 }
 
@@ -246,13 +246,11 @@
         margin-left: 40rem;
     }
     .contenedor__transacciones{
-        background-size: cover;
-        background-position-x: center;
-        object-fit: cover;
+        background-size: $background-size;
+        background-position-x: $position-center;
+        object-fit: $background-size;
     }
-    .btn-enviar{
-        width: auto;
-    }
+    
 }
 
 /* END MEDIA QUERIES */
